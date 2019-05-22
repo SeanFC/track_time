@@ -1,0 +1,7 @@
+#!/bin/sh
+
+timer_name="/home/sean/projects/track_time/track_time" # Path to run the timer 
+
+project_name=`$timer_name -p | dmenu -l 10 -p "Project Name"` # Get which project we want from the user
+
+$timer_name -n $project_name # Run the timer with the given project name

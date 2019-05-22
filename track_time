@@ -1,0 +1,94 @@
+#!/bin/python3
+
+from os import system, path
+from datetime import datetime, timedelta
+from time import sleep
+import csv
+import sys
+import argparse
+from glob import glob
+
+
+#TODO: Give better name
+def get_as_nearest_time_string(time):
+    cur_start_hour = time.hour
+    cur_start_minute = round(time.minute/nearest_time_interval)*nearest_time_interval
+
+    #TODO:Near midnight problem, try and have python lib handle this time stuff
+    if cur_start_minute > 60 - nearest_time_interval:
+        cur_start_hour += 1
+        cur_start_minute = 0
+
+    time_indicator = str(cur_start_hour) + ":" + str(cur_start_minute) 
+
+    if cur_start_minute < 10: time_indicator = str(cur_start_hour) + ":0" + str(cur_start_minute)
+    if cur_start_hour < 10: time_indicator = '0' + time_indicator
+
+    return time_indicator
+
+if __name__ == "__main__":
+
+    # Set up the possible arguments to the command line
+    parser = argparse.ArgumentParser(description="Set and save task related timers")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument("-n", "--project_name", help="The project this task is associated to", default="Other")
+    group.add_argument("-p", "--list_projects", help="List previous projects", action="store_true" )
+    parser.add_argument("-s", "--subscribe", help="Count down the current timer", action="store_true" )
+    parser.add_argument("-l", "--length", type=int, help="The length of the task in minutes", default=20)
+
+    args = parser.parse_args()
+
+    # Set parameters 
+    app_name = "Tasking Time"
+    minutes_to_wait = args.length
+    nearest_time_interval = 5
+
+    # Find conditional parameters
+    start_time = datetime.now()
+    date_string = start_time.strftime("%y%m%d")
+    #file_name = 'test.csv'
+    base_path = '/home/sean/projects/track_time/data'
+
+    if not os.path.exists(base_path):
+        os.makedirs(base_path)
+
+
+    file_name = date_string + '.csv'
+    file_path = path.join(base_path, file_name)
+
+    # List all the projects that have been selected so far
+    if args.list_projects:
+        data_files = glob(path.join(base_path, '*.csv'))
+        project_names = set()
+        
+        # Go through all the csv files and find the unique project names
+        for data_file_handler in data_files:     
+            with open(data_file_handler, 'r') as csv_file_handler:
+                csv_read_handler = csv.reader(csv_file_handler)
+                
+                project_names.update( set([ row[2] for row in csv_read_handler]) )
+        
+        # Print the unique names
+        for name in project_names:
+            print(name)
+
+    # Start a new task
+    else:
+        chosen_project = args.project_name.strip()
+        start_time_string = get_as_nearest_time_string(start_time)
+        end_time_string = get_as_nearest_time_string(start_time + timedelta(minutes=minutes_to_wait))
+        print(start_time_string)
+
+        if args.subscribe:
+            print('Test')
+            exit()
+        else:
+            sleep(minutes_to_wait*60)
+
+        message = chosen_project + "\n " + start_time_string + " -> " + end_time_string
+
+        system("notify-send --icon=task-past -a \"" + app_name + "\" \"" + message + "\"")
+
+        with open(file_path, 'a') as csv_file_handler:
+            csv_write_handler = csv.writer(csv_file_handler)
+            csv_write_handler.writerow([start_time_string, minutes_to_wait, chosen_project])
