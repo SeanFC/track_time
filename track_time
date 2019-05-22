@@ -7,7 +7,7 @@ import csv
 import sys
 import argparse
 from glob import glob
-
+import settings
 
 #TODO: Give better name
 def get_as_nearest_time_string(time):
@@ -46,19 +46,18 @@ if __name__ == "__main__":
     # Find conditional parameters
     start_time = datetime.now()
     date_string = start_time.strftime("%y%m%d")
-    #file_name = 'test.csv'
-    base_path = '/home/sean/projects/track_time/data'
 
-    if not os.path.exists(base_path):
-        os.makedirs(base_path)
+    if not path.exists(settings.base_path):
+        makedirs(settings.base_path)
 
 
     file_name = date_string + '.csv'
-    file_path = path.join(base_path, file_name)
+    file_path = path.join(settings.base_path, file_name)
+    file_name = 'test.csv'
 
     # List all the projects that have been selected so far
     if args.list_projects:
-        data_files = glob(path.join(base_path, '*.csv'))
+        data_files = glob(path.join(settings.base_path, '*.csv'))
         project_names = set()
         
         # Go through all the csv files and find the unique project names
