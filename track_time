@@ -1,6 +1,6 @@
 #!/bin/python3
 
-from os import system, path
+from os import system, path, makedirs
 from datetime import datetime, timedelta
 from time import sleep
 import csv
