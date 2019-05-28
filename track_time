@@ -26,6 +26,11 @@ def get_as_nearest_time_string(time):
 
     return time_indicator
 
+def get_timedelta_minute_string(td):
+    #return str(round(td.total_seconds()/60))
+    from math import ceil
+    return str(ceil(td.total_seconds()/60))
+
 if __name__ == "__main__":
 
     # Set up the possible arguments to the command line
@@ -50,10 +55,9 @@ if __name__ == "__main__":
     if not path.exists(settings.base_path):
         makedirs(settings.base_path)
 
-
     file_name = date_string + '.csv'
     file_path = path.join(settings.base_path, file_name)
-    file_name = 'test.csv'
+    #file_path = 'test.csv'
 
     # List all the projects that have been selected so far
     if args.list_projects:
@@ -76,11 +80,15 @@ if __name__ == "__main__":
         chosen_project = args.project_name.strip()
         start_time_string = get_as_nearest_time_string(start_time)
         end_time_string = get_as_nearest_time_string(start_time + timedelta(minutes=minutes_to_wait))
-        print(start_time_string)
 
         if args.subscribe:
-            print('Test')
-            exit()
+            end_time = start_time + timedelta(minutes=minutes_to_wait);
+            secs_past = 0;
+            while datetime.now() < end_time or secs_past > 1000000: #TODO:Poor maximum subscribe time
+                cur_time = datetime.now()
+                sleep(1)
+                system("echo AT"+str(chosen_project)+":"+str(get_timedelta_minute_string(end_time - cur_time)))
+            system("echo AF"+str(chosen_project)+":"+str(0))
         else:
             sleep(minutes_to_wait*60)
 
@@ -88,6 +96,17 @@ if __name__ == "__main__":
 
         system("notify-send --icon=task-past -a \"" + app_name + "\" \"" + message + "\"")
 
+        #max_freq = 450
+        #for i in np.arange(440, max_freq, 10):
+        #    system("play -nq -t alsa synth 0.4 sine {}".format(str(i)))
+        #    print(i)
+            #system("play -nq -t alsa synth 0.1 sine {}".format(str(i)))
+
+        #system("play -nq -t alsa synth 0.5 square {}".format(str(max_freq)))
+        #system("cvlc wow.mpeg")
+        #system("cvlc to-the-point.mp3")
+
+        # Save the completed timer
         with open(file_path, 'a') as csv_file_handler:
             csv_write_handler = csv.writer(csv_file_handler)
             csv_write_handler.writerow([start_time_string, minutes_to_wait, chosen_project])

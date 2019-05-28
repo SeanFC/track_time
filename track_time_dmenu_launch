@@ -1,7 +1,8 @@
 #!/bin/sh
 
 timer_name="/home/sean/projects/track_time/track_time" # Path to run the timer 
+PANEL_FIFO='/tmp/panel-fifo'
 
 project_name=`$timer_name -p | dmenu -l 10 -p "Project Name"` # Get which project we want from the user
 
-$timer_name -n $project_name # Run the timer with the given project name
+$timer_name -s -n "$project_name" > "$PANEL_FIFO" & # Run the timer with the given project name
