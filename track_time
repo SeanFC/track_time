@@ -10,7 +10,7 @@ from glob import glob
 import settings
 
 #TODO: Give better name
-def get_as_nearest_time_string(time):
+def get_as_nearest_time_string(time, nearest_time_interval=5):
     cur_start_hour = time.hour
     cur_start_minute = round(time.minute/nearest_time_interval)*nearest_time_interval
 
@@ -27,7 +27,6 @@ def get_as_nearest_time_string(time):
     return time_indicator
 
 def get_timedelta_minute_string(td):
-    #return str(round(td.total_seconds()/60))
     from math import ceil
     return str(ceil(td.total_seconds()/60))
 
@@ -38,6 +37,7 @@ if __name__ == "__main__":
     group = parser.add_mutually_exclusive_group()
     group.add_argument("-n", "--project_name", help="The project this task is associated to", default="Other")
     group.add_argument("-p", "--list_projects", help="List previous projects", action="store_true" )
+    group.add_argument("-u", "--count_up", help="Time up for 0 till asked to stop", action="store_true")
     parser.add_argument("-s", "--subscribe", help="Count down the current timer", action="store_true" )
     parser.add_argument("-l", "--length", type=int, help="The length of the task in minutes", default=20)
 
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     # Set parameters 
     app_name = "Tasking Time"
     minutes_to_wait = args.length
-    nearest_time_interval = 5
+    round_to_time_interval = 5
 
     # Find conditional parameters
     start_time = datetime.now()
@@ -75,11 +75,33 @@ if __name__ == "__main__":
         for name in project_names:
             print(name)
 
+    elif args.count_up:
+
+        project_name = input("Enter project name: ")
+        time_spent_delta = datetime.now() - start_time
+        time_spent = get_timedelta_minute_string(time_spent_delta)
+        time_spent = 0 if time_spent_delta.seconds < 60 else time_spent
+
+        if not project_name and not time_spent:
+            print("ERROR: For event at {} no time or project name has been given and the event was less that 1 minute".format(get_as_nearest_time_string(start_time, 1)))
+            exit()
+        elif not project_name:
+            print("ERROR: {},{} event not saved since no project name given".format(get_as_nearest_time_string(start_time, 1), time_spent))
+            exit()
+        elif not time_spent: 
+            print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
+            exit()
+
+        # Save the completed time track
+        with open(file_path, 'a') as csv_file_handler:
+            csv_write_handler = csv.writer(csv_file_handler, lineterminator='\n')
+            csv_write_handler.writerow([get_as_nearest_time_string(start_time, 1), time_spent, project_name])
+
     # Start a new task
     else:
         chosen_project = args.project_name.strip()
-        start_time_string = get_as_nearest_time_string(start_time)
-        end_time_string = get_as_nearest_time_string(start_time + timedelta(minutes=minutes_to_wait))
+        start_time_string = get_as_nearest_time_string(start_time, round_to_time_interval)
+        end_time_string = get_as_nearest_time_string(start_time + timedelta(minutes=minutes_to_wait), round_to_time_interval)
 
         if args.subscribe:
             end_time = start_time + timedelta(minutes=minutes_to_wait);
