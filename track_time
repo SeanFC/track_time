@@ -8,6 +8,7 @@ import sys
 import argparse
 from glob import glob
 import settings
+import pandas as pd
 
 #TODO: Give better name
 def get_as_nearest_time_string(time, nearest_time_interval=5):
@@ -30,6 +31,25 @@ def get_timedelta_minute_string(td):
     from math import ceil
     return str(ceil(td.total_seconds()/60))
 
+def save_timed_project(file_path, date_string, start_time_string, minutes_to_wait, chosen_project, extra=None):
+    split_project = chosen_project.split(',', 1)
+    chosen_project = split_project[0].strip()
+
+    if len(split_project) > 1:
+        extra = split_project[1].strip()
+
+    dat = {
+            'date': [date_string], 
+            'start_time': [start_time_string], 
+            'time_spend':[minutes_to_wait], 
+            'project_name':[chosen_project],
+            'extra': [extra]
+            }
+    new_data = pd.DataFrame(data=dat)
+
+    with open(file_path, 'a') as csv_file_handler:
+        new_data.to_csv(csv_file_handler, mode='a', header=False, index=False)
+
 if __name__ == "__main__":
 
     # Set up the possible arguments to the command line
@@ -38,6 +58,7 @@ if __name__ == "__main__":
     group.add_argument("-n", "--project_name", help="The project this task is associated to", default="Other")
     group.add_argument("-p", "--list_projects", help="List previous projects", action="store_true" )
     group.add_argument("-u", "--count_up", help="Time up for 0 till asked to stop", action="store_true")
+    group.add_argument("-o", "--open", help="Open today\'s time tracking file", action="store_true")
     parser.add_argument("-s", "--subscribe", help="Count down the current timer", action="store_true" )
     parser.add_argument("-l", "--length", type=int, help="The length of the task in minutes", default=20)
 
@@ -82,20 +103,26 @@ if __name__ == "__main__":
         time_spent = get_timedelta_minute_string(time_spent_delta)
         time_spent = 0 if time_spent_delta.seconds < 60 else time_spent
 
-        if not project_name and not time_spent:
-            print("ERROR: For event at {} no time or project name has been given and the event was less that 1 minute".format(get_as_nearest_time_string(start_time, 1)))
-            exit()
-        elif not project_name:
-            print("ERROR: {},{} event not saved since no project name given".format(get_as_nearest_time_string(start_time, 1), time_spent))
-            exit()
-        elif not time_spent: 
-            print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
-            exit()
+        #if not project_name and not time_spent:
+        #    print("ERROR: For event at {} no time or project name has been given and the event was less that 1 minute".format(get_as_nearest_time_string(start_time, 1)))
+        #    exit()
+        #elif not project_name:
+        #    print("ERROR: {},{} event not saved since no project name given".format(get_as_nearest_time_string(start_time, 1), time_spent))
+        #    exit()
+        #elif not time_spent: 
+        #    print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
+        #    exit()
 
+        
+        save_timed_project(settings.data_file_path, date_string, get_as_nearest_time_string(start_time, 1), time_spent, project_name)
         # Save the completed time track
-        with open(file_path, 'a') as csv_file_handler:
-            csv_write_handler = csv.writer(csv_file_handler, lineterminator='\n')
-            csv_write_handler.writerow([get_as_nearest_time_string(start_time, 1), time_spent, project_name])
+        #with open(file_path, 'a') as csv_file_handler:
+        #    csv_write_handler = csv.writer(csv_file_handler, lineterminator='\n')
+        #    csv_write_handler.writerow([get_as_nearest_time_string(start_time, 1), time_spent, project_name])
+
+    elif args.open:
+       #TODO:This should be replaced with the editor variable
+       system("vim + {}".format(settings.data_file_path)) # Open the vim file of the database, the + here means we go to the end of the file, 
 
     # Start a new task
     else:
@@ -132,3 +159,4 @@ if __name__ == "__main__":
         with open(file_path, 'a') as csv_file_handler:
             csv_write_handler = csv.writer(csv_file_handler)
             csv_write_handler.writerow([start_time_string, minutes_to_wait, chosen_project])
+
