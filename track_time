@@ -103,15 +103,15 @@ if __name__ == "__main__":
         time_spent = get_timedelta_minute_string(time_spent_delta)
         time_spent = 0 if time_spent_delta.seconds < 60 else time_spent
 
-        #if not project_name and not time_spent:
-        #    print("ERROR: For event at {} no time or project name has been given and the event was less that 1 minute".format(get_as_nearest_time_string(start_time, 1)))
-        #    exit()
-        #elif not project_name:
-        #    print("ERROR: {},{} event not saved since no project name given".format(get_as_nearest_time_string(start_time, 1), time_spent))
-        #    exit()
-        #elif not time_spent: 
-        #    print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
-        #    exit()
+        if not project_name and not time_spent:
+            print("ERROR: For event at {} no time or project name has been given and the event was less that 1 minute".format(get_as_nearest_time_string(start_time, 1)))
+            exit()
+        elif not project_name:
+            print("ERROR: {},{} event not saved since no project name given".format(get_as_nearest_time_string(start_time, 1), time_spent))
+            exit()
+        elif not time_spent: 
+            print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
+            exit()
 
         
         save_timed_project(settings.data_file_path, date_string, get_as_nearest_time_string(start_time, 1), time_spent, project_name)
