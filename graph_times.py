@@ -21,9 +21,9 @@ def stacked_bar_chart(in_data, bar_labels):
         plt.bar(np.arange(n_group), in_data[proj_idx, :], bottom=stack_data[proj_idx, :], label=bar_labels[proj_idx])
 
 if __name__ == "__main__":
-    #plot_type = "monthly" 
+    plot_type = "monthly" 
     #plot_type = "all_week" 
-    plot_type = "daily"
+    #plot_type = "daily"
 
     # Pull in project data
     parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
@@ -32,12 +32,14 @@ if __name__ == "__main__":
 
     if plot_type == "monthly":
         base_time = dt.datetime(year = proj_data['date'][0].year, month = proj_data['date'][0].month, day=1)
+
+        amount_of_months = int((proj_data['date'].iloc[-1] - base_time).days/31 + 1)
         date_list = [
                 dt.datetime(
                     year = base_time.year + ((base_time.month +x)//12 if (base_time.month +x)//12 != (base_time.month +x)/12 else (base_time.month +x-1)//12), 
                     month = (base_time.month + x)%12 if (base_time.month + x)%12 != 0 else 12, 
                     day=1) 
-                for x in range(8)
+                for x in range(amount_of_months)
                 ]
     elif plot_type == "all_week" or plot_type == "daily":
         base_time = proj_data['date'][0]
@@ -60,7 +62,9 @@ if __name__ == "__main__":
 
     if plot_type == "monthly":
         stacked_bar_chart(proj_time_by_group, proj_names)
+        #TODO: These days are wrong, first month is repeated
         plt.gca().set_xticklabels(list(map(lambda x: x.strftime("%B"), [base_time, *date_list] )))
+        plt.gca().set_xticks(range(len(date_list)))
     elif plot_type == "daily":
         stacked_bar_chart(proj_time_by_group, proj_names)
     elif plot_type == "all_week":
