@@ -22,8 +22,8 @@ def stacked_bar_chart(in_data, bar_labels):
 
 if __name__ == "__main__":
     #plot_type = "monthly" 
-    plot_type = "all_week" 
-    #plot_type = "daily"
+    #plot_type = "all_week" 
+    plot_type = "daily"
 
     # Pull in project data
     parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
@@ -41,7 +41,8 @@ if __name__ == "__main__":
                 ]
     elif plot_type == "all_week" or plot_type == "daily":
         base_time = proj_data['date'][0]
-        date_list = [ base_time + dt.timedelta(days=x) for x in range(223) ]
+        amount_of_days = (proj_data['date'].iloc[-1] - base_time).days + 1
+        date_list = [ base_time + dt.timedelta(days=x) for x in range(amount_of_days) ]
     else:
         print("Please event valid plot type")
         exit()
@@ -57,7 +58,7 @@ if __name__ == "__main__":
         for proj_idx, proj_name in enumerate(proj_names):
             proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group['project_name'] == proj_name]['time_spent'].to_numpy(dtype='int'))
 
-    if plot_type == "monthly" :
+    if plot_type == "monthly":
         stacked_bar_chart(proj_time_by_group, proj_names)
         plt.gca().set_xticklabels(list(map(lambda x: x.strftime("%B"), [base_time, *date_list] )))
     elif plot_type == "daily":
