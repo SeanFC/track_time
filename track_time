@@ -9,6 +9,7 @@ import argparse
 from glob import glob
 import settings
 import pandas as pd
+from math import ceil
 
 #TODO: Give better name
 def get_as_nearest_time_string(time, nearest_time_interval=5):
@@ -28,7 +29,6 @@ def get_as_nearest_time_string(time, nearest_time_interval=5):
     return time_indicator
 
 def get_timedelta_minute_string(td):
-    from math import ceil
     return str(ceil(td.total_seconds()/60))
 
 def save_timed_project(file_path, date_string, start_time_string, minutes_to_wait, chosen_project, extra=None):
