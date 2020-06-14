@@ -11,20 +11,17 @@ def map_bin(x, bins, base):
 
     return np.digitize((x-base).total_seconds(), bins, **kwargs)
 
-def stacked_bar_chart(in_data, bar_labels):
+def stacked_bar_chart(ax, in_data, bar_labels):
     stack_data = np.cumsum(in_data, axis=0)
     n_proj, n_group = stack_data.shape
 
     stack_data = np.vstack((np.zeros((1, n_group)), stack_data))
 
     for proj_idx in range(n_proj):
-        plt.bar(np.arange(n_group), in_data[proj_idx, :], bottom=stack_data[proj_idx, :], label=bar_labels[proj_idx])
+        ax.bar(np.arange(n_group), in_data[proj_idx, :], bottom=stack_data[proj_idx, :], label=bar_labels[proj_idx])
 
-if __name__ == "__main__":
-    plot_type = "monthly" 
-    #plot_type = "all_week" 
-    #plot_type = "daily"
 
+def monthly_weekly_daily_plots(plot_type):
     # Pull in project data
     parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
@@ -46,8 +43,10 @@ if __name__ == "__main__":
         amount_of_days = (proj_data['date'].iloc[-1] - base_time).days + 1
         date_list = [ base_time + dt.timedelta(days=x) for x in range(amount_of_days) ]
     else:
-        print("Please event valid plot type")
+        print("Please enter valid plot type")
         exit()
+
+    fig, ax = plt.subplots(1,1)
 
     proj_names = proj_data['project_name'].unique()
     proj_time_by_group = np.zeros((len(proj_names), len(date_list)))
@@ -61,17 +60,24 @@ if __name__ == "__main__":
             proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group['project_name'] == proj_name]['time_spent'].to_numpy(dtype='int'))
 
     if plot_type == "monthly":
-        stacked_bar_chart(proj_time_by_group, proj_names)
-        #TODO: These days are wrong, first month is repeated
-        plt.gca().set_xticklabels(list(map(lambda x: x.strftime("%B"), [base_time, *date_list] )))
-        plt.gca().set_xticks(range(len(date_list)))
+        stacked_bar_chart(ax, proj_time_by_group, proj_names)
+        ax.set_xticklabels(list(map(lambda x: x.strftime("%B"), date_list)))
+        ax.set_xticks(range(len(date_list)))
+        ax.set_ylabel("Longed Time (m)")
     elif plot_type == "daily":
-        stacked_bar_chart(proj_time_by_group, proj_names)
+        stacked_bar_chart(ax, proj_time_by_group, proj_names)
     elif plot_type == "all_week":
-        weekly_proj_times = np.zeros((5, 7))
-        for i in np.arange(7):
-            weekly_proj_times[:, i] = np.sum(proj_time_by_group[:, i::7], axis=1)
-        stacked_bar_chart(weekly_proj_times[:, [-1, *(np.arange(6))]], proj_names)
+        weekly_proj_times = np.zeros((proj_time_by_group.shape[0], 7))
 
-    plt.legend()
+        for i in np.arange(7):
+            weekly_proj_times[:, i] = np.sum(proj_time_by_group[:, i::7], axis=1)/proj_time_by_group.shape[1]*7/60
+        stacked_bar_chart(ax, weekly_proj_times[:, [-1, *(np.arange(6))]], proj_names)
+        ax.set_xticklabels(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
+        ax.set_xticks(np.arange(0, 7))
+        ax.set_ylabel('Time Spent (h)')
+    
+    ax.legend()
     plt.show()
+
+if __name__ == "__main__":
+    monthly_weekly_daily_plots('monthly')
