@@ -79,5 +79,32 @@ def monthly_weekly_daily_plots(plot_type):
     ax.legend()
     plt.show()
 
+def raster_plot_last_time_period(days_past=7):
+    group = 'somnus'
+    import datetime as dt
+
+    parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
+    import somnia.visualise as vis
+    
+    cur_data = proj_data[
+        (dt.date.today() - proj_data['date'].dt.date < np.timedelta64(days_past, 'D')) &
+        (dt.date.today() - proj_data['date'].dt.date > np.timedelta64(-1, 'D')) &
+        (proj_data['project_name'] == group)
+        ].copy()
+    cur_data['Full Time'] = cur_data.apply(lambda x: dt.datetime(year=x['date'].year, month=x['date'].month, day=x['date'].day, hour=int(x['start_time'].split(':')[0]), minute=int(x['start_time'].split(':')[1])), axis=1)
+    cur_data['Full Time'] = cur_data['Full Time'] - cur_data['date'].min()
+
+    import somnia.time_periods as tp
+
+    view = vis.VariableSleepViewer([0, days_past*24*60*60], 24*60*60, start_date=cur_data['date'].min())
+    scheds = [ tp.ScheduledPeriod(row['Full Time'].total_seconds(), row['Full Time'].total_seconds() + row['time_spent']*60, tp.SleepState.awake) for idx, row in cur_data.iterrows()]
+
+    view.add_shifts(scheds)
+    plt.show()
+    #proj_data[dt.date.today() - proj_data['date'] < days_past]
+
+
 if __name__ == "__main__":
-    monthly_weekly_daily_plots('monthly')
+    #monthly_weekly_daily_plots('monthly')
+    raster_plot_last_time_period()
