@@ -105,6 +105,24 @@ def raster_plot_last_time_period(days_past=7):
     #proj_data[dt.date.today() - proj_data['date'] < days_past]
 
 
+def graph_month_in_group_split():
+    cur_group = 'somnus'
+
+    parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
+
+    proj_data = proj_data[proj_data['project_name'] == cur_group]
+
+    task_names = proj_data['extra'].unique()
+    task_times = [ proj_data[proj_data['extra'] == tn]['time_spent'].sum() for tn in task_names]
+
+    plt.pie(task_times, labels=task_names)
+    plt.show()
+
+
+    print(proj_data)
+
 if __name__ == "__main__":
     #monthly_weekly_daily_plots('monthly')
-    raster_plot_last_time_period()
+    #raster_plot_last_time_period()
+    graph_month_in_group_split()
