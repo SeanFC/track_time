@@ -101,9 +101,15 @@ def raster_plot_last_time_period(days_past=7):
     scheds = [ tp.ScheduledPeriod(row['Full Time'].total_seconds(), row['Full Time'].total_seconds() + row['time_spent']*60, tp.SleepState.awake) for idx, row in cur_data.iterrows()]
 
     view.add_shifts(scheds)
-    plt.show()
-    #proj_data[dt.date.today() - proj_data['date'] < days_past]
 
+    def plot_marker(axes, time_h, **kwargs):
+        for idx, ax in enumerate(axes):
+            time = (time_h + idx*24)*60*60
+            ax.plot([time, time], [0,1], linestyle='dashed', color='red')
+
+    _ = [plot_marker(view.axes, x) for x in [9, 12, 14, 17, 18]]
+
+    plt.show()
 
 def graph_month_in_group_split():
     cur_group = 'somnus'
@@ -124,5 +130,5 @@ def graph_month_in_group_split():
 
 if __name__ == "__main__":
     #monthly_weekly_daily_plots('monthly')
-    #raster_plot_last_time_period()
-    graph_month_in_group_split()
+    raster_plot_last_time_period()
+    #graph_month_in_group_split()
