@@ -63,7 +63,7 @@ def monthly_weekly_daily_plots(plot_type):
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
         ax.set_xticklabels(list(map(lambda x: x.strftime("%B"), date_list)))
         ax.set_xticks(range(len(date_list)))
-        ax.set_ylabel("Longed Time (m)")
+        ax.set_ylabel("Logged Time (m)")
     elif plot_type == "daily":
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
     elif plot_type == "all_week":
