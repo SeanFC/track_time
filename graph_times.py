@@ -86,18 +86,24 @@ def raster_plot_last_time_period(days_past=7):
     parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
     import somnia.visualise as vis
+
+    # By today we want the end of day so days past needs an extra 1 to reflect this
+    min_date = dt.date.today() - dt.timedelta(days=days_past - 1)
+    min_date_pd = pd.to_datetime(min_date)
     
     cur_data = proj_data[
-        (dt.date.today() - proj_data['date'].dt.date < np.timedelta64(days_past, 'D')) &
-        (dt.date.today() - proj_data['date'].dt.date > np.timedelta64(-1, 'D')) &
+        (dt.date.today() >= proj_data['date'].dt.date) &
+        (min_date_pd <= proj_data['date'].dt.date) &
         (proj_data['project_name'] == group)
         ].copy()
+
     cur_data['Full Time'] = cur_data.apply(lambda x: dt.datetime(year=x['date'].year, month=x['date'].month, day=x['date'].day, hour=int(x['start_time'].split(':')[0]), minute=int(x['start_time'].split(':')[1])), axis=1)
-    cur_data['Full Time'] = cur_data['Full Time'] - cur_data['date'].min()
+
+    cur_data['Full Time'] = cur_data['Full Time'] - min_date_pd 
 
     import somnia.time_periods as tp
 
-    view = vis.VariableSleepViewer([0, days_past*24*60*60], 24*60*60, start_date=cur_data['date'].min())
+    view = vis.VariableSleepViewer([0, (days_past+1)*24*60*60], 24*60*60, start_date=min_date) # The days_part+1 here is so we can include today
     scheds = [ tp.ScheduledPeriod(row['Full Time'].total_seconds(), row['Full Time'].total_seconds() + row['time_spent']*60, tp.SleepState.awake) for idx, row in cur_data.iterrows()]
 
     view.add_shifts(scheds)
