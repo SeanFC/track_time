@@ -135,6 +135,6 @@ def graph_month_in_group_split():
     print(proj_data)
 
 if __name__ == "__main__":
-    #monthly_weekly_daily_plots('monthly')
-    raster_plot_last_time_period()
+    monthly_weekly_daily_plots('monthly')
+    #raster_plot_last_time_period(31)
     #graph_month_in_group_split()
