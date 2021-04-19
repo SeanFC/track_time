@@ -21,16 +21,16 @@ def stacked_bar_chart(ax, in_data, bar_labels):
         ax.bar(np.arange(n_group), in_data[proj_idx, :], bottom=stack_data[proj_idx, :], label=bar_labels[proj_idx])
 
 
-def monthly_weekly_daily_plots(plot_type):
+def monthly_weekly_daily_plots(plot_type, figax=None):
     # Pull in project data
     parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
-    proj_data['project_name'] = proj_data['project_name'].str.lower()
+    proj_data['group_name'] = proj_data['group_name'].str.lower()
 
     if plot_type == "monthly":
         base_time = dt.datetime(year = proj_data['date'][0].year, month = proj_data['date'][0].month, day=1)
 
-        amount_of_months = int((proj_data['date'].iloc[-1] - base_time).days/31 + 1)
+        amount_of_months = int((proj_data['date'].iloc[-1] - base_time).days/31 + 2) #TODO: Unsure why +2 needed here
         date_list = [
                 dt.datetime(
                     year = base_time.year + ((base_time.month +x)//12 if (base_time.month +x)//12 != (base_time.month +x)/12 else (base_time.month +x-1)//12), 
@@ -39,16 +39,23 @@ def monthly_weekly_daily_plots(plot_type):
                 for x in range(amount_of_months)
                 ]
     elif plot_type == "all_week" or plot_type == "daily":
+        # Where to start from 
+        #TODO: Make this an input option
         base_time = proj_data['date'][0]
+        base_time= pd.Timestamp(dt.date.today() - dt.timedelta(days=31))
+
         amount_of_days = (proj_data['date'].iloc[-1] - base_time).days + 1
         date_list = [ base_time + dt.timedelta(days=x) for x in range(amount_of_days) ]
     else:
         print("Please enter valid plot type")
         exit()
 
-    fig, ax = plt.subplots(1,1)
+    if not figax:
+        fig, ax = plt.subplots(1,1)
+    else:
+        fig, ax = figax
 
-    proj_names = proj_data['project_name'].unique()
+    proj_names = proj_data['group_name'].unique()
     proj_time_by_group = np.zeros((len(proj_names), len(date_list)))
 
     proj_data['Grouping'] = proj_data['date'].apply(lambda x, bins: map_bin(x,bins,base_time), bins=[(x-base_time).total_seconds() for x in date_list])
@@ -57,11 +64,11 @@ def monthly_weekly_daily_plots(plot_type):
         cur_group = g[1]
         time_per_proj = {}
         for proj_idx, proj_name in enumerate(proj_names):
-            proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group['project_name'] == proj_name]['time_spent'].to_numpy(dtype='int'))
+            proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group['group_name'] == proj_name]['time_spent'].to_numpy(dtype='int'))
 
     if plot_type == "monthly":
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
-        ax.set_xticklabels(list(map(lambda x: x.strftime("%B"), date_list)))
+        ax.set_xticklabels(list(map(lambda x: x.strftime("%b"), date_list)))
         ax.set_xticks(range(len(date_list)))
         ax.set_ylabel("Logged Time (m)")
     elif plot_type == "daily":
@@ -77,7 +84,7 @@ def monthly_weekly_daily_plots(plot_type):
         ax.set_ylabel('Time Spent (h)')
     
     ax.legend()
-    plt.show()
+    return ax
 
 def raster_plot_last_time_period(days_past=7):
     group = 'somnus'
@@ -94,7 +101,7 @@ def raster_plot_last_time_period(days_past=7):
     cur_data = proj_data[
         (dt.date.today() >= proj_data['date'].dt.date) &
         (min_date_pd <= proj_data['date'].dt.date) &
-        (proj_data['project_name'] == group)
+        (proj_data['group_name'] == group)
         ].copy()
 
     cur_data['Full Time'] = cur_data.apply(lambda x: dt.datetime(year=x['date'].year, month=x['date'].month, day=x['date'].day, hour=int(x['start_time'].split(':')[0]), minute=int(x['start_time'].split(':')[1])), axis=1)
@@ -117,24 +124,33 @@ def raster_plot_last_time_period(days_past=7):
 
     plt.show()
 
-def graph_month_in_group_split():
-    cur_group = 'somnus'
+def graph_month_in_group_split(cur_group, figax):
+    if not figax:
+        fig, ax = plt.subplots(1,1)
+    else:
+        fig, ax = figax
 
     parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
 
-    proj_data = proj_data[proj_data['project_name'] == cur_group]
+    proj_data = proj_data[proj_data['group_name'] == cur_group]
 
     task_names = proj_data['extra'].unique()
     task_times = [ proj_data[proj_data['extra'] == tn]['time_spent'].sum() for tn in task_names]
 
-    plt.pie(task_times, labels=task_names)
-    plt.show()
+    ax.pie(task_times, labels=task_names)
 
-
-    print(proj_data)
+    ax.text(0.05, 0.95, cur_group, transform=ax.transAxes, bbox={'boxstyle':'square', 'facecolor':'white'})
 
 if __name__ == "__main__":
-    monthly_weekly_daily_plots('monthly')
-    #raster_plot_last_time_period(31)
-    #graph_month_in_group_split()
+    fig, axes = plt.subplots(2, 2)
+    monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]))
+    monthly_weekly_daily_plots('monthly', (fig, axes[0, 1]))
+    #monthly_weekly_daily_plots('monthly')
+    #raster_plot_last_time_period(7)
+
+    #TODO: What about the projects for these
+    #TODO: These should be ables on the biggest groups worked on
+    graph_month_in_group_split('sudorn', (fig, axes[1,0]))
+    graph_month_in_group_split('jobs', (fig, axes[1,1]))
+    plt.show()

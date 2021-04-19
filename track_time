@@ -31,18 +31,19 @@ def get_as_nearest_time_string(time, nearest_time_interval=5):
 def get_timedelta_minute_string(td):
     return str(ceil(td.total_seconds()/60))
 
-def save_timed_project(file_path, date_string, start_time_string, minutes_to_wait, chosen_project, extra=None):
-    split_project = chosen_project.split(',', 1)
-    chosen_project = split_project[0].strip()
+def save_timed_project(file_path, date_string, start_time_string, minutes_to_wait, name_string):
+    split_name = name_string.split(',')
 
-    if len(split_project) > 1:
-        extra = split_project[1].strip()
+    group_name = split_name[0].strip()
+    project_name = split_name[1].strip() if len(split_name) > 1 else None
+    extra = split_name[2].strip() if len(split_name) > 2 else None
 
     dat = {
             'date': [date_string], 
             'start_time': [start_time_string], 
             'time_spend':[minutes_to_wait], 
-            'project_name':[chosen_project],
+            'group_name':[group_name],
+            'project_name': [project_name],
             'extra': [extra]
             }
     new_data = pd.DataFrame(data=dat)
@@ -97,7 +98,6 @@ if __name__ == "__main__":
             print(name)
 
     elif args.count_up:
-
         project_name = input("Enter project name: ")
         time_spent_delta = datetime.now() - start_time
         time_spent = get_timedelta_minute_string(time_spent_delta)
@@ -112,7 +112,6 @@ if __name__ == "__main__":
         elif not time_spent: 
             print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
             exit()
-
         
         save_timed_project(settings.data_file_path, date_string, get_as_nearest_time_string(start_time, 1), time_spent, project_name)
         # Save the completed time track
