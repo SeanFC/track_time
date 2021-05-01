@@ -135,10 +135,13 @@ def graph_month_in_group_split(cur_group, figax):
 
     proj_data = proj_data[proj_data['group_name'] == cur_group]
 
-    task_names = proj_data['extra'].unique()
-    task_times = [ proj_data[proj_data['extra'] == tn]['time_spent'].sum() for tn in task_names]
+    column_name = 'extra' #project_name
+    task_names = proj_data[column_name].unique()
+    task_times = [ proj_data[proj_data[column_name] == tn]['time_spent'].sum() for tn in task_names]
 
     ax.pie(task_times, labels=task_names)
+    print(task_names)
+    print(proj_data[proj_data[column_name] == 'all'])
 
     ax.text(0.05, 0.95, cur_group, transform=ax.transAxes, bbox={'boxstyle':'square', 'facecolor':'white'})
 
