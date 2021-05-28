@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "track_time"
+version = "0.1.0"
+description = "Track your time spent on different projects"
+authors = ["Sean F. Cleator <seancleator@hotmail.co.uk>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.4.2"
+pandas = "^1.2.4"
+numpy = "^1.20.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -7,9 +7,10 @@ import csv
 import sys
 import argparse
 from glob import glob
-import settings
-import pandas as pd
 from math import ceil
+
+import pandas as pd
+from .settings import base_path, data_file_path
 
 #TODO: Give better name
 def get_as_nearest_time_string(time, nearest_time_interval=5):
@@ -51,8 +52,7 @@ def save_timed_project(file_path, date_string, start_time_string, minutes_to_wai
     with open(file_path, 'a') as csv_file_handler:
         new_data.to_csv(csv_file_handler, mode='a', header=False, index=False)
 
-if __name__ == "__main__":
-
+def main_start():
     # Set up the possible arguments to the command line
     parser = argparse.ArgumentParser(description="Set and save task related timers")
     group = parser.add_mutually_exclusive_group()
@@ -74,16 +74,16 @@ if __name__ == "__main__":
     start_time = datetime.now()
     date_string = start_time.strftime("%y%m%d")
 
-    if not path.exists(settings.base_path):
-        makedirs(settings.base_path)
+    if not path.exists(base_path):
+        makedirs(base_path)
 
     file_name = date_string + '.csv'
-    file_path = path.join(settings.base_path, file_name)
+    file_path = path.join(base_path, file_name)
     #file_path = 'test.csv'
 
     # List all the projects that have been selected so far
     if args.list_projects:
-        data_files = glob(path.join(settings.base_path, '*.csv'))
+        data_files = glob(path.join(base_path, '*.csv'))
         project_names = set()
         
         # Go through all the csv files and find the unique project names
@@ -113,7 +113,7 @@ if __name__ == "__main__":
             print("ERROR: Event {},0,{} not saved since less than a minute long".format(get_as_nearest_time_string(start_time, 1), project_name))
             exit()
         
-        save_timed_project(settings.data_file_path, date_string, get_as_nearest_time_string(start_time, 1), time_spent, project_name)
+        save_timed_project(data_file_path, date_string, get_as_nearest_time_string(start_time, 1), time_spent, project_name)
         # Save the completed time track
         #with open(file_path, 'a') as csv_file_handler:
         #    csv_write_handler = csv.writer(csv_file_handler, lineterminator='\n')
@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
     elif args.open:
        #TODO:This should be replaced with the editor variable
-       system("vim + {}".format(settings.data_file_path)) # Open the vim file of the database, the + here means we go to the end of the file, 
+       system("vim + {}".format(data_file_path)) # Open the vim file of the database, the + here means we go to the end of the file, 
 
     # Start a new task
     else:
@@ -158,4 +158,3 @@ if __name__ == "__main__":
         with open(file_path, 'a') as csv_file_handler:
             csv_write_handler = csv.writer(csv_file_handler)
             csv_write_handler.writerow([start_time_string, minutes_to_wait, chosen_project])
-

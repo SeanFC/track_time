@@ -1,0 +1,3953 @@
+date,start_time,time_spent,group_name,project_name,extra
+190521,14:05,20,Eastwood,Clean main doc draft
+190521,14:25,20,sean,time tracker
+190521,14:45,20,Eastwood,
+190521,15:05,20,sean,time tracker
+190521,15:25,20,Eastwood,
+190521,15:45,20,sean,time tracker
+190521,16:05,20,Eastwood,
+190521,16:25,20,sean,time tracker
+190521,16:45,20,Eastwood,
+190521,18:05,20,sean,time tracker
+190521,18:25,20,sean,time tracker
+190522,09:20,20,Eastwood,
+190522,09:45,20,sean,time tracker
+190522,11:40,20,Eastwood,
+190522,12:55,20,Eastwood,
+190522,13:15,20,Eastwood,
+190522,13:35,5,Eastwood,
+190522,14:00,20,Eastwood,
+190522,14:20,20,Eastwood,
+190522,14:50,20,Eastwood,
+190522,15:10,20,Eastwood,
+190522,15:30,20,Eastwood,
+190522,16:20,20,PhD,
+190522,16:40,20,PhD,
+190522,17:00,20,PhD,
+190522,17:20,20,PhD,
+190522,17:45,5,PhD,
+190522,17:50,5,PhD,
+190522,19:50,5,PhD,
+190522,23:20,20,sean,time tracker
+190522,23:40,5,sean,time tracker
+190522,23:45,5,sean,time tracker
+190522,23:50,5,sean,time tracker
+190522,23:55,5,sean,time tracker
+190523,09:45,20,Eastwood,
+190523,10:05,20,Eastwood,
+190523,10:25,20,Eastwood,
+190523,12:35,20,PhD,
+190523,12:55,5,PhD,
+190523,13:00,5,PhD,
+190523,13:15,5,PhD,
+190523,13:20,5,PhD,
+190523,15:45,20,Eastwood,
+190523,16:05,20,Eastwood,
+190523,16:25,20,Eastwood,
+190524,09:45,20,Eastwood,
+190524,10:05,20,sean,time tracker
+190524,10:25,20,sean,time tracker
+190524,10:45,10,sean,time tracker
+190524,12:40,20,Eastwood,
+190524,13:10,20,Eastwood,
+190524,13:35,20,Eastwood,
+190524,13:55,20,Eastwood,
+190524,14:40,20,PhD,
+190524,15:10,20,PhD,
+190524,15:30,10,PhD,
+190524,15:40,5,PhD,
+190524,15:55,5,sean,time tracker
+190524,16:05,5,sean,time tracker
+190524,16:50,20,PhD,
+190527,16:30,20,PhD,
+190527,17:00,20,PhD,
+190528,10:35,20,Eastwood,
+190528,10:55,20,Eastwood,
+190528,13:35,5,sean,time tracker
+190528,13:40,20,Eastwood,
+190528,14:40,20,Eastwood,
+190528,15:00,20,Eastwood,
+190528,15:20,20,Eastwood,
+190528,16:50,20,PhD,
+190528,17:10,20,PhD,
+190528,17:30,10,Eastwood,
+190529,09:25,20,Eastwood,
+190529,12:40,20,Eastwood,
+190529,13:35,20,Eastwood,
+190529,14:40,20,Eastwood,
+190529,16:00,20,Eastwood,
+190529,17:00,20,Eastwood,
+190530,13:25,20,Eastwood,
+190530,13:55,20,Eastwood,
+190603,12:50,20,Eastwood,
+190603,16:45,20,Eastwood,
+190603,17:05,20,Eastwood,
+190603,17:25,20,Eastwood,
+190604,18:50,20,Eastwood,
+190606,14:45,20,Eastwood,
+190611,14:10,20,PhD,
+190611,14:50,20,PhD,
+190611,17:00,25,PhD,
+190612,11:00,30,eastwood,email light
+190612,12:15,15,eastwood,email
+190612,12:30,3,eastwood,email
+190612,12:35,9,eastwood,email
+190612,12:45,20,phd,JAMES paper light
+190612,15:00,10,eastwood,email
+190612,15:15,20,phd,JAMES paper
+190612,16:00,23,phd,JAMES paper
+190612,17:15,18,Eastwood,document
+190612,18:31,15,sean,track time
+190613,10:30,15,Eastwood,admin
+190613,10:47,28,phd,JAMES paper
+190613,12:41,22,Eastwood,
+190613,13:13,5,Eastwood,
+190613,13:30,10,phd,JAMES paper
+190613,13:43,27,Eastwood,
+190613,15:50,49,Eastwood,
+190613,20:26,8,Eastwood,
+190614,10:24,15,phd,JAMES paper
+190617,10:55,85,PhD,
+190617,12:26,2,PhD,
+190617,12:31,3,Eastwood,
+190617,14:06,16,Eastwood,
+190617,14:38,11,Eastwood,
+190617,16:06,39,Eastwood,
+190617,16:53,20,Eastwood,
+190618,11:16,14,phd,benchmark
+190618,11:31,64,phd,benchmark
+190618,13:30,20,phd,JAMES
+190618,14:11,19,eastwood,
+190618,14:34,3,eastwood,
+190618,14:41,25,phd,JAMES
+190618,15:42,84,eastwood,
+190619,12:01,33,eastwood,
+190619,13:05,30,eastwood,
+190619,13:36,60,eastwood,
+190620,13:10,40,eastwood,
+190620,13:52,4,sean,track_time
+190620,13:56,4,eastwood,
+190620,14:10,39,eastwood,
+190620,15:42,51,eastwood,
+190620,16:44,18,eastwood,
+190621,11:42,121,eastwood,
+190621,15:27,45,eastwood,
+190621,15:40,70,eastwood,
+190621,16:57,35,eastwood,
+190622,13:09,5,eastwood,
+190622,13:14,5,phd,
+190622,13:44,10,phd,JAMES paper
+190622,14:25,12,phd,JAMES paper
+190622,14:37,6,phd,JAMES paper
+190622,15:16,40,phd,JAMES paper
+190622,16:12,7,phd,JAMES paper
+190622,21:03,5,phd,JAMES paper
+190622,22:48,15,phd,JAMES paper
+190623,13:47,8,phd,JAMES paper
+190624,11:34,63,eastwood,
+190624,12:49,52,eastwood,
+190624,14:26,94,eastwood,
+190624,16:05,10,eastwood,
+190624,22:56,22,eastwood,
+190625,11:16,35,eastwood,
+190625,12:59,146,eastwood,
+190625,17:45,22,eastwood,
+190625,20:14,11,eastwood,
+190626,00:13,48,eastwood,
+190626,10:42,78,eastwood,
+190626,12:40,102,eastwood,
+190626,14:22,22,eastwood,
+190626,15:38,40,eastwood,
+190626,17:09,19,eastwood,
+190627,09:03,81,eastwood,
+190627,17:10,2,eastwood,
+190627,17:17,19,phd,JAMES
+190628,12:47,23,eastwood,
+190628,13:10,5,phd,JAMES
+190628,13:16,13,eastwood,
+190628,13:28,13,phd,JAMES
+190628,13:41,36,phd,JAMES
+190628,15:11,29,phd,JAMES
+190628,16:00,74,phd,JAMES
+190628,17:16,20,phd,JAMES
+190630,11:30,30,eastwood,
+190630,13:05,26,phd,JAMES
+190630,22:45,20,phd,JAMES
+190701,10:54,34,phd,JAMES
+190701,11:35,56,phd,JAMES
+190701,13:37,53,phd,JAMES
+190701,15:22,84,phd,JAMES
+190701,17:33,11,phd,JAMES
+190701,20:45,20,phd,JAMES
+190701,21:19,127,phd,JAMES
+190702,10:56,90,eastwood,SAPC
+190702,12:47,159,eastwood,SAPC
+190702,15:35,20,eastwood,SAPC
+190702,23:15,45,eastwood,SAPC
+190703,10:53,49,eastwood,SAPC
+190706,11:53,24,phd,JAMES
+190706,12:22,11,phd,JAMES
+190707,15:24,24,phd,JAMES
+190707,23:58,80,phd,JAMES
+190708,13:33,35,phd,JAMES
+190708,15:16,21,phd,JAMES
+190708,16:00,60,phd,JAMES
+190709,11:24,8,phd,JAMES
+190709,11:44,7,phd,JAMES
+190709,13:14,89,phd,JAMES
+190709,15:06,72,phd,JAMES
+190709,16:17,28,eastwood,
+190709,17:40,25,eastwood,
+190710,10:38,64,phd,JAMES
+190710,12:02,89,phd,JAMES
+190710,14:21,73,phd,JAMES
+190710,15:46,21,eastwood,
+190711,11:24,102,eastwood,
+190711,13:08,12,eastwood,
+190711,14:06,61,eastwood,
+190711,15:44,27,eastwood,
+190711,16:28,18,eastwood,
+190711,16:40,30,eastwood,
+190711,17:26,9,phd,JAMES
+190711,17:43,15,eastwood,
+190711,18:56,10,eastwood,
+190712,11:33,37,eastwood,
+190712,12:14,8,eastwood,
+190712,12:23,5,eastwood,
+190712,12:38,12,eastwood,
+190712,12:55,31,phd,JAMES
+190713,12:44,31,eastwood,email
+190714,12:48,16,eastwood,email
+190715,10:56,98,eastwood,
+190715,13:25,30,eastwood,
+190715,14:21,29,eastwood,
+190715,15:00,42,eastwood,
+190715,15:42,77,eastwood,
+190715,17:01,3,eastwood,
+190716,12:04,36,eastwood,
+190716,12:45,15,eastwood,
+190716,13:03,19,eastwood,
+190716,14:04,3,eastwood,email
+190716,14:16,20,eastwood,email
+190716,15:25,91,eastwood,
+190717,10:34,49,eastwood,
+190717,11:24,36,eastwood,
+190717,12:10,27,eastwood,
+190717,13:26,74,eastwood,
+190717,14:43,15,eastwood,
+190717,15:36,56,eastwood,
+190717,16:35,24,eastwood,
+190718,10:05,10,phd,thesis
+190718,10:30,10,eastwood,
+190718,10:41,2,eastwood,
+190718,10:53,6,eastwood,
+190718,11:08,6,eastwood,
+190718,11:36,29,eastwood,
+190718,12:18,13,eastwood,
+190718,13:33,34,eastwood,
+190718,14:16,94,eastwood,
+190718,19:56,60,sean,website
+190719,10:05,5,phd,thesis
+190721,14:47,29,phd,thesis
+190721,15:17,26,phd,thesis
+190721,18:48,40,phd,thesis
+190721,18:51,5,eastwood,
+190721,22:04,6,phd,thesis
+190721,22:10,44,eastwood,
+190722,10:45,7,eastwood,
+190722,10:59,21,eastwood,
+190722,12:15,20,eastwood,
+190722,12:37,72,eastwood,
+190722,13:49,49,eastwood,
+190722,15:35,53,phd,JAMES
+190722,16:27,2,eastwood,email
+190722,16:29,2,eastwood,email
+190722,23:30,30,phd,thesis
+190723,10:15,15,eastwood,email
+190723,10:46,27,eastwood,aus
+190723,11:12,7,sean,website
+190723,11:19,35,eastwood,
+190723,12:15,22,eastwood,aus
+190723,13:25,72,phd,JAMES
+190723,14:54,64,eastwood,
+190723,16:03,27,eastwood,
+190724,11:00,22,phd,JAMES
+190724,11:43,24,phd,thesis
+190724,17:55,5,phd,JAMES
+190724,18:51,27,eastwood,
+190724,19:35,14,eastwood,
+190724,20:58,9,eastwood,
+190725,00:10,7,eastwood,
+190725,10:37,14,phd,thesis
+190725,10:53,5,phd,JAMES
+190725,12:11,4,phd,thesis
+190725,12:37,16,phd,thesis
+190725,12:56,13,eastwood,
+190725,14:20,8,phd,thesis
+190725,14:40,7,phd,thesis
+190725,15:03,9,phd,thesis
+190725,15:18,37,phd,thesis
+190725,16:06,7,phd,thesis
+190725,16:16,45,eastwood,
+190725,3:15,7,eastwood,
+190726,11:54,74,phd,JAMES
+190726,13:15,25,phd,JAMES
+190726,14:38,90,phd,JAMES
+190727,16:46,56,phd,JAMES
+190728,12:20,14,phd,JAMES
+190728,13:25,46,phd,JAMES
+190728,14:11,19,phd,thesis
+190728,20:20,15,phd,thesis
+190729,12:22,63,eastwood,admin
+190729,13:38,14,eastwood,admin
+190729,13:53,49,phd,thesis
+190729,14:43,4,eastwood,admin
+190729,15:58,11,phd,thesis
+190729,16:14,9,phd,thesis
+190729,16:25,10,phd,thesis
+190729,17:51,78,phd,JAMES
+190729,19:20,40,phd,JAMES
+190730,10:45,20,phd,JAMES
+190730,11:07,45,phd,JAMES
+190730,12:02,34,eastwood,
+190730,13:33,43,eastwood,
+190730,14:27,45,eastwood,
+190730,15:24,14,eastwood,
+190730,15:50,50,eastwood,
+190731,00:59,15,phd,JAMES
+190731,09:58,9,phd,JAMES
+190731,10:45,28,phd,JAMES
+190731,11:25,23,phd,JAMES
+190731,11:48,7,phd,JAMES
+190731,12:07,15,phd,JAMES
+190731,13:47,118,eastwood,
+190731,15:55,12,phd,JAMES
+190731,16:22,5,phd,thesis
+190802,11:44,31,eastwood,
+190802,12:22,8,eastwood,
+190802,12:48,23,eastwood,
+190802,13:23,14,eastwood,
+190802,15:05,8,eastwood,
+190802,15:17,26,eastwood,
+190802,15:55,9,eastwood,
+190802,17:01,30,eastwood,
+190804,13:57,40,phd,thesis
+190804,16:31,22,phd,thesis
+190805,11:26,123,eastwood,
+190805,14:38,42,eastwood,
+190805,16:17,39,eastwood,
+190805,22:01,3,eastwood,email
+190805,22:04,8,phd,thesis
+190805,23:38,13,phd,thesis
+190806,11:11,12,eastwood,
+190806,11:35,42,eastwood,
+190806,12:40,34,eastwood,
+190806,14:08,83,eastwood,
+190806,15:59,5,eastwood,
+190806,16:09,19,eastwood,
+190806,16:43,3,eastwood,
+190806,17:06,34,eastwood,
+190806,17:45,10,eastwood,
+190806,18:10,10,eastwood,
+190806,18:19,47,eastwood,
+190806,19:06,4,eastwood,
+190806,23:33,10,phd,thesis
+190807,10:05,3,eastwood,email
+190807,11:33,16,eastwood,
+190807,12:07,3,eastwood,
+190807,12:13,5,eastwood,
+190807,12:22,116,phd,thesis
+190807,15:07,77,eastwood,email setup
+190807,16:27,10,phd,thesis
+190808,10:26,3,eastwood,
+190808,10:30,21,phd,thesis
+190808,11:08,3,phd,thesis
+190808,11:42,3,phd,thesis
+190808,11:50,6,phd,thesis
+190808,12:56,14,phd,thesis
+190808,13:22,36,phd,thesis
+190808,14:20,5,phd,thesis
+190808,14:50,10,phd,thesis
+190808,14:59,9,phd,thesis
+190808,15:26,20,phd,thesis
+190808,15:50,16,phd,thesis
+190808,16:19,11,phd,thesis
+190808,16:30,2,phd,thesis
+190808,16:38,4,phd,thesis
+190808,16:41,10,eastwood,
+190808,16:56,6,phd,thesis
+190809,11:50,25,phd,
+190809,12:31,38,phd,thesis
+190809,14:38,16,phd,thesis
+190809,15:16,16,phd,thesis
+190809,15:55,29,phd,thesis
+190811,12:02,37,phd,thesis
+190811,13:20,22,phd,thesis
+190811,13:59,16,phd,thesis
+190811,14:43,30,phd,thesis
+190811,16:51,7,phd,thesis
+190811,18:30,18,phd,thesis
+190811,19:07,17,phd,thesis
+190811,21:50,54,phd,thesislight
+190811,23:04,4,phd,thesislight
+190812,10:54,7,phd,thesis
+190812,11:22,6,phd,thesis
+190812,11:35,3,phd,thesis
+190812,11:43,4,phd,thesis
+190812,11:56,7,phd,thesis
+190812,12:04,26,phd,thesis
+190812,12:43,9,phd,JAMES
+190812,14:30,30,eastwood,
+190812,15:08,22,eastwood,
+190812,16:07,9,phd,thesis
+190812,16:51,5,phd,thesis
+190812,16:57,17,phd,JAMES
+190813,00:01,3,phd,JAMES
+190813,10:46,8,phd,JAMES
+190813,11:04,77,phd,JAMES
+190813,12:45,97,phd,JAMES
+190813,15:42,28,phd,thesis
+190813,16:28,49,phd,thesis
+190814,10:52,20,eastwood,
+190814,11:22,35,eastwood,
+190814,11:59,5,eastwood,
+190814,12:06,4,eastwood,
+190814,13:09,51,eastwood,
+190814,14:04,6,eastwood,
+190814,14:11,14,eastwood,
+190814,14:34,38,eastwood,
+190814,16:41,50,phd,thesislight
+190814,17:39,15,phd,thesis
+190814,19:42,6,phd,thesis
+190815,00:13,134,phd,JAMES
+190815,13:14,28,phd,JAMES
+190815,14:29,110,phd,thesis
+190815,19:58,13,phd,thesis
+190816,10:34,91,phd,thesis
+190816,12:26,83,phd,thesis
+190816,15:04,15,phd,thesis
+190816,17:09,7,eastwood,
+190819,11:17,7,phd,thesis
+190819,11:30,49,eastwood,
+190819,12:27,37,eastwood,
+190819,14:00,30,jobs,all,
+190819,15:24,42,eastwood,
+190819,16:20,58,eastwood,
+190820,10:31,53,eastwood,
+190820,11:28,37,eastwood,
+190820,12:44,3,eastwood,
+190820,13:03,21,eastwood,
+190820,13:37,11,eastwood,
+190820,13:56,43,eastwood,
+190820,15:00,13,eastwood,
+190820,15:28,65,eastwood,
+190820,16:39,30,eastwood,
+190821,11:13,41,eastwood,
+190821,12:00,25,eastwood,
+190821,12:29,19,eastwood,
+190821,13:42,26,eastwood,
+190821,14:24,59,eastwood,
+190821,15:39,38,eastwood,
+190822,10:43,8,eastwood,
+190822,11:00,43,eastwood,
+190822,11:44,6,eastwood,
+190822,11:57,32,eastwood,
+190822,13:50,19,eastwood,
+190822,14:17,50,eastwood,
+190822,15:07,3,eastwood,
+190822,15:23,15,eastwood,
+190822,19:50,30,phd,thesis
+190823,11:35,37,phd,thesis
+190823,12:29,28,phd,thesis
+190823,13:11,20,phd,thesis
+190823,16:02,26,phd,thesis
+190823,16:36,71,phd,thesis
+190823,18:55,68,phd,thesis
+190824,11:20,2,phd,thesis
+190824,11:32,29,phd,thesis
+190824,13:57,37,phd,thesislight
+190824,14:57,23,phd,thesis
+190824,16:29,10,phd,thesislight
+190824,17:01,24,phd,thesis
+190825,14:21,2,eastwood,email
+190825,14:33,3,eastwood,email
+190825,14:38,18,sean,tidying
+190825,15:00,60,sean,time tracker
+190825,18:00,30,sean,time tracker
+190826,11:37,22,phd,JAMES/COP
+190826,12:07,27,eastwood,
+190826,12:49,10,eastwood,
+190826,14:18,47,eastwood,
+190826,15:18,10,eastwood,
+190826,15:35,64,eastwood,
+190826,17:56,18,eastwood,
+190826,18:30,13,eastwood,
+190827,13:39,97,phd,JAMES/COP
+190827,16:06,10,somnus,
+190827,16:35,36,somnus,
+190827,17:17,9,somnus,
+190828,10:36,2,eastwood,email
+190828,10:37,2,phd,COP
+190828,10:39,2,phd,COP
+190828,11:19,7,somnus,
+190828,11:32,5,somnus,
+190828,11:40,27,somnus,
+190828,12:15,5,somnus,
+190828,13:53,11,somnus,
+190828,14:37,13,somnus,
+190828,16:45,20,somnus,
+190829,11:41,6,eastwood,email
+190829,11:49,33,eastwood,agresso
+190829,12:52,12,somnus,
+190829,13:57,43,eastwood,email
+190829,15:06,16,eastwood,
+190829,17:11,53,eastwood,
+190829,18:08,6,eastwood,
+190830,12:38,8,phd,JAMES
+190830,13:35,15,phd,JAMES
+190830,13:57,28,phd,JAMES
+190830,15:53,4,phd,tidy
+190830,16:09,45,phd,tidy
+190830,17:03,50,phd,JAMES
+190901,15:30,8,phd,thesis
+190901,15:56,4,phd,COP
+190901,16:13,21,phd,COP
+190901,17:44,37,phd,COP
+190902,11:42,45,phd,thesis
+190902,12:35,5,phd,thesis
+190902,12:43,7,phd,thesis
+190902,13:34,8,phd,thesis
+190902,14:10,2,phd,thesis
+190902,14:37,54,phd,COP
+190902,17:14,16,phd,COP
+190903,10:42,41,phd,COP
+190903,12:40,60,phd,COP
+190903,14:41,16,phd,thesis
+190903,15:23,3,eastwood,
+190903,15:39,76,eastwood,
+190904,10:20,32,phd,COP
+190904,11:10,40,phd,thesis
+190904,13:20,10,phd,COP
+190904,14:04,18,phd,COP
+190904,14:35,43,eastwood,
+190904,15:27,60,eastwood,
+190905,10:24,8,phd,thesis
+190905,12:56,14,eastwood,admin
+190905,13:10,10,phd,thesis
+190905,13:49,10,phd,thesis
+190905,14:16,10,phd,thesis
+190905,14:39,20,eastwood,admin
+190906,09:41,5,sean,util dotfiles
+190906,10:00,32,phd,thesis
+190906,10:37,71,phd,thesis
+190906,12:34,10,phd,thesis
+190906,12:55,160,phd,thesis
+190906,15:42,10,eastwood,email
+190906,16:38,21,phd,thesis
+190906,17:11,84,phd,COP
+190906,18:44,55,phd,COP
+190908,16:53,10,phd,thesis
+190908,17:09,3,phd,COP
+190908,17:30,10,sean,util
+190908,18:02,128,sean,util light
+190908,20:12,65,sean,util light
+190909,10:06,2,sean,util
+190909,10:23,101,phd,thesis
+190909,12:50,11,phd,thesis
+190909,13:12,47,phd,JAMES
+190909,14:04,5,phd,thesis
+190909,14:24,8,phd,thesis
+190909,14:37,15,phd,thesis
+190910,10:32,8,phd,COP
+190910,10:56,16,phd,thesis
+190910,13:31,15,phd,thesis
+190910,14:13,27,phd,thesis
+190911,10:39,47,phd,COP
+190911,11:42,24,phd,COP
+190911,12:17,30,phd,COP
+190911,13:35,34,phd,COP
+190911,14:23,16,phd,COP
+190911,17:13,37,phd,COP
+190911,17:57,17,phd,COP
+190911,18:48,5,phd,COP
+190912,09:55,33,phd,COP
+190912,10:50,55,phd,COP
+190912,12:59,12,phd,COP
+190912,13:37,21,phd,COP
+190912,14:11,12,phd,COP
+190912,14:34,5,phd,COP
+190912,14:39,27,phd,thesis
+190912,15:57,34,phd,thesis
+190913,00:13,18,phd,thesis
+190913,09:14,7,phd,COP
+190913,09:27,3,phd,COP
+190913,09:52,16,phd,COP
+190913,10:09,2,phd,COP
+190913,10:19,26,phd,COP
+190913,10:44,13,phd,COP
+190913,10:57,16,phd,COP
+190913,11:13,9,phd,JAMES
+190913,11:24,5,phd,thesis
+190913,11:30,18,phd,COP
+190913,12:24,24,phd,thesis
+190913,13:03,41,phd,thesis
+190913,14:33,10,phd,thesis
+190913,14:42,31,phd,thesis
+190913,15:21,32,phd,thesis
+190913,16:30,10,phd,thesis
+190913,16:58,9,phd,thesis
+190913,17:11,42,phd,COP
+190914,11:21,38,phd,thesis
+190914,11:58,14,phd,thesis
+190914,12:36,6,phd,thesis
+190914,12:48,24,phd,thesis
+190914,13:41,47,phd,thesis
+190914,14:49,25,phd,thesis
+190914,15:22,5,phd,thesis
+190914,15:30,5,phd,COP
+190914,15:36,15,eastwood,
+190914,17:31,18,phd,thesis
+190915,13:47,3,phd,thesis
+190915,13:50,7,eastwood,
+190915,14:35,45,phd,thesis
+190915,15:43,7,phd,thesis
+190915,15:49,28,phd,thesis
+190915,17:02,7,phd,thesis
+190916,09:54,9,phd,COP
+190916,11:13,45,phd,COP
+190916,12:02,25,phd,COP
+190916,12:28,19,phd,COP
+190916,13:57,12,phd,thesis
+190916,14:13,4,phd,thesis
+190916,14:19,5,phd,thesis
+190916,14:23,2,phd,thesis
+190916,14:26,9,phd,thesis
+190916,15:17,19,phd,thesis
+190916,16:13,19,phd,thesis
+190916,16:48,13,phd,thesis
+190917,15:43,15,phd,thesis
+190918,10:11,14,phd,thesis
+190918,10:32,3,phd,thesis
+190918,10:36,3,phd,thesis
+190918,10:58,36,phd,thesis
+190918,12:19,11,phd,thesis
+190918,12:31,22,phd,thesis
+190918,14:17,2,phd,thesis
+190918,14:30,3,phd,thesis
+190918,14:44,16,phd,thesis
+190918,15:15,10,phd,COP
+190918,15:25,8,phd,COP
+190918,15:36,22,phd,COP
+190918,17:17,9,eastwood,
+190918,17:38,7,eastwood,
+190918,17:49,6,eastwood,
+190918,18:01,15,eastwood,
+190918,18:20,3,eastwood,
+190919,09:42,25,eastwood,
+190919,10:48,32,phd,COP
+190919,11:36,22,phd,COP
+190919,12:26,2,phd,COP
+190919,13:29,10,phd,COP
+190919,14:00,15,phd,thesis
+190919,14:14,9,phd,thesis
+190919,15:17,9,phd,thesis
+190919,15:32,15,phd,thesis
+190919,15:46,50,phd,thesis
+190919,17:20,11,phd,thesis
+190920,09:48,34,eastwood,
+190920,11:26,56,phd,thesis
+190920,13:36,24,phd,thesis
+190920,14:49,26,phd,thesis
+190920,16:07,9,phd,thesis
+190920,16:52,21,phd,thesis
+190920,17:51,10,phd,thesis
+190920,19:55,34,phd,thesis
+190921,14:45,4,phd,thesis
+190921,14:52,10,phd,thesis
+190921,15:11,29,phd,thesis
+190921,15:43,22,phd,thesis
+190921,19:05,3,phd,thesis
+190921,19:54,2,phd,thesis
+190922,09:04,5,phd,thesis
+190922,19:48,5,phd,thesis
+190922,23:03,3,phd,thesis
+190923,10:07,164,phd,thesis
+190923,13:36,9,phd,thesis
+190923,16:36,12,phd,COP
+190924,09:05,66,phd,thesis
+190924,10:15,105,phd,thesis
+190924,14:06,12,phd,thesis
+190924,14:19,9,phd,COP
+190924,15:00,4,phd,thesis
+190924,15:08,28,phd,thesis
+190924,15:46,12,phd,thesis
+190924,17:10,20,phd,thesis
+190924,21:32,90,phd,thesis
+190925,09:47,2,phd,COP
+190925,09:54,79,phd,COP
+190925,11:12,4,phd,thesis
+190925,12:01,6,phd,thesis
+190925,12:10,4,phd,thesis
+190925,12:17,68,phd,thesis
+190925,14:21,25,phd,thesis
+190925,14:51,14,phd,thesis
+190925,15:19,12,phd,thesis
+190925,16:13,29,phd,thesis
+190926,01:45,42,phd,thesis
+190926,03:01,36,phd,thesis
+190926,04:03,12,phd,thesis
+190926,04:44,18,phd,thesis
+190926,12:18,123,phd,thesis
+190927,12:59,36,eastwood,
+190927,13:43,10,eastwood,
+190930,11:12,9,eastwood,email
+190930,11:20,58,eastwood,
+190930,12:18,60,eastwood,
+190930,13:49,6,eastwood,
+190930,14:37,91,eastwood,
+190930,16:16,17,eastwood,
+190930,17:16,20,eastwood,
+191001,11:05,10,eastwood,
+191001,11:50,32,eastwood,
+191001,12:34,110,eastwood,
+191001,15:25,7,eastwood,
+191001,15:42,8,eastwood,
+191001,15:57,38,eastwood,
+191001,17:48,39,eastwood,
+191002,11:15,80,eastwood,email
+191002,12:47,21,phd,JAMES
+191002,13:25,13,phd,JAMES
+191002,13:37,30,phd,COP SPECIAL voip
+191002,14:10,6,phd,JAMES
+191002,14:29,8,phd,JAMES
+191002,15:14,2,phd,COP
+191002,15:15,24,phd,
+191002,16:48,55,eastwood,
+191003,10:53,6,phd,JAMES
+191003,10:58,4,eastwood,email
+191003,11:07,66,eastwood,
+191003,12:46,3,eastwood,
+191003,13:29,2,eastwood,
+191003,13:45,12,eastwood,
+191003,14:11,19,eastwood,
+191003,14:30,10,eastwood,Ian Skype 
+191003,14:44,8,phd,JAMES
+191003,15:59,29,eastwood,
+191003,16:28,5,phd,JAMES
+191003,16:39,75,eastwood,
+191004,10:04,9,phd,JAMES
+191004,10:50,20,eastwood,
+191004,11:11,21,eastwood,
+191004,11:36,3,eastwood,
+191004,11:51,53,eastwood,
+191004,12:43,2,eastwood,
+191007,10:16,10,eastwood,
+191007,10:28,14,eastwood,
+191007,10:43,51,eastwood,
+191007,11:44,48,eastwood,
+191007,13:27,39,eastwood,
+191007,14:07,92,eastwood,
+191007,16:08,11,eastwood,
+191007,16:50,43,eastwood,
+191008,10:33,22,eastwood,
+191008,11:07,39,eastwood,
+191008,12:26,10,eastwood,
+191008,12:35,56,eastwood,
+191008,14:20,34,eastwood,
+191008,15:16,79,eastwood,
+191008,17:24,31,eastwood,
+191008,18:12,89,eastwood,
+191009,10:34,79,eastwood,email
+191009,12:07,9,eastwood,
+191009,12:16,3,somnus,
+191009,12:18,34,eastwood,
+191009,13:52,30,eastwood,email setup
+191009,14:30,9,phd,
+191009,14:44,50,eastwood,
+191009,15:40,69,eastwood,
+191009,18:44,13,eastwood,email light
+191010,10:49,45,eastwood,
+191010,11:46,12,eastwood,
+191010,12:01,37,eastwood,
+191010,13:22,48,eastwood,
+191010,14:56,10,eastwood,
+191010,16:38,8,eastwood,
+191011,11:56,17,phd,JAMES
+191011,12:14,53,eastwood,
+191011,13:15,40,eastwood,
+191011,16:57,38,eastwood,
+191014,10:59,4,phd,JAMES
+191014,11:10,10,phd,JAMES
+191014,11:21,11,janus,
+191014,11:36,24,janus,
+191014,12:07,37,somnus,
+191014,12:46,2,somnus,
+191014,12:51,9,somnus,
+191014,13:55,4,eastwood,
+191014,14:05,51,eastwood,
+191014,15:02,54,eastwood,
+191014,15:59,11,eastwood,
+191014,16:29,8,eastwood,
+191014,16:47,43,eastwood,
+191015,10:57,16,phd,JAMES
+191015,11:21,7,phd,JAMES
+191015,11:49,12,phd,JAMES
+191015,12:11,52,eastwood,
+191015,14:00,56,eastwood,
+191015,15:03,36,eastwood,
+191015,16:00,17,eastwood,
+191015,16:17,15,eastwood,
+191016,10:34,37,janus,
+191016,11:16,90,janus,
+191016,13:34,27,janus,
+191016,14:13,78,eastwood,
+191016,15:40,50,eastwood,
+191016,16:37,3,eastwood,
+191016,16:41,11,eastwood,
+191016,19:32,40,sean,
+191017,11:05,39,eastwood,
+191017,12:10,35,eastwood,
+191017,12:51,33,eastwood,
+191017,14:12,117,eastwood,
+191017,17:27,26,eastwood,
+191017,18:03,23,eastwood,
+191017,18:33,2,eastwood,
+191017,19:40,17,eastwood,
+191018,10:23,3,eastwood, email
+191018,10:26,64,eastwood,
+191018,11:32,3,eastwood,
+191018,11:50,45,eastwood,
+191018,13:16,96,eastwood,
+191018,14:58,150,eastwood,
+191018,17:57,11,eastwood,
+191018,18:14,16,janus,
+191019,13:51,3,sean,
+191019,13:54,5,sean,
+191020,13:30,3,janus,
+191020,14:54,10,sean,
+191020,15:23,17,sean,
+191020,15:44,12,eastwood, email
+191020,16:00,29,sean,website
+191020,17:26,28,sean,website
+191020,17:53,20,sean,website
+191021,11:07,12,eastwood,
+191021,11:27,3,eastwood,
+191021,11:39,44,janus,
+191021,12:24,5,eastwood,
+191021,12:31,15,janus,
+191021,13:35,65,janus,
+191021,14:43,43,eastwood,
+191021,15:39,2,eastwood,
+191021,15:43,22,eastwood,
+191021,16:11,39,eastwood,
+191021,20:16,17,eastwood,
+191022,10:21,47,eastwood,train
+191022,11:08,31,somnus,train
+191022,13:12,14,somnus,train
+191023,10:51,5,eastwood,email
+191023,11:01,22,janus,
+191023,11:35,37,janus,
+191023,12:19,47,janus,
+191023,13:06,18,somnus,
+191023,14:15,22,somnus,
+191023,15:01,48,eastwood,
+191023,16:03,21,eastwood,
+191023,16:35,16,eastwood,
+191023,17:01,86,janus,
+191024,01:00,84,janus,light
+191024,09:54,17,eastwood,
+191024,12:08,10,janus,
+191024,12:18,12,eastwood,email
+191024,12:30,73,janus,
+191024,13:52,13,eastwood,
+191024,14:05,8,eastwood,
+191024,15:12,138,eastwood,
+191024,19:25,28,eastwood,light
+191024,19:56,13,eastwood,light
+191024,21:27,67,eastwood,light
+191025,11:03,26,sean,
+191025,11:35,33,eastwood,
+191025,12:23,7,eastwood,
+191025,12:33,5,eastwood,
+191025,12:39,26,eastwood,
+191025,13:55,141,eastwood,
+191025,16:21,21,eastwood,
+191025,16:47,6,eastwood,
+191025,17:45,33,eastwood,
+191028,10:16,114,eastwood,
+191028,12:55,33,eastwood,
+191028,13:31,51,eastwood,
+191028,14:25,29,eastwood,
+191028,14:57,87,eastwood,
+191028,16:23,3,eastwood,
+191028,16:32,18,janus,
+191029,11:50,21,eastwood,
+191029,12:16,76,sean,todo
+191029,13:43,8,sean,todo
+191029,13:53,7,sean,todo
+191029,14:43,13,eastwood,
+191029,15:15,101,eastwood,
+191030,00:21,15,eastwood,
+191030,10:26,5,eastwood,
+191030,10:55,36,eastwood,
+191030,11:43,7,janus,
+191030,11:55,19,janus,
+191030,12:14,36,janus,
+191030,13:57,75,janus,
+191030,15:27,23,somnus,
+191030,15:50,5,eastwood,
+191031,11:36,25,eastwood,
+191031,12:08,27,eastwood,
+191031,13:25,27,eastwood,
+191031,16:37,100,sean,
+191125,09:41,15,eastwood,email
+191125,09:56,23,somnus,voip
+191125,11:11,21,somnus,
+191125,11:31,9,eastwood,email
+191125,11:55,15,sean,email
+191125,12:18,4,eastwood,email
+191125,12:27,24,eastwood,email
+191125,13:38,69,somnus,
+191125,15:01,20,somnus,
+191125,15:40,10,somnus,
+191125,15:50,26,somnus,
+191125,16:23,65,somnus,
+191126,09:09,34,somnus,
+191126,09:51,29,somnus,
+191126,10:36,7,somnus,
+191126,10:51,49,somnus,
+191126,12:19,144,somnus,
+191126,14:46,35,somnus,
+191126,15:24,6,somnus,
+191126,16:41,10,somnus,
+191127,09:12,46,phd,
+191127,10:11,34,somnus,
+191127,10:50,47,somnus,
+191127,12:25,160,somnus,
+191127,15:13,38,somnus,
+191127,15:58,2,somnus,
+191127,16:02,31,somnus,
+191128,17:05,15,somnus,
+191129,10:08,59,somnus,
+191129,11:39,55,somnus,
+191129,13:30,260,somnus,
+191201,15:36,121,sean,
+191202,10:26,6,eastwood,
+191202,10:37,17,somnus,
+191202,11:01,55,somnus,
+191202,12:55,173,somnus,
+191202,15:48,88,somnus,
+191203,08:46,37,somnus,
+191203,09:29,162,somnus,
+191203,12:11,2,somnus,
+191203,13:01,190,somnus,
+191203,16:40,44,somnus,
+191203,17:48,88,somnus,
+191203,19:16,31,somnus,light
+191203,21:53,4,somnus,
+191204,10:04,9,phd,JAMES
+191204,10:20,32,somnus,
+191204,10:54,16,somnus,
+191204,11:16,56,somnus,
+191204,13:09,96,somnus,
+191204,14:50,30,somnus,
+191204,15:21,81,somnus,
+191204,18:18,18,somnus,light
+191205,11:10,20,somnus,
+191205,12:31,36,somnus,
+191205,13:10,8,phd,JAMES
+191205,13:22,66,somnus,
+191205,14:28,27,phd,JAMES
+191205,14:55,4,somnus,
+191205,15:32,22,somnus,
+191205,16:01,87,somnus,
+191205,17:27,22,somnus,
+191205,18:39,5,somnus,
+191206,10:04,27,somnus,
+191206,10:32,7,somnus,
+191206,10:45,22,somnus,
+191206,11:11,33,somnus,
+191206,11:43,51,somnus,
+191206,13:40,32,phd,JAMES,light
+191206,14:42,10,somnus,
+191206,15:20,22,somnus,
+191206,15:55,20,somnus,
+191206,16:17,9,somnus,
+191206,16:27,58,somnus,
+191206,17:28,60,somnus,
+191207,15:40,4,phd,JAMES
+191208,15:14,53,phd,JAMES
+191208,16:11,51,sean,rearrange files
+191208,22:52,9,phd,JAMES
+191209,10:08,13,phd,JAMES
+191209,10:21,42,phd,JAMES
+191209,11:05,8,phd,JAMES
+191209,11:13,3,somnus,
+191209,11:19,45,somnus,
+191209,12:06,9,somnus,
+191209,12:48,11,somnus,
+191209,13:00,55,somnus,voip
+191209,14:38,32,somnus,
+191209,15:12,21,somnus,
+191209,15:34,38,somnus,
+191209,16:25,50,somnus,
+191210,10:35,5,somnus,
+191210,10:54,12,somnus,
+191210,11:06,126,somnus,
+191210,13:55,8,somnus,
+191210,14:20,65,somnus,
+191210,15:28,43,somnus,
+191210,16:15,18,somnus,
+191210,16:32,45,somnus,
+191210,17:43,61,somnus,
+191210,19:58,9,somnus,
+191210,20:21,36,somnus,
+191211,10:49,7,somnus,
+191211,11:31,9,phd,
+191211,11:52,9,somnus,
+191211,12:21,45,somnus,
+191211,13:06,15,somnus,
+191211,14:21,31,somnus,
+191211,14:52,43,somnus,
+191211,15:40,11,somnus,
+191211,15:59,19,phd,
+191211,16:21,12,phd,
+191211,16:33,28,somnus,
+191211,17:17,45,somnus,
+191211,18:03,15,somnus,
+191212,11:26,20,phd,previva
+191212,12:03,28,phd,previva
+191212,12:44,19,phd,previvia
+191212,13:02,15,phd,previva
+191212,14:23,45,phd,previva
+191212,15:56,29,phd,previva
+191212,16:32,20,phd,previva
+191212,17:23,90,phd,previva
+191213,11:12,6,phd,previva
+191214,16:02,46,somnus,
+191214,16:47,54,somnus,
+191214,17:40,20,somnus,
+191215,14:51,9,phd,viva
+191215,15:37,90,eastwood,
+191215,17:09,3,eastwood,
+191216,09:53,43,somnus,
+191216,10:53,35,somnus,
+191216,11:29,3,somnus,
+191216,11:46,4,phd,
+191216,11:52,22,phd,COP
+191216,13:44,22,eastwood
+191216,14:06,32,eastwood,
+191216,14:38,27,eastwood,
+191216,15:20,19,somnus,
+191216,15:48,42,somnus,
+191216,16:37,24,somnus,
+191216,17:24,10,somnus,
+191216,23:42,120,eastwood,
+191217,16:00,10,somnus,
+191218,10:27,47,somnus,
+191218,11:18,16,somnus,
+191218,11:33,14,somnus,
+191218,11:47,35,somnus,
+191218,12:22,19,somnus,
+191218,12:41,46,somnus,
+191218,14:04,15,somnus,
+191218,14:19,83,somnus,
+191218,15:41,27,somnus,
+191218,16:08,6,janus,
+191218,16:38,90,somnus,
+191218,18:07,15,somnus,
+191219,02:40,17,janus,
+191219,09:44,73,janus,
+191219,12:22,6,somnus,email
+191219,12:36,30,phd,
+191219,13:26,19,phd,
+191219,14:00,66,phd,
+191219,15:12,28,phd,
+191219,17:19,39,phd,
+191220,00:56,40,phd,
+191220,08:17,10,phd,
+191226,15:29,7,somnus,email
+191226,19:12,51,phd,JAMES
+191227,15:41,9,sean,time tracker
+191227,15:49,44,sean,time tracker
+191227,16:54,6,sean,time tracker
+191227,17:05,18,sean,time tracker
+191227,17:45,55,sean,time tracker
+191227,22:26,3,sean,time tracker
+191227,23:12,42,sean,time tracker
+191228,00:25,40,sean,time tracker
+191228,16:42,24,sean,time tracker
+191228,18:49,23,sean,passport
+191230,17:38,18,sean,photos
+191231,12:15,22,sean,car insurance
+200101,22:29,6,phd,JAMES
+200102,11:41,14,sean,TODO
+200102,12:00,3,eastwood,
+200102,12:06,46,phd,JAMES
+200102,12:51,7,phd,JAMES
+200102,13:08,58,phd,JAMES
+200102,14:56,49,phd,JAMES
+200102,15:52,33,somnus,
+200102,16:25,11,phd,JAMES
+200102,16:43,34,somnus,
+200102,17:17,105,somnus,
+200103,10:39,24,somnus,
+200103,11:21,26,somnus,
+200103,12:08,31,somnus,
+200103,12:40,49,somnus,
+200103,13:29,38,somnus,
+200103,15:03,4,somnus,
+200103,15:06,52,phd,COP
+200103,16:02,32,phd,COP
+200103,16:45,19,phd,COP
+200104,16:19,9,phd,COP
+200104,16:29,21,phd,COP
+200104,16:52,22,phd,COP
+200104,17:13,27,phd,COP
+200104,17:40,35,phd,COP
+200104,18:41,10,phd,COP
+200104,19:38,26,phd,COP
+200105,12:41,89,phd,COP
+200105,14:10,27,phd,COP
+200105,14:49,48,phd,COP
+200105,15:37,27,phd,COP
+200105,16:03,35,phd,COP
+200105,16:38,19,phd,COP
+200106,09:47,18,phd,JAMES
+200106,10:10,44,somnus,
+200106,11:03,7,phd,JAMES
+200106,11:09,10,phd,JAMES
+200106,11:18,60,phd,JAMES
+200106,13:03,53,somnus,voip
+200106,14:50,29,phd,JAMES
+200106,15:31,10,phd,COP
+200106,15:41,6,phd,COP
+200106,15:46,37,phd,COP
+200106,16:25,7,phd,COP
+200106,16:35,13,somnus,
+200106,16:48,21,somnus,
+200107,10:21,75,somnus,
+200107,11:35,40,somnus,
+200107,12:23,25,somnus,
+200107,13:30,49,somnus,
+200107,14:18,49,somnus,
+200107,15:06,26,somnus,
+200107,15:38,138,somnus,
+200107,18:36,46,somnus,
+200108,10:54,118,somnus,
+200108,12:52,36,somnus,
+200108,14:03,88,somnus,
+200108,15:30,77,somnus,
+200108,17:16,5,phd,COP
+200108,17:21,34,somnus,
+200108,18:08,10,somnus,
+200109,11:22,62,somnus,
+200109,12:24,86,somnus,
+200109,14:29,8,somnus,
+200109,14:37,58,somnus,
+200109,15:34,16,somnus,
+200109,15:49,26,somnus,
+200109,16:15,43,somnus,
+200109,16:57,37,somnus,
+200109,17:34,18,somnus,
+200109,20:21,12,somnus,
+200110,10:48,22,somnus,
+200110,11:16,76,somnus,
+200110,12:31,39,somnus,
+200110,13:09,22,somnus,
+200110,14:44,72,somnus,
+200110,15:58,9,phd,COP
+200110,16:40,44,somnus,
+200110,17:24,6,somnus,
+200110,17:30,13,sean,CV
+200110,17:43,18,somnus,
+200113,10:50,42,somnus,
+200113,11:43,90,somnus,
+200113,13:12,40,somnus,
+200113,14:11,36,somnus,
+200113,14:47,12,somnus,
+200113,15:05,63,somnus,
+200113,16:09,47,somnus,
+200113,16:59,15,somnus,
+200114,09:25,17,somnus,
+200114,09:58,69,somnus,
+200114,11:06,75,somnus,
+200114,12:27,15,somnus,
+200114,15:35,44,somnus,
+200114,16:19,49,somnus,
+200114,17:19,45,somnus,
+200114,20:56,5,somnus,
+200115,09:41,67,somnus,
+200115,10:49,33,somnus,
+200115,11:27,24,somnus,
+200115,11:51,46,somnus,
+200115,13:15,108,somnus,
+200115,15:03,70,somnus,
+200115,16:20,22,somnus,
+200115,16:42,80,somnus,
+200116,11:02,15,sean,CV
+200116,11:36,3,eastwood,
+200116,11:39,24,somnus,
+200116,12:03,61,somnus,
+200116,13:03,52,somnus,
+200116,14:01,25,somnus,
+200116,14:59,28,somnus,
+200116,15:35,117,somnus,
+200116,17:40,45,somnus,
+200117,09:51,6,somnus,
+200117,10:00,22,somnus,
+200117,10:32,23,eastwood,
+200117,10:54,37,eastwood,
+200117,12:08,30,eastwood,
+200117,13:08,43,somnus,
+200117,14:31,13,somnus,
+200117,14:47,93,somnus,
+200117,16:19,116,somnus,
+200118,13:35,31,somnus,
+200125,17:30,31,sean,CV
+200127,10:17,7,somnus,email
+200127,10:24,10,somnus,email
+200127,10:33,13,somnus,pension
+200127,10:55,43,somnus,admin
+200127,11:47,18,somnus,
+200127,12:05,26,somnus,
+200127,12:34,40,somnus,
+200127,14:12,33,somnus,
+200127,14:47,39,somnus,
+200127,14:45,20,somnus,
+200127,16:06,35,somnus,
+200127,16:42,36,somnus,
+200128,09:22,54,somnus,
+200128,10:15,37,somnus,
+200128,10:52,42,somnus,
+200128,11:39,55,somnus,
+200128,14:00,40,somnus,voip
+200128,15:53,22,somnus,
+200128,16:15,41,somnus,
+200128,16:56,43,somnus,
+200128,17:38,31,somnus,
+200128,18:15,38,somnus,
+200129,10:37,10,phd,COP
+200129,10:56,3,somnus,
+200129,11:04,8,sean,TODO
+200129,11:26,7,phd,COP
+200129,11:33,65,phd,thesis corrections
+200129,12:45,22,phd,thesis corrections
+200129,13:40,5,phd,thesis corrections
+200129,13:57,24,somnus,
+200129,14:34,31,phd,COP
+200129,15:05,42,phd,COP
+200129,15:47,33,phd,COP
+200129,16:19,110,phd,COP
+200129,18:08,2,phd,COP
+200129,23:27,15,phd,COP
+200130,13:37,10,somnus,
+200130,15:08,77,somnus,
+200130,16:24,53,somnus,
+200130,17:16,14,somnus,
+200130,17:30,46,somnus,
+200131,11:05,57,phd,COP
+200131,12:01,73,phd,COP
+200131,13:14,56,phd,COP
+200131,14:39,86,phd,COP
+200131,16:04,34,phd,COP
+200131,16:41,21,phd,COP
+200201,15:26,18,phd,COP
+200203,10:31,8,somnus,
+200203,10:51,13,phd,thesis
+200203,11:16,10,phd,thesis
+200203,11:28,22,phd,thesis
+200203,11:53,19,somnus,
+200203,12:12,41,somnus,
+200203,13:54,8,phd,thesis
+200203,14:08,19,phd,thesis
+200203,14:32,2,phd,thesis
+200203,14:35,15,somnus,
+200203,14:51,46,somnus,
+200203,15:39,24,phd,thesis
+200203,16:07,12,phd,thesis
+200203,16:24,44,somnus,
+200203,17:08,10,somnus,
+200204,10:39,15,phd,thesis
+200204,11:00,11,phd,thesis
+200204,11:11,29,somnus,
+200204,11:40,31,somnus,
+200204,12:10,29,somnus,
+200204,12:39,5,somnus,
+200204,12:44,3,somnus,
+200204,13:31,10,somnus,
+200204,13:52,14,somnus,
+200204,14:10,52,somnus,
+200204,15:07,47,somnus,
+200204,15:54,31,somnus,
+200204,16:30,14,somnus,
+200204,16:56,7,somnus,
+200204,17:02,12,phd,thesis
+200204,17:19,15,somnus,
+200205,09:40,126,somnus,cv
+200205,12:00,40,somnus,
+200205,13:59,40,somnus,sgn
+200205,13:59,20,somnus,slurrey
+200205,15:32,46,somnus,
+200205,16:17,9,somnus,
+200205,16:34,2,somnus,
+200205,16:47,18,somnus,
+200205,17:08,2,somnus,sgn
+200206,11:16,39,phd,thesis
+200206,12:04,53,phd,thesis
+200206,13:04,2,phd,thesis
+200206,13:09,41,phd,thesis
+200206,14:37,92,phd,thesis
+200206,16:09,2,somnus,sgn
+200206,16:13,45,phd,thesis
+200206,16:59,87,phd,thesis
+200206,18:26,8,phd,thesis
+200207,11:01,11,phd,thesis
+200207,11:15,17,phd,thesis
+200207,11:39,45,phd,thesis
+200207,12:35,13,somnus,slurrey
+200207,12:47,62,phd,thesis
+200207,14:22,75,phd,thesis
+200207,16:23,22,somnus,er_study
+200207,16:45,22,somnus,er_study
+200207,17:06,8,somnus,er_study
+200207,20:30,60,phd,thesis
+200208,15:36,19,phd,thesis
+200208,15:55,40,phd,thesis
+200208,16:41,18,sean,arke
+200208,16:59,30,sean,arke
+200208,17:37,5,sean,arke
+200208,17:42,25,somnus,sgn
+200208,19:14,35,sean,garmin watch
+200208,23:21,70,sean,garmin watch
+200209,16:09,53,phd,COP
+200209,17:01,41,phd,COP
+200210,10:42,52,phd,COP
+200210,11:46,61,somnus,er study
+200210,12:47,25,somnus,tpl
+200210,13:49,78,somnus,er study
+200210,15:11,14,somnus,er study
+200210,15:25,116,somnus,er study
+200210,17:21,25,somnus,er study
+200211,10:20,84,somnus,er study
+200211,11:57,50,somnus,er study
+200211,13:25,62,somnus,er study
+200211,14:27,14,somnus,tpl
+200211,14:50,16,somnus,tpl
+200211,15:10,15,somnus,tpl
+200211,15:33,37,somnus,tpl
+200211,16:33,30,somnus,tpl
+200211,17:01,16,somnus,tpl
+200212,10:00,60,somnus,tpl
+200212,13:25,104,somnus,er study
+200212,15:08,5,somnus,er study
+200212,15:29,64,somnus,er study
+200212,16:33,7,somnus,er study
+200212,16:39,76,somnus,sgn
+200213,11:42,59,somnus,sgn
+200213,12:41,9,somnus,sgn
+200213,12:52,21,somnus,sgn
+200213,13:14,7,somnus,sgn
+200213,13:21,14,phd,COP
+200213,13:37,26,somnus,er study
+200213,14:24,9,phd,COP
+200213,14:59,143,somnus,er study
+200214,10:48,46,somnus,er study
+200214,11:33,7,somnus,er study
+200214,11:48,5,phd,COP
+200214,11:52,33,somnus,sgn
+200214,12:29,4,somnus,er study
+200214,13:56,2,somnus,sgn
+200214,13:58,55,phd,COP
+200214,15:11,46,phd,COP
+200214,16:01,19,somnus,er study
+200214,16:20,20,somnus,er study
+200216,13:18,32,phd,thesis
+200217,11:00,40,somnus,voip
+200217,12:52,36,somnus,
+200217,13:38,14,somnus,
+200217,13:56,51,somnus,sgn
+200217,15:14,27,somnus,sgn
+200217,16:00,28,somnus,er study
+200217,16:38,4,somnus,er study
+200217,16:43,30,somnus,er study
+200218,06:30,180,somnus,driving
+200219,09:45,180,somnus,meeting
+200218,15:43,39,somnus,er study
+200218,16:52,40,somnus,er study
+200218,17:36,24,somnus,er study
+200218,21:20,6,somnus,sgn
+200218,23:32,71,somnus,sgn
+200219,02:02,37,somnus,sgn
+200219,10:16,190,somnus,sgn interview
+200219,13:30,150,somnus,driving
+200220,13:13,25,somnus,email
+200220,13:38,36,somnus,admin
+200220,14:15,15,somnus,admin
+200220,14:58,22,somnus,er study
+200220,15:55,126,somnus,er study
+200221,09:55,19,somnus,er study
+200221,10:16,84,somnus,er study
+200221,12:00,30,somnus,er study
+200221,16:00,75,somnus,voip
+200223,22:08,60,sean,parking
+200224,09:31,136,somnus,simple model
+200224,11:53,33,somnus,simple model
+200224,12:37,62,somnus,simple model
+200224,14:20,120,somnus,simple model
+200224,16:22,16,somnus,simple model
+200224,16:39,39,somnus,simple model
+200225,11:30,65,somnus,simple model
+200225,12:50,5,somnus,simple model
+200225,12:54,33,somnus,simple model
+200225,13:28,8,somnus,simple model
+200225,14:36,128,somnus,simple model
+200225,16:44,13,somnus,simple model
+200225,16:58,75,somnus,simple model
+200226,09:46,116,somnus,simple model
+200226,12:00,55,somnus,voip
+200226,13:33,12,somnus,simple model
+200226,13:53,45,somnus,simple model
+200226,14:46,105,somnus,simple model
+200227,09:50,19,somnus,simple model
+200227,10:16,138,somnus,simple model
+200227,13:26,108,somnus,simple model
+200227,15:26,173,somnus,simple model
+200227,22:31,54,somnus,tfl
+200228,11:13,9,somnus,admin
+200228,11:25,4,phd,thesis
+200228,11:45,58,somnus,simple model
+200228,14:23,13,phd,thesis
+200228,14:38,212,somnus,simple model
+200229,15:34,16,phd,thesis
+200229,16:09,109,phd,thesis
+200229,18:06,16,somnus,admin
+200229,18:22,75,phd,thesis
+200229,19:41,5,phd,thesis
+200302,10:28,75,somnus,simple model
+200302,12:00,40,somnus,voip
+200302,13:30,26,somnus,simple model
+200302,14:18,107,somnus,simple model
+200302,16:07,47,somnus,simple model
+200302,17:04,13,somnus,simple model
+200303,10:55,66,somnus,simple model
+200303,12:21,27,somnus,simple model
+200303,13:57,186,somnus,simple model
+200303,17:19,48,somnus,simple model
+200304,10:22,48,somnus,simple model
+200304,11:14,92,somnus,simple model
+200304,12:45,5,somnus,simple model
+200304,13:45,17,phd,COP
+200304,14:11,99,somnus,simple model
+200304,15:55,5,somnus,simple model
+200304,16:01,108,somnus,simple model
+200305,11:56,13,somnus,sgn
+200305,12:10,16,somnus,sgn
+200305,12:26,68,somnus,simple model
+200305,14:15,102,somnus,simple model
+200305,15:57,84,somnus,simple model
+200305,18:07,108,sean,ukraine
+200305,19:57,6,somnus,simple model
+200305,20:02,22,sean,ukraine
+200305,20:30,17,sean,ukraine
+200306,09:57,102,somnus,simple model
+200306,11:43,29,somnus,simple model
+200306,12:42,123,somnus,simple model
+200306,15:00,30,somnus,voip
+200306,17:25,59,somnus,simple model
+200306,19:01,9,somnus,simple model
+200307,14:20,127,sean,todo
+200308,15:37,12,janus,COP
+200308,15:53,11,sean,todo
+200308,16:04,8,janus,COP
+200308,16:11,34,sean,cv
+200308,16:50,55,sean,cv
+200308,17:44,5,sean,parkrun data
+200308,18:11,44,sean,parkrun data light
+200308,18:59,10,sean,parkrun data
+200308,21:59,19,sean,website
+200308,22:17,35,sean,parkrun data
+200308,22:52,20,sean,parkrun data
+200308,23:12,45,sean,parkrun data
+200309,10:20,3,somnus,simple model
+200309,10:28,20,somnus,simple model
+200309,10:47,4,janus,COP
+200309,10:57,116,somnus,simple model
+200309,12:57,10,somnus,simple model
+200309,13:32,25,somnus,simple model
+200309,14:13,8,janus,COP
+200309,14:22,2,somnus,email
+200309,14:28,55,somnus,simple model
+200309,15:33,85,somnus,simple model
+200309,16:58,20,somnus,simple model
+200310,11:24,9,somnus,simple model
+200310,12:00,25,phd,admin
+200310,12:38,44,janus,COP
+200310,14:00,33,somnus,simple model
+200310,14:42,13,somnus,simple model
+200310,15:02,92,somnus,simple model
+200310,16:47,63,somnus,simple model
+200310,17:50,31,somnus,simple model
+200310,18:29,25,somnus,simple model
+200310,18:53,8,somnus,simple model
+200310,19:20,10,somnus,simple model
+200311,10:51,32,somnus,sgn
+200311,11:33,62,somnus,sgn
+200311,13:37,46,somnus,sgn
+200311,14:37,121,somnus,sgn
+200311,17:06,77,somnus,sgn
+200311,11:00,60,somnus,voip
+200312,12:04,13,somnus,sgn
+200312,13:50,30,somnus,simple model
+200312,14:35,8,somnus,simple model
+200312,14:55,61,somnus,simple model
+200312,16:06,47,somnus,simple model
+200312,17:01,17,somnus,simple model
+200313,10:33,40,somnus,simple model
+200313,11:15,114,somnus,simple model
+200313,13:09,4,janus,COP
+200313,14:14,57,somnus,simple model
+200313,17:01,2,somnus,simple model
+200313,17:30,78,janus,COP
+200313,19:04,8,janus,COP
+200314,12:31,50,somnus,sgn
+200315,23:56,29,somnus,sgn
+200316,00:35,30,somnus,sgn
+200316,10:49,38,somnus,sgn
+200316,12:14,174,somnus,sgn
+200316,15:26,46,somnus,sgn
+200316,17:25,76,somnus,sgn
+200317,11:26,4,somnus,simple model
+200317,11:33,71,somnus,simple model
+200317,12:44,17,somnus,simple model
+200317,13:05,28,somnus,simple model
+200317,15:52,22,somnus,simple model
+200317,16:26,45,somnus,admin
+200317,17:19,12,somnus,admin
+200317,17:37,4,somnus,simple model
+200317,17:45,53,somnus,simple model
+200318,10:55,17,somnus,admin
+200318,11:17,66,somnus,simple model
+200318,13:36,24,somnus,simple model
+200318,14:00,75,somnus,voip
+200318,15:30,25,janus,voip
+200319,11:31,21,janus,COP
+200319,12:17,43,janus,COP
+200319,14:49,11,janus,COP
+200319,15:15,6,somnus,admin
+200319,15:20,2,janus,COP
+200319,15:25,73,somnus,sgn
+200319,16:40,75,somnus,sgn
+200320,11:51,33,somnus,sgn
+200320,11:23,22,somnus,voip Sina
+200320,14:29,46,janus,COP
+200320,15:35,52,somnus,sgn
+200320,16:32,11,janus,COP
+200320,16:44,38,somnus,sgn
+200320,17:55,12,janus,COP
+200320,18:09,26,janus,COP
+200320,18:53,17,janus,COP
+200321,17:17,7,sean,TODO
+200321,17:38,5,sean,TODO
+200321,17:52,59,sean,CV
+200321,18:58,13,jobs,all
+200322,14:41,5,sean,parkrun
+200322,14:50,41,sean,parkrun
+200322,15:37,55,sean,parkrun
+200323,11:21,9,eastwood,admin
+200323,11:30,30,eastwood,voip
+200323,12:08,93,somnus,sgn
+200323,13:41,20,somnus,sgn
+200323,14:00,90,somnus,sgn voip
+200323,14:30,15,somnus,voip
+200323,17:36,47,somnus,somnia
+200324,11:12,13,somnus,sgn
+200324,11:25,47,somnus,voip
+200324,11:12,10,somnus,sgn
+200324,12:22,13,somnus,sgn
+200324,14:00,90,somnus,voip
+200324,15:42,24,somnus,sgn
+200324,16:06,6,somnus,sgn
+200324,16:14,62,somnus,somnia
+200324,17:29,35,somnus,somnia
+200324,18:12,11,sean,setup
+200324,18:26,10,somnus,somnia
+200325,10:45,25,somnus,admin
+200325,11:09,2,somnus,admin
+200325,11:11,51,eastwood,covid
+200325,12:03,3,somnus,admin
+200325,12:06,151,eastwood,covid
+200325,14:57,30,eastwood,covid
+200325,15:30,50,eastwood,covid voip
+200325,17:02,10,somnus,sgn
+200325,17:13,19,somnus,sgn
+200325,17:32,102,somnus,sgn
+200326,10:52,9,somnus,admin
+200326,11:01,33,somnus,simple model
+200326,11:34,73,somnus,simple model
+200326,13:38,83,somnus,simple model
+200326,15:01,123,somnus,raid voip
+200327,12:00,46,somnus,voip
+200327,12:47,33,somnus,voip sina
+200327,15:02,28,somnus,admin
+200327,15:30,18,janus,COP
+200327,16:15,19,janus,COP
+200327,17:00,40,somnus,simple model
+200327,18:12,14,somnus,simple model
+200330,12:01,105,somnus,sgn
+200330,12:01,100,somnus,sgn
+200330,13:41,19,somnus,sgn voip
+200330,14:03,26,somnus,voip
+200330,15:43,136,eastwood,covid
+200330,17:58,66,eastwood,covid
+200330,19:15,83,eastwood,covid
+200330,09:30,63,eastwood,covid voip
+200331,10:54,75,somnus,somnia
+200331,10:54,75,somnus,somnia
+200331,12:15,30,somnus,somnia
+200331,12:45,40,somnus,somnia
+200331,14:31,31,somnus,somnia
+200331,15:08,59,somnus,somnia
+200331,16:07,42,somnus,somnia
+200331,17:03,15,somnus,somnia
+200331,17:34,45,somnus,somnia
+200331,18:20,68,somnus,somnia
+200331,19:29,30,somnus,somnia
+200331,20:15,21,somnus,somnia
+200331,20:57,85,somnus,somnia
+200331,23:04,33,eastwood,covid
+200401,12:21,93,sean,parkrun
+200401,14:09,14,somnus,somnia
+200401,14:23,5,janus,COP
+200401,14:28,62,somnus,somnia
+200401,16:28,36,somnus,somnia
+200401,17:45,91,somnus,somnia
+200401,19:15,7,somnus,sgn
+200402,11:15,93,somnus,somnia
+200402,14:16,42,somnus,somnia
+200402,14:58,8,janus,COP
+200402,15:33,110,somnus,somnia
+200402,17:23,19,somnus,somnia
+200403,10:54,5,somnus,sgn
+200403,10:59,58,somnus,voip
+200403,13:20,44,somnus,sgn
+200403,14:00,77,eastwood,covid voip
+200403,15:38,58,somnus,sgn
+200403,17:06,23,somnus,sgn
+200403,17:44,3,somnus,sgn
+200403,17:47,32,somnus,simple model
+200403,21:25,16,eastwood,covid light
+200403,21:47,15,eastwood,covid light
+200403,22:13,21,eastwood,covid light
+200403,22:55,46,eastwood,covid
+200404,13:30,76,eastwood,covid
+200404,17:08,130,eastwood,covid
+200405,12:18,76,eastwood,covid
+200405,15:27,93,eastwood,covid
+200405,23:10,81,eastwood,covid
+200406,11:40,18,somnus,admin
+200406,12:10,101,somnus,simple model
+200406,14:30,86,eastwood,voip
+200406,15:57,55,somnus,sgn
+200406,17:02,34,somnus,simple model
+200406,17:46,95,eastwood,covid gicpy
+200406,19:21,32,eastwood,covid gicpy
+200406,23:14,58,eastwood,covid gicpy
+200407,00:12,7,eastwood,covid gicpy
+200407,10:29,11,somnus,simple model
+200407,11:03,20,somnus,sgn
+200407,11:36,69,somnus,sgn
+200407,13:22,33,eastwood,covid gicpy
+200407,13:58,3,eastwood,covid gicpy
+200407,14:00,70,somnus,voip
+200407,15:13,25,eastwood,covid gicpy
+200407,15:41,20,eastwood,covid gicpy
+200407,16:00,10,eastwood,covid voip 
+200407,16:11,92,eastwood,covid
+200407,17:47,136,eastwood,covid
+200408,10:42,18,eastwood,covid
+200408,11:17,13,somnus,simple model
+200408,11:36,76,somnus,simple model
+200408,14:05,20,somnus,simple model
+200408,14:25,54,somnus,simple model
+200408,15:42,210,somnus,sgn
+200408,19:12,13,somnus,sgn
+200409,10:01,6,somnus,simple model
+200409,10:09,39,eastwood,covid
+200409,10:51,54,eastwood,covid
+200409,13:25,21,eastwood,covid
+200409,14:06,89,eastwood,covid
+200409,16:01,49,somnus,simple model
+200409,17:13,68,somnus,simple model
+200410,10:53,28,somnus,tpl
+200410,11:20,194,somnus,tpl
+200410,17:08,28,somnus,somnia
+200410,17:38,41,somnus,sgn
+200410,18:19,14,somnus,sgn
+200411,10:52,197,eastwood,covid
+200411,17:37,47,somnus,simple model
+200411,18:36,16,somnus,simple model
+200411,19:17,15,somnus,
+200412,11:38,140,eastwood,covid
+200412,14:53,12,phd,admin
+200413,13:34,34,eastwood,covid
+200413,14:09,28,eastwood,covid
+200414,11:22,41,eastwood,covid
+200414,12:21,44,eastwood,covid
+200414,13:05,42,somnus,tfl
+200414,15:11,101,somnus,tfl
+200414,17:01,82,somnus,tfl
+200414,18:40,9,somnus,tfl
+200415,11:05,104,eastwood,covid
+200415,13:07,29,eastwood,covid
+200415,14:16,18,eastwood,covid
+200415,15:26,21,somnus,tfl
+200415,16:01,14,somnus,tfl
+200415,17:15,99,somnus,tfl
+200415,23:42,96,eastwood,covid
+200416,09:30,69,eastwood,covid
+200416,11:40,4,eastwood,covid
+200416,11:56,66,eastwood,covid
+200416,15:38,94,somnus,tfl
+200416,17:30,34,somnus,tfl
+200417,00:01,137,eastwood,covid
+200417,12:28,74,eastwood,covid
+200417,16:45,82,somnus,simple model
+200418,13:06,44,sean,parkrun
+200418,17:43,30,phd,thesis
+200419,12:53,6,phd,thesis
+200419,14:53,7,phd,thesis
+200419,16:39,31,phd,thesis light
+200420,11:29,4,phd,thesis
+200420,11:45,6,phd,admin
+200420,11:50,122,eastwood,covid
+200420,15:07,19,eastwood,covid
+200420,15:38,76,somnus,simple model
+200420,17:17,20,somnus,simple model
+200421,11:14,81,somnus,simple model
+200421,13:12,24,somnus,simple model
+200421,14:00,72,somnus,voip
+200421,15:31,54,somnus,sgn
+200421,16:25,4,somnus,tfl
+200421,16:29,4,somnus,somnia
+200421,16:52,4,somnus,simple model
+200421,16:58,71,somnus,simple model
+200422,10:33,19,somnus,
+200422,10:53,109,somnus,simple model
+200422,13:38,23,somnus,simple model
+200422,14:00,32,somnus,voip
+200422,14:43,68,somnus,sgn
+200422,16:05,96,somnus,simple model
+200422,17:58,4,somnus,simple model
+200422,19:10,6,phd,admin
+200423,10:33,69,somnus,sgn
+200423,11:45,10,phd,thesis
+200423,12:04,73,somnus,simple model
+200423,15:00,135,somnus,raid
+200423,17:16,41,somnus,simple model
+200423,18:01,3,somnus,simple model
+200424,10:01,147,eastwood,covid
+200424,13:38,26,somnus,tfl
+200424,14:03,62,somnus,voip
+200424,15:04,53,somnus,tfl
+200424,16:17,6,somnus,sgn
+200424,16:27,80,eastwood,covid
+200424,17:58,42,eastwood,covid
+200425,12:40,29,sean,todo
+200425,13:09,20,janus,admin
+200425,14:59,29,somnus,sgn
+200425,16:30,54,sean,todo
+200425,17:39,40,sean,website light
+200426,17:03,57,eastwood,covid
+200426,18:00,74,eastwood,covid light
+200426,19:14,45,eastwood,covid light
+200427,10:04,26,phd,admin
+200427,10:35,58,somnus,
+200427,11:42,42,somnus,
+200427,12:25,39,somnus,
+200427,14:21,56,somnus,
+200427,15:16,88,somnus,
+200427,16:43,6,somnus,
+200427,17:03,60,somnus,
+200428,11:05,87,somnus,
+200428,12:32,20,somnus,
+200428,14:22,83,somnus,
+200428,15:51,4,somnus,
+200428,16:14,65,somnus,
+200428,17:21,56,somnus,
+200428,18:31,57,somnus,
+200429,09:34,5,somnus,
+200429,09:46,58,somnus,
+200429,10:49,11,somnus,
+200429,11:01,51,somnus,voip
+200429,11:53,28,somnus,sgn
+200429,13:24,27,somnus,sgn
+200429,13:55,47,somnus,
+200429,14:58,34,somnus,
+200429,15:32,21,somnus,sgn
+200429,15:53,9,somnus,
+200429,16:01,18,somnus,sgn
+200429,16:25,6,somnus,
+200429,16:46,73,somnus,
+200429,18:17,43,somnus,
+200430,10:41,44,somnus,
+200430,11:40,3,somnus,
+200430,11:46,14,somnus,
+200430,12:01,16,somnus,
+200430,12:20,92,somnus,
+200430,14:00,80,somnus,voip
+200430,16:01,7,somnus,
+200430,17:13,37,somnus,
+200501,09:34,14,eastwood,admin
+200501,09:47,10,somnus,admin
+200501,10:57,91,somnus,sgn
+200501,14:14,15,somnus,sgn
+200501,14:40,15,somnus
+200501,14:55,89,somnus,effort
+200501,16:34,11,somnus,effort
+200501,16:51,44,somnus,effort
+200501,17:39,51,somnus,effort
+200501,19:19,7,eastwood,covid
+200502,09:51,21,sean,todo
+200504,10:04,2,somnus,admin
+200504,10:09,7,somnus,research
+200504,10:15,7,phd,admin
+200504,10:22,41,somnus,research
+200504,11:20,56,somnus,research
+200504,13:33,21,eastwood,covid
+200504,14:00,28,eastwood,voip
+200504,14:40,81,somnus,voip
+200504,16:33,13,somnus,research
+200504,16:47,50,somnus,research
+200504,17:48,13,somnus,research
+200505,10:53,3,somnus,admin
+200505,10:59,105,somnus,sgn
+200505,14:29,57,somnus,research
+200505,17:04,63,somnus,research
+200505,18:07,7,somnus,research
+200505,18:23,8,somnus,sgn
+200505,22:24,40,sean,paperpi light
+200506,09:49,16,sean,paperpi
+200506,10:04,56,somnus,sgn
+200506,14:09,14,somnus,research
+200506,14:25,6,somnus,research
+200506,14:33,24,somnus,research
+200506,15:05,10,somnus,research
+200506,15:18,30,somnus,research
+200506,15:48,5,somnus,research
+200506,15:59,84,somnus,research
+200506,17:36,26,somnus,research
+200505,23:10,30,sean,paperpi
+200506,23:46,28,sean,paperpi
+200507,10:43,11,sean,paperpi
+200507,10:59,63,somnus,sgn
+200507,13:37,37,somnus,sgn
+200507,15:31,5,somnus,research
+200507,15:57,62,somnus,research
+200507,17:09,52,somnus,research
+200508,09:16,31,sean,paperpi
+200508,10:13,45,somnus,research
+200508,11:00,87,somnus,voip
+200508,14:01,32,somnus,sgn
+200508,14:57,24,somnus,research
+200508,15:43,25,somnus,research
+200508,16:09,14,somnus,research
+200508,16:29,93,somnus,research
+200509,17:24,6,sean,paperpi
+200509,17:52,94,sean,paperpi light
+200509,19:27,35,sean,paperpi
+200509,21:51,21,sean,TODO
+200510,11:12,11,janus,mh
+200510,11:29,11,janus,mh
+200510,12:42,9,janus,mh
+200510,12:54,30,sean,paperpi
+200510,19:09,168,sean,paperpi case
+200511,10:58,89,somnus,research
+200511,13:48,12,somnus,research
+200511,14:00,75,somnus,voip
+200511,15:47,48,somnus,somnia
+200511,16:43,9,somnus,somnia
+200511,16:55,32,somnus,somnia
+200511,17:39,77,somnus,somnia
+200511,23:13,68,sean,paperpi
+200512,10:43,86,somnus,research
+200512,12:09,25,somnus,research
+200512,14:06,62,somnus,effort
+200512,15:26,22,somnus,research
+200512,15:47,53,somnus,research
+200512,16:45,102,somnus,somnia
+200512,18:29,48,somnus,somnia
+200512,19:22,13,somnus,somnia
+200512,23:37,38,sean,sfc_site
+200513,10:14,3,phd,admin
+200513,10:24,119,somnus,somnia
+200513,13:48,13,somnus,effort
+200513,14:01,52,somnus,voip
+200513,15:09,17,somnus,effort
+200513,15:26,14,somnus,effort
+200513,15:43,40,somnus,effort
+200513,16:25,14,somnus,admin
+200513,16:47,39,somnus,effort
+200513,17:30,30,somnus,effort
+200514,10:08,17,somnus,research
+200514,10:39,65,somnus,effort
+200514,12:24,74,eastwood,covid voip
+200514,13:37,23,eastwood,covid
+200514,13:37,58,somnus,direction voip
+200514,15:40,8,eastwood,covid
+200514,15:48,91,eastwood,covid
+200514,17:24,83,eastwood,covid
+200514,10:30,77,eastwood,covid
+200515,12:06,20,eastwood,coivd
+200515,12:28,33,eastwood,covid
+200515,13:00,32,somnus,voip
+200515,15:07,8,somnus,sgn
+200515,15:26,9,somnus,sgn
+200515,15:38,52,somnus,sgn
+200515,16:38,5,somnus,effort
+200515,16:57,71,somnus,research
+200517,12:02,31,sean,TODO
+200518,10:35,6,somnus,sgn
+200518,10:41,4,somnus,sgn
+200518,10:46,7,janus,mh
+200518,10:53,10,somnus,somnia
+200518,11:04,55,somnus,somnia
+200518,12:04,11,somnus,somnia
+200518,12:27,3,somnus,somnia
+200518,12:35,33,somnus,effort
+200518,13:14,29,somnus,effort
+200518,15:02,3,somnus,effort
+200518,15:11,47,somnus,effort
+200518,16:01,25,somnus,effort
+200518,16:36,13,somnus,effort
+200518,16:51,53,somnus,effort
+200518,17:49,27,sean,paperpi
+200518,18:17,98,sean,arke
+200518,21:25,8,janus,mh
+200519,09:10,15,sean,fdc
+200519,09:29,53,somnus,sgn
+200519,10:30,30,somnus,sgn voip
+200519,11:29,74,somnus,effort
+200519,11:29,74,somnus,effort
+200519,14:00,57,somnus,somnia voip
+200519,15:30,5,somnus,effort
+200519,15:36,16,somnus,effort
+200519,16:00,84,somnus,sgn voip
+200519,17:54,45,sean,fdc
+200520,10:35,6,somnus,admin
+200520,10:47,13,somnus,effort
+200520,11:00,40,somnus,voip
+200520,11:51,12,somnus,effort
+200520,12:16,38,somnus,effort
+200520,12:56,29,somnus,effort
+200520,14:58,8,somnus,effort
+200520,15:10,14,somnus,effort
+200520,15:24,7,somnus,effort
+200520,15:39,49,somnus,effort
+200520,16:25,15,somnus,effort
+200520,16:41,35,somnus,effort
+200520,17:20,15,somnus,effort
+200520,22:53,48,sean,fdc
+200521,09:58,82,somnus,somnia
+200521,11:41,119,somnus,sgn
+200521,15:10,8,somnus,sgn
+200521,15:20,30,somnus,sgn
+200521,15:50,6,somnus,somnia
+200521,15:58,78,somnus,RAID
+200521,17:35,47,somnus,somnia
+200522,09:39,14,somnus,admin
+200522,09:56,55,somnus,effort
+200522,11:04,60,somnus,effort
+200522,13:52,3,somnus,effort
+200522,13:55,36,somnus,somnia
+200522,14:32,22,somnus,somnia
+200522,15:00,72,somnus,somnia
+200522,16:17,22,somnus,sgn
+200522,16:41,3,somnus,sgn
+200522,16:49,12,somnus,sgn
+200522,21:14,54,sean,fdc
+200524,11:31,38,phd,admin
+200525,14:36,7,janus,MH
+200525,14:43,25,janus,MH
+200525,15:13,35,janus,MH
+200525,16:04,20,janus,MH
+200525,16:36,23,janus,MH
+200525,17:09,35,janus,MH
+200526,10:36,8,somnus,tfl
+200526,10:57,63,somnus,tfl
+200526,12:12,4,somnus,admin
+200526,12:30,8,somnus,somnia
+200526,12:39,41,somnus,effort
+200526,15:03,74,somnus,effort
+200526,16:16,17,somnus,effort
+200526,16:34,31,somnus,effort
+200526,17:17,18,somnus,effort
+200526,17:34,60,somnus,effort
+200527,09:56,18,somnus,effort
+200527,10:13,15,somnus,sgn
+200527,10:33,13,somnus,effort
+200527,10:49,31,somnus,effort
+200527,11:30,26,somnus,effort
+200527,11:55,21,somnus,effort
+200527,14:18,38,somnus,somnia
+200527,15:03,19,somnus,somnia
+200527,15:25,20,somnus,somnia
+200527,15:48,5,somnus,somnia
+200527,16:05,21,somnus,somnia
+200527,16:28,54,somnus,somnia
+200527,17:29,32,somnus,research
+200528,09:58,68,somnus,research
+200528,11:24,57,somnus,research
+200528,14:12,11,somnus,research
+200528,14:28,64,somnus,effort
+200528,15:33,62,somnus,effort
+200528,16:46,28,somnus,effort
+200528,17:14,29,janus,email
+200529,10:00,90,somnus,voip
+200529,12:00,47,somnus,research
+200529,12:56,10,somnus,effort
+200529,14:00,3,somnus,effort voip
+200529,14:44,41,somnus,research
+200529,15:27,18,somnus,research
+200529,16:00,48,somnus,research
+200529,16:50,39,somnus,research
+200529,17:29,10,somnus,sgn
+200601,10:45,6,phd,admin
+200601,10:51,9,somnus,admin
+200601,11:01,2,somnus,admin
+200601,11:10,20,janus,MH
+200601,11:38,64,eastwood,covid
+200601,14:13,18,eastwood,covid
+200601,14:31,54,eastwood,covid
+200601,15:44,27,eastwood,covid
+200601,16:48,12,janus,admin
+200601,17:35,14,janus,MH
+200602,09:48,2,somnus,admin
+200602,10:06,13,somnus,research
+200602,10:20,54,somnus,research
+200602,11:28,12,eastwood,covid
+200602,11:42,22,somnus,somnia
+200602,14:36,12,phd,admin
+200602,14:56,28,phd,admin
+200602,15:24,31,somnus,sgn
+200602,16:05,6,somnus,sgn
+200602,16:11,74,somnus,sgn
+200603,10:53,71,somnus,sgn
+200603,13:31,27,somnus,sgn
+200603,14:08,7,somnus,sgn
+200603,14:15,13,somnus,sgn
+200603,14:28,49,somnus,sgn
+200603,15:44,84,somnus,sgn
+200604,09:39,50,somnus,sgn
+200604,10:29,10,somnus,sgn
+200604,11:12,57,somnus,sgn
+200604,12:15,57,somnus,effort
+200604,15:28,7,somnus,sgn
+200604,15:45,12,somnus,sgn
+200604,16:00,71,somnus,effort
+200605,10:35,25,somnus,sgn
+200605,11:14,19,somnus,sgn
+200605,11:33,4,somnus,effort
+200605,11:49,18,somnus,effort
+200605,12:08,62,somnus,effort
+200605,14:42,16,somnus,effort
+200605,14:59,41,somnus,effort
+200605,15:55,29,somnus,effort
+200605,16:29,13,somnus,effort
+200605,16:43,15,somnus,effort
+200605,17:35,6,somnus,effort
+200606,12:31,9,phd,admin
+200606,14:08,6,phd,admin
+200606,17:33,12,phd,admin
+200607,17:20,37,sean,CV
+200608,10:11,136,somnus,sgn
+200608,10:11,87,somnus,voip
+200608,13:59,37,somnus,sgn
+200608,14:37,29,somnus,sgn
+200608,15:14,23,somnus,sgn
+200608,15:46,13,somnus,sgn
+200608,16:07,84,somnus,sgn
+200609,10:42,62,somnus,sgn
+200609,11:45,2,somnus,sgn
+200609,11:53,17,somnus,sgn
+200609,12:11,9,somnus,sgn
+200609,12:21,70,somnus,sgn
+200609,15:18,17,somnus,sgn
+200609,15:40,23,somnus,sgn
+200609,16:11,39,somnus,sgn
+200609,16:58,28,somnus,sgn
+200609,17:40,5,somnus,sgn
+200610,10:18,10,somnus,sgn
+200610,10:33,3,phd,admin
+200610,10:36,51,somnus,sgn
+200610,11:28,25,somnus,sgn
+200610,11:53,18,somnus,sgn
+200610,13:53,54,somnus,sgn
+200610,14:50,49,somnus,effort
+200610,16:03,12,somnus,effort
+200610,16:16,122,somnus,effort
+200611,09:22,76,somnus,sgn
+200611,11:06,61,somnus,effort
+200611,13:44,26,somnus,sgn
+200611,14:12,36,somnus,sgn
+200611,15:00,61,somnus,sgn voip
+200611,16:48,24,somnus,effort
+200611,17:22,47,somnus,effort
+200612,11:05,22,somnus,effort
+200612,11:33,35,somnus,effort
+200612,12:13,34,somnus,effort
+200612,12:47,11,somnus,effort
+200612,14:46,11,somnus,sgn
+200612,14:58,20,somnus,sgn
+200612,15:25,19,somnus,sgn
+200612,15:44,61,somnus,sgn
+200612,16:53,7,somnus,sgn
+200612,17:15,6,somnus,sgn
+200612,17:30,19,somnus,sgn
+200614,19:29,14,jobs,all
+200614,20:18,35,sean,time tracker
+200615,11:27,6,phd,admin
+200615,11:33,34,somnus,effort
+200615,12:07,22,somnus,effort
+200615,12:47,14,somnus,effort
+200615,15:35,5,somnus,effort
+200615,15:47,54,somnus,effort
+200615,16:58,35,somnus,effort
+200615,17:36,18,somnus,effort
+200616,10:36,107,somnus,effort
+200616,14:19,32,somnus,effort
+200616,14:53,10,somnus,effort
+200616,15:10,7,somnus,effort
+200616,15:34,77,somnus,effort
+200616,16:54,18,somnus,effort
+200616,17:14,48,somnus,effort
+200617,10:46,91,somnus,effort
+200617,14:01,65,somnus,sgn voip
+200617,15:09,21,somnus,effort
+200617,15:33,24,somnus,effort
+200617,16:00,60,somnus,effort voip
+200617,17:41,5,somnus,sgn
+200617,17:53,14,somnus,sgn
+200618,09:59,2,somnus,admin
+200618,10:10,144,somnus,sgn
+200618,12:42,32,somnus,sgn
+200618,13:14,5,somnus,sgn
+200618,15:17,32,somnus,sgn
+200618,16:00,74,somnus,raid
+200618,17:13,2,somnus,sgn
+200618,17:33,28,somnus,sgn
+200619,11:18,15,somnus,sgn light
+200619,12:13,5,somnus,tpl
+200619,12:27,28,somnus,tpl
+200619,15:17,16,somnus,tpl
+200619,15:33,22,somnus,tpl
+200619,16:08,100,somnus,tpl
+200622,10:44,8,somnus,sgn
+200622,11:00,95,somnus,sgn voip
+200622,12:36,5,somnus,sgn
+200622,12:52,14,somnus,sgn
+200622,14:57,84,somnus,sgn
+200622,16:21,34,somnus,sgn
+200622,17:00,47,somnus,sgn
+200622,17:50,15,somnus,sgn
+200622,18:08,12,somnus,sgn
+200623,10:36,97,somnus,sgn
+200623,12:15,28,somnus,sgn
+200623,14:05,34,somnus,sgn
+200623,15:29,54,somnus,effort
+200623,16:25,24,somnus,effort
+200623,16:57,8,somnus,effort
+200623,17:25,48,somnus,effort
+200623,21:34,90,arke,email
+200624,10:04,70,somnus,effort
+200624,11:25,11,somnus,effort
+200624,11:35,7,somnus,admin
+200624,11:42,5,somnus,effort
+200624,11:47,4,arke,email
+200624,11:50,6,somnus,effort
+200624,11:55,8,arke,email
+200624,12:02,48,somnus,effort
+200624,14:46,14,somnus,effort
+200624,15:02,27,somnus,effort
+200624,15:34,39,somnus,effort
+200624,16:29,54,somnus,effort
+200624,17:30,12,somnus,effort
+200624,17:51,15,somnus,effort
+200625,10:00,57,somnus,sgn voip
+200625,11:06,80,somnus,sgn
+200625,14:03,78,somnus,sgn
+200625,15:29,29,phd,admin
+200625,16:12,47,somnus,effort
+200626,11:02,17,somnus,effort
+200626,11:43,18,somnus,effort
+200626,12:22,42,somnus,effort
+200626,15:22,18,somnus,sgn
+200626,15:59,12,somnus,sgn
+200626,16:16,57,somnus,sgn
+200626,17:16,14,somnus,sgn
+200626,17:31,4,somnus,sgn
+200626,17:38,33,somnus,sgn
+200628,12:24,4,jobs,all
+200628,12:45,50,jobs,all
+200628,13:37,7,jobs,all
+200629,10:48,70,somnus,sgn
+200629,12:01,4,somnus,sgn
+200629,12:18,8,somnus,effort
+200629,12:26,49,somnus,effort
+200629,14:42,15,somnus,effort
+200629,15:12,5,somnus,effort
+200629,15:22,50,somnus,effort
+200629,16:15,55,somnus,effort
+200629,17:15,30,somnus,sgn
+200630,11:09,99,somnus,sgn
+200630,14:24,11,somnus,sgn
+200630,14:51,43,somnus,sgn
+200630,15:33,61,somnus,effort
+200630,16:52,18,somnus,effort
+200630,17:13,62,somnus,effort
+200701,09:45,36,somnus,effort
+200701,10:25,11,phd,admin
+200701,10:38,22,somnus,sgn
+200701,14:15,2,somnus,sgn
+200701,14:18,90,somnus,effort
+200701,16:00,90,somnus,effort voip
+200701,17:27,3,somnus,sgn
+200701,17:36,6,somnus,effort
+200701,17:46,20,somnus,sgn
+200701,21:52,28,sean,fdc
+200702,09:51,69,somnus,sgn
+200702,11:27,47,somnus,sgn
+200702,12:16,16,somnus,sgn
+200702,14:07,22,somnus,sgn
+200702,14:45,60,somnus,sgn
+200702,15:56,74,somnus,sgn
+200702,17:15,12,phd,admin
+200702,17:38,5,phd,admin
+200703,10:20,27,somnus,sgn
+200703,10:49,18,somnus,sgn
+200703,11:08,14,somnus,sgn
+200703,11:21,73,somnus,sgn
+200703,14:01,10,somnus,sgn
+200703,14:16,15,somnus,sgn
+200703,14:30,25,somnus,sgn voip
+200703,15:00,55,somnus,sgn voip
+200703,15:57,31,somnus,sgn
+200703,16:36,104,somnus,sgn
+200706,10:13,47,somnus,effort
+200706,10:13,65,somnus,sgn voip
+200706,13:52,34,somnus,sgn
+200706,14:43,14,somnus,sgn
+200706,14:57,5,somnus,sgn
+200706,15:03,110,somnus,sgn
+200706,16:57,30,somnus,effort
+200707,09:55,2,somnus,admin
+200707,09:57,59,somnus,effort
+200707,10:58,65,somnus,effort
+200707,12:02,4,somnus,effort
+200707,14:13,20,somnus,effort
+200707,14:39,11,somnus,sgn
+200707,14:57,69,somnus,sgn
+200707,16:52,38,somnus,sgn
+200707,17:33,28,somnus,sgn
+200708,10:05,39,somnus,sgn
+200708,10:46,88,somnus,effort
+200708,12:16,7,somnus,effort
+200708,14:23,2,somnus,sgn
+200708,14:29,23,somnus,sgn
+200708,15:00,15,somnus,sgn
+200708,15:16,10,somnus,sgn
+200708,15:30,33,somnus,sgn
+200708,16:10,13,somnus,sgn
+200708,16:32,47,somnus,sgn
+200708,17:23,37,somnus,sgn
+200708,18:01,2,somnus,sgn
+200709,10:19,5,somnus,admin
+200709,10:24,34,somnus,sgn
+200709,11:00,53,somnus,sgn voip
+200709,12:09,68,somnus,sgn
+200709,15:11,20,somnus,sgn
+200709,15:35,96,somnus,sgn
+200709,17:26,124,somnus,sgn
+200710,10:01,9,somnus,sgn
+200710,10:13,49,somnus,sgn
+200710,11:46,20,somnus,somnia
+200710,12:20,44,somnus,somnia
+200710,14:08,23,somnus,sgn
+200710,15:00,45,somnus,sgn voip
+200710,15:46,20,somnus,sgn
+200710,16:24,31,somnus,somnia
+200711,11:50,29,sean,todo
+200711,12:38,16,sean,paperpi
+200711,15:18,80,jobs,all
+200711,23:57,8,sean,blog
+200712,13:35,27,sean,blog
+200712,15:03,27,jobs,all
+200712,16:45,15,jobs,all
+200713,10:44,6,somnus,sgn
+200713,10:57,4,somnus,somnia
+200713,11:01,84,somnus,sgn voip
+200713,13:40,18,somnus,sgn
+200713,13:58,12,somnus,somnia
+200713,14:23,38,somnus,somnia
+200713,15:21,125,somnus,somnia
+200713,17:29,4,somnus,somnia
+200713,17:40,30,somnus,somnia
+200714,09:53,154,somnus,sgn
+200714,13:57,28,somnus,sgn
+200714,14:35,5,somnus,effort
+200714,14:52,14,somnus,effort
+200714,15:11,8,somnus,somnia
+200714,15:18,19,somnus,effort
+200714,15:40,15,somnus,admin
+200714,15:56,26,somnus,effort
+200714,17:20,52,somnus,effort
+200715,10:42,115,somnus,effort
+200715,14:05,11,somnus,sgn
+200715,14:20,27,somnus,sgn
+200715,14:55,25,somnus,sgn
+200715,15:36,19,somnus,icelos
+200715,16:00,64,somnus,effort voip
+200715,10:20,10,somnus,admin
+200716,10:46,20,somnus,effort
+200716,11:09,26,somnus,icelos
+200716,11:35,30,somnus,sgn voip
+200716,12:04,2,somnus,sgn voip
+200716,12:05,64,somnus,sgn
+200716,14:33,13,somnus,sgn
+200716,14:50,126,somnus,sgn/raid
+200719,19:00,120,sean,blog paperpi
+200720,10:46,70,somnus,icelos
+200720,11:56,56,somnus,sgn voip
+200720,14:52,14,somnus,icelos
+200720,15:07,29,somnus,icelos
+200720,16:01,60,somnus,icelos
+200720,17:04,3,somnus,icelos
+200720,17:29,21,somnus,icelos
+200721,10:11,19,somnus,icelos
+200721,11:11,42,somnus,icelos
+200721,11:53,39,somnus,sgn
+200721,13:53,26,somnus,sgn
+200721,14:23,77,somnus,sgn
+200721,15:53,39,somnus,sgn
+200721,16:38,26,somnus,sgn
+200721,17:03,6,somnus,effort
+200721,17:11,7,somnus,sgn
+200722,10:26,9,somnus,sgn
+200722,10:40,127,somnus,sgn
+200722,14:23,84,somnus,sgn
+200722,16:01,23,somnus,sgn
+200722,17:34,8,somnus,sgn
+200722,17:52,12,somnus,sgn
+200722,23:07,4,sean,blog
+200723,09:41,120,somnus,sgn
+200723,14:51,4,somnus,effort
+200723,14:55,15,somnus,effort
+200723,15:16,35,somnus,effort
+200723,15:52,7,somnus,effort
+200723,16:09,12,somnus,effort
+200723,16:33,38,somnus,effort
+200723,17:11,6,somnus,effort
+200724,10:19,14,somnus,effort
+200724,10:40,20,somnus,effort
+200724,11:01,36,somnus,effort
+200724,11:37,23,somnus,effort
+200724,11:59,3,somnus,effort
+200724,13:12,51,somnus,effort
+200724,14:05,23,somnus,effort
+200724,14:28,55,somnus,effort
+200724,15:33,47,somnus,effort
+200726,18:10,16,sean,blog
+200727,10:14,71,somnus,effort
+200727,11:30,15,somnus,effort
+200727,11:59,10,somnus,effort
+200727,13:34,4,somnus,sgn
+200727,13:38,89,somnus,effort
+200727,15:06,21,somnus,effort
+200727,15:28,41,somnus,effort
+200727,16:09,20,somnus,sgn
+200727,16:48,8,somnus,sgn
+200727,16:59,13,somnus,effort
+200727,17:13,17,somnus,effort
+200728,10:10,3,somnus,sgn
+200728,10:25,68,somnus,effort
+200728,11:47,59,somnus,effort
+200728,14:27,21,somnus,effort
+200728,14:52,5,somnus,effort
+200728,14:58,60,somnus,sgn
+200728,15:58,28,somnus,admin
+200728,16:25,41,somnus,effort
+200728,17:09,11,somnus,effort
+200728,17:21,20,somnus,effort
+200729,10:16,7,somnus,effort
+200729,10:25,4,somnus,effort
+200729,11:22,36,somnus,effort
+200729,13:38,3,somnus,sgn
+200729,13:41,64,somnus,effort
+200729,15:02,23,somnus,effort
+200729,15:24,20,somnus,admin
+200729,15:43,24,somnus,effort
+200729,16:28,63,somnus,effort
+200729,17:34,14,somnus,effort
+200729,17:55,4,somnus,effort
+200730,10:25,15,somnus,effort
+200730,10:46,76,somnus,effort
+200730,12:04,17,somnus,effort
+200730,12:35,121,somnus,sgn
+200730,14:41,43,somnus,sgn
+200730,15:30,26,somnus,sgn
+200730,16:03,24,somnus,sgn voip
+200730,16:46,45,somnus,effort light
+200731,10:49,53,somnus,effort
+200731,11:53,51,somnus,effort
+200731,12:50,2,somnus,effort
+200731,12:54,20,somnus,effort
+200731,14:42,5,somnus,effort
+200731,14:49,53,somnus,effort
+200731,15:47,89,somnus,effort
+200802,17:53,29,sean,TODO
+200803,10:10,110,somnus,effort
+200803,12:19,20,somnus,effort
+200803,14:27,75,somnus,effort
+200803,16:07,75,somnus,effort
+200804,11:04,74,somnus,effort
+200804,13:54,82,somnus,effort
+200804,15:34,15,somnus,effort
+200804,16:00,60,somnus,dri voip
+200804,17:02,39,somnus,dri
+200804,17:43,12,somnus,dri
+200805,10:41,62,somnus,dri
+200805,11:49,13,somnus,dri
+200805,13:00,42,somnus,dri voip
+200805,13:43,2,somnus,dri
+200805,13:51,36,somnus,dri
+200805,14:31,8,somnus,dri
+200805,14:58,3,somnus,dri
+200805,15:13,66,somnus,effort
+200805,16:52,9,somnus,effort
+200805,17:05,34,somnus,effort
+200805,17:39,8,sean,todo
+200805,18:04,22,sean,todo
+200806,09:05,208,somnus,dri institute voip
+200806,13:33,145,somnus,dri institude voip
+200806,15:57,32,somnus,effort
+200806,16:32,52,somnus,effort
+200806,09:00,63,somnus,effort voip
+200807,10:50,25,somnus,effort
+200807,11:16,16,somnus,effort
+200807,13:02,171,somnus,effort
+200807,15:55,5,somnus,effort
+200808,15:30,10,somnus,admin
+200808,17:16,18,jobs,all
+200810,10:51,124,somnus,effort
+200810,15:03,34,somnus,effort
+200810,15:40,18,somnus,effort
+200810,16:03,7,somnus,dri
+200810,16:35,4,somnus,effort
+200810,16:39,26,somnus,effort
+200810,17:13,3,somnus,dri
+200811,10:14,3,somnus,effort
+200811,10:30,40,somnus,effort
+200811,11:33,56,somnus,cadal
+200811,14:17,32,somnus,cadal
+200811,15:00,52,somnus,dri voip
+200811,16:00,68,somnus,effort voip
+200811,17:23,23,somnus,effort
+200812,10:48,2,somnus,dri
+200812,10:52,8,somnus,dri
+200812,11:37,12,somnus,dri
+200812,12:05,44,somnus,dri
+200812,13:00,65,somnus,dri voip
+200812,14:04,3,somnus,cadal
+200812,14:12,75,somnus,cadal
+200812,15:32,14,somnus,admin
+200812,16:13,14,somnus,cadal
+200812,16:28,32,somnus,cadal
+200812,17:37,33,somnus,cadal
+200812,23:01,19,somnus,cadal
+200813,09:28,96,somnus,cadal
+200813,11:11,45,somnus,cadal
+200813,13:22,5,somnus,admin
+200813,13:27,101,somnus,cadal
+200813,15:16,9,somnus,cadal
+200813,15:25,46,somnus,cadal
+200813,16:38,12,somnus,cadal
+200813,17:02,63,somnus,cadal
+200814,10:24,42,somnus,cadal
+200814,11:23,16,somnus,dri
+200814,11:40,33,somnus,dri
+200814,12:22,47,somnus,dri
+200814,15:00,2,somnus,admin
+200814,15:02,19,somnus,dri
+200814,15:22,40,somnus,effort
+200814,15:62,20,somnus,effort voip
+200814,16:27,14,somnus,effort
+200814,16:42,35,somnus,effort
+200814,17:24,3,somnus,effort
+200814,17:30,17,somnus,dri
+200817,11:21,37,somnus,cadal
+200817,12:02,17,somnus,cadal
+200817,12:20,41,somnus,cadal
+200817,15:02,15,somnus,cadal
+200817,15:25,52,somnus,cadal
+200817,16:30,6,somnus,cadal
+200817,16:50,38,somnus,cadal
+200818,10:47,26,somnus,cadal
+200818,11:22,18,somnus,cadal
+200818,11:40,13,somnus,cadal
+200818,12:00,78,somnus,dri voip
+200818,13:19,8,somnus,dri
+200818,14:48,7,somnus,dri
+200818,14:56,2,somnus,dri
+200818,15:02,6,somnus,dri
+200818,15:08,84,somnus,cadal
+200819,11:21,58,jobs,all
+200819,12:30,10,jobs,all
+200819,12:41,22,jobs,all
+200819,13:02,59,somnus,dri voip
+200819,14:04,6,jobs,all
+200819,14:13,35,jobs,all
+200819,14:47,26,somnus,dri admin
+200819,15:22,5,somnus,dri admin
+200819,15:31,23,somnus,cadal
+200819,16:00,60,somnus,dri voip
+200819,17:36,16,somnus,cadal
+200819,17:53,40,sean,passport
+200820,09:58,7,jobs,all
+200820,10:06,2,sean,passport
+200820,10:25,3,somnus,admin
+200820,10:32,22,somnus,cadal
+200820,14:18,27,somnus,cadal
+200820,14:47,44,somnus,cadal
+200820,15:41,57,somnus,cadal
+200820,16:58,11,somnus,cadal
+200821,11:34,14,somnus,effort
+200821,13:03,4,somnus,effort
+200821,13:34,32,somnus,effort
+200821,15:58,2,somnus,effort
+200821,16:10,13,somnus,effort
+200821,16:49,21,somnus,effort
+200821,17:22,13,somnus,effort
+200821,17:55,10,somnus,effort
+200822,13:46,42,sean,passport
+200822,15:49,37,sean,passport
+200822,16:36,14,sean,passport
+200823,18:29,26,sean,arke todo
+200824,11:18,115,sean,arke todo
+200824,14:16,122,somnus,cadal
+200824,16:45,45,somnus,cadal
+200824,17:31,30,somnus,cadal
+200825,10:00,55,somnus,dri voip
+200825,11:54,40,somnus,cadal
+200825,14:37,26,somnus,dri
+200825,15:09,47,somnus,admin
+200825,16:17,50,somnus,admin
+200825,17:27,3,somnus,effort
+200825,17:32,30,somnus,effort
+200825,21:53,70,sean,website
+200826,10:26,5,somnus,effort
+200826,10:38,18,somnus,effort
+200826,10:55,10,sean,admin
+200826,11:7,23,somnus,effort
+200826,11:30,7,sean,website
+200826,11:53,42,somnus,effort
+200826,12:36,8,somnus,effort
+200826,14:00,60,somnus,admin
+200826,15:11,32,somnus,effort
+200826,15:44,6,somnus,effort
+200826,15:59,20,somnus,effort
+200826,16:21,14,somnus,effort
+200826,16:48,39,somnus,effort
+200826,17:29,28,somnus,effort
+200827,10:08,58,sean,admin
+200827,11:07,13,sean,passport
+200827,11:30,16,somnus,effort
+200827,13:47,63,somnus,effort
+200827,15:12,11,somnus,effort
+200827,15:27,68,somnus,cadal
+200827,16:46,28,somnus,cadal
+200827,17:15,15,somnus,cadal
+200901,10:00,19,somnus,admin
+200901,10:30,33,sean,admin
+200901,11:04,13,somnus,admin
+200901,11:28,33,somnus,effort
+200901,12:14,20,somnus,effort
+200901,13:52,27,somnus,effort
+200901,14:27,11,somnus,effort
+200901,14:43,98,somnus,effort
+200901,16:40,36,somnus,effort
+200901,17:18,10,somnus,effort
+200901,17:28,31,somnus,effort
+200901,10:30,140,sean,fnc interview
+200902,13:07,52,somnus,dri voip
+200902,15:59,59,somnus,cadal
+200902,17:05,20,somnus,cadal
+200902,17:46,14,somnus,cadal
+200903,09:45,30,somnus,dri all voip
+200903,10:14,96,somnus,dri all voip
+200903,11:50,52,somnus,dri all voip
+200903,13:34,145,somnus,dri all voip
+200903,16:35,72,somnus,cadal
+200903,17:57,3,somnus,cadal
+200904,09:34,67,somnus,effort
+200904,10:56,14,somnus,effort
+200904,11:16,37,somnus,effort
+200904,13:12,90,somnus,effort
+200904,14:46,32,somnus,effort
+200904,15:29,13,somnus,effort
+200904,15:41,27,somnus,cadal
+200904,17:01,68,somnus,cadal
+200906,17:31,60,jobs,all
+200906,18:31,30,arke,TODO
+200907,09:44,43,somnus,effort
+200907,11:14,10,janus,email
+200907,11:27,114,somnus,effort
+200907,13:21,3,somnus,sgn
+200907,13:24,59,somnus,sgn
+200907,15:37,22,somnus,sgn
+200907,16:04,93,somnus,effort
+200908,10:15,3,somnus,effort
+200908,10:31,5,somnus,effort
+200908,10:56,33,somnus,effort
+200908,11:59,8,somnus,sgn
+200908,12:07,80,somnus,effort
+200908,13:30,45,somnus,effort
+200908,15:00,60,somnus,effort voip
+200908,15:58,34,somnus,effort
+200908,16:35,11,somnus,effort
+200908,17:00,15,jobs,all
+200908,17:30,36,somnus,effort
+200909,09:50,9,somnus,admin
+200909,09:59,56,somnus,cadal
+200909,11:00,35,somnus,voip
+200909,13:02,58,somnus,dri voip
+200909,14:07,5,somnus,cadal
+200909,14:39,35,somnus,cadal
+200909,15:27,25,somnus,cadal
+200909,16:05,35,somnus,cadal
+200909,16:56,19,somnus,cadal
+200909,17:21,35,somnus,cadal
+200909,22:53,8,jobs,all
+200910,09:45,43,somnus,cadal
+200910,10:34,12,somnus,cadal
+200910,10:47,6,somnus,cadal
+200910,11:43,4,somnus,effort
+200910,13:07,23,somnus,effort
+200910,13:37,14,somnus,effort
+200910,13:54,13,somnus,effort
+200910,14:09,29,somnus,effort
+200910,14:39,4,somnus,dri
+200910,14:43,79,somnus,effort
+200910,16:50,10,somnus,effort
+200910,17:05,20,jobs,all
+200910,17:29,2,somnus,effort
+200910,17:36,10,somnus,effort
+200911,10:08,25,somnus,effort
+200911,10:47,59,somnus,effort
+200911,11:51,5,somnus,dri
+200911,12:45,93,somnus,effort
+200911,14:20,8,somnus,effort
+200911,14:27,8,sean,phd
+200911,14:34,26,somnus,effort
+200911,15:03,15,somnus,effort
+200912,16:18,5,sean,todo
+200913,15:53,4,sean,todo
+200913,15:56,27,jobs,all
+200913,16:24,10,jobs,all
+200913,17:53,26,sean,todo
+200914,11:30,62,somnus,cadal
+200914,13:22,5,somnus,cadal
+200914,13:27,5,somnus,cadal
+200914,13:38,13,somnus,cadal
+200914,14:10,29,somnus,cadal
+200914,14:47,4,somnus,dri
+200914,14:51,9,somnus,cadal
+200914,15:08,6,somnus,dri
+200914,15:15,12,somnus,dri
+200914,15:29,15,somnus,dri
+200914,15:47,26,somnus,effort
+200914,16:44,44,somnus,effort
+200915,10:19,35,somnus,effort
+200915,11:07,6,somnus,effort
+200915,11:13,7,somnus,effort
+200915,11:27,17,somnus,effort
+200915,11:48,4,somnus,effort
+200915,11:55,3,somnus,effort
+200915,14:12,50,somnus,effort
+200915,15:04,2,somnus,effort
+200915,15:09,9,somnus,cadal
+200915,15:20,33,somnus,cadal
+200915,16:29,11,somnus,cadal
+200915,16:40,11,somnus,cadal
+200915,16:52,7,somnus,cadal
+200915,16:59,3,somnus,dri
+200915,17:03,10,somnus,cadal
+200915,17:12,3,jobs,all
+200915,17:14,24,somnus,cadal
+200915,17:38,18,jobs,all
+200915,17:55,9,somnus,cadal
+200916,10:24,2,somnus,dri
+200916,10:30,10,somnus,cadal
+200916,10:42,8,somnus,cadal
+200916,10:49,8,somnus,cadal
+200916,10:58,2,somnus,cadal
+200916,11:01,27,somnus,cadal
+200916,11:31,11,somnus,cadal
+200916,12:00,12,somnus,cadal
+200916,13:03,62,somnus,dri voip
+200916,14:21,30,somnus,cadal
+200916,14:55,14,somnus,cadal
+200916,15:09,8,somnus,cadal
+200916,15:33,49,somnus,cadal
+200916,16:23,15,somnus,cadal
+200916,16:45,13,somnus,cadal
+200916,17:11,3,somnus,cadal
+200916,17:27,27,somnus,cadal
+200917,10:21,15,sean,admin
+200917,10:36,23,somnus,effort
+200917,11:00,60,somnus,cadal
+200917,13:01,2,somnus,effort
+200917,13:26,30,somnus,effort
+200917,14:02,34,somnus,effort
+200917,14:36,34,somnus,effort
+200917,15:15,12,somnus,effort
+200917,15:30,14,somnus,cadal
+200917,16:07,38,somnus,cadal
+200917,16:45,10,somnus,cadal
+200917,17:01,21,somnus,cadal
+200917,17:39,24,somnus,cadal
+200918,09:41,18,jobs,all
+200918,10:01,4,jobs,all
+200918,10:30,35,jobs,all
+200918,11:05,15,jobs,all
+200918,12:52,5,jobs,all
+200918,12:58,42,somnus,effort
+200918,13:42,25,somnus,effort
+200918,14:23,7,somnus,effort
+200918,14:32,55,somnus,effort
+200918,16:50,3,somnus,admin
+200918,16:53,3,sean,admin
+200918,17:32,2,sean,admin
+200918,17:35,33,somnus,cadal
+200919,17:44,24,sean,todo
+200921,11:03,51,somnus,cadal
+200921,12:00,57,somnus,effort voip
+200921,13:52,11,somnus,cadal
+200921,14:00,60,somnus,voip
+200921,15:16,80,somnus,effort
+200921,16:58,27,somnus,effort
+200922,10:23,22,jobs,all
+200922,10:50,13,jobs,all
+200922,11:03,3,jobs,all
+200922,11:10,7,jobs,all
+200922,11:17,16,somnus,effort
+200922,11:33,2,jobs,all
+200922,11:47,13,somnus,effort
+200922,11:47,13,somnus,effort
+200922,11:55,5,jobs,all
+200922,13:49,145,somnus,cadal
+200922,16:56,35,somnus,cadal
+200922,17:45,18,somnus,cadal
+200923,10:01,15,jobs,all
+200923,10:01,10,somnus,cadal
+200923,10:25,49,somnus,cadal
+200923,11:38,16,somnus,cadal
+200923,12:49,8,somnus,cadal
+200923,13:00,60,somnus,dri voip
+200923,14:01,12,somnus,dri admin
+200923,14:26,4,somnus,effort
+200923,14:32,13,somnus,effort
+200923,14:50,75,somnus,effort
+200923,16:16,7,somnus,effort
+200923,16:32,45,somnus,effort
+200923,17:23,5,somnus,effort
+200924,09:49,23,somnus,admin
+200924,11:13,33,somnus,effort
+200924,11:51,43,somnus,effort
+200924,11:35,17,jobs,all
+200924,12:55,9,somnus,effort
+200924,14:55,15,somnus,cadal
+200924,15:13,34,somnus,cadal
+200924,16:00,65,jobs,all
+200924,17:50,14,somnus,cadal
+200924,23:01,29,jobs,all
+200925,09:29,6,somnus,effort
+200925,09:45,10,somnus,cadal
+200925,10:35,40,somnus,cadal
+200925,11:17,38,somnus,cadal
+200925,11:56,67,somnus,cadal
+200925,14:00,60,somnus,voip
+200925,15:21,12,somnus,cadal
+200925,15:35,27,somnus,cadal
+200925,16:02,38,somnus,cadal
+200925,16:55,2,somnus,cadal
+200925,17:07,36,somnus,cadal
+200926,11:15,6,sean,todo
+200926,11:22,11,sean,todo
+200926,12:14,35,jobs,all
+200927,17:51,5,jobs,all
+200927,17:58,13,jobs,all
+200927,18:50,13,jobs,all
+200928,10:50,66,somnus,cadal
+200928,11:58,91,somnus,cadal
+200928,14:59,99,somnus,cadal
+200928,16:42,63,somnus,cadal
+200928,23:40,30,jobs,all,
+200929,00:10,5,somnus,cadal
+200929,09:00,44,somnus,cadal
+200929,10:53,3,somnus,dri
+200929,11:23,38,somnus,cadal
+200929,12:02,46,somnus,effort
+200929,13:12,6,somnus,admin
+200929,13:17,17,somnus,effort
+200929,13:37,27,somnus,effort
+200929,15:26,58,somnus,effort
+200929,16:25,32,somnus,effort
+200930,10:57,69,somnus,effort
+200930,13:10,4,jobs,all
+200930,13:15,93,somnus,effort
+200930,14:54,9,somnus,effort
+200930,15:07,33,somnus,effort
+200930,16:24,27,somnus,effort
+200930,17:00,20,somnus,effort
+200930,17:26,8,somnus,effort
+201001,09:07,13,somnus,dri all voip 
+201001,09:21,46,somnus,dri all voip
+201001,10:07,57,somnus,dri all meet and effort
+201001,11:17,79,somnus,dri all meet and effort
+201001,13:38,127,somnus,dri all mean and effort
+201001,15:44,12,somnus,effort
+201001,16:03,126,somnus,effort
+201002,10:00,60,somnus,dri voip
+201002,11:15,39,jobs,all
+201002,12:12,10,jobs,all
+201002,13:17,10,somnus,admin
+201002,13:28,35,jobs,all
+201002,14:34,69,somnus,effort
+201002,15:46,29,somnus,effort
+201003,14:48,97,sean,arke
+201004,14:27,28,jobs,all
+201004,14:54,32,somnus,effort
+201004,15:29,27,somnus,effort
+201004,15:58,5,somnus,effort
+201004,16:47,28,somnus,effort
+201004,17:48,7,somnus,effort
+201004,17:57,29,somnus,effort
+201004,19:48,17,janus,mh
+201005,10:00,50,somnus,effort voip
+201005,11:29,3,somnus,effort
+201005,11:43,3,somnus,effort
+201005,12:30,102,somnus,effort
+201005,14:14,27,somnus,effort
+201005,15:37,69,somnus,raid and effort
+201005,16:45,2,somnus,effort
+201005,16:56,9,somnus,effort
+201005,17:17,13,somnus,effort
+201006,11:50,37,somnus,effort
+201006,13:02,9,somnus,effort
+201006,13:13,41,somnus,effort
+201006,13:57,18,somnus,effort
+201006,14:23,11,somnus,effort
+201006,15:00,61,somnus,effort
+201006,16:05,51,somnus,effort
+201007,10:53,67,somnus,effort
+201007,13:00,09,somnus,dri all voip
+201007,13:09,52,somnus,dri all voip
+201007,14:43,14,somnus,effort
+201007,15:13,142,somnus,effort
+201007,19:47,15,somnus,effort
+201007,20:04,12,somnus,effort
+201008,10:48,22,somnus,cadal
+201008,11:37,93,somnus,dri
+201008,13:15,13,somnus,dri admin
+201008,14:46,2,somnus,dri
+201008,14:55,7,somnus,dri
+201008,15:05,48,somnus,dri
+201008,16:00,70,somnus,dri voip
+201008,17:20,20,somnus,dri
+201008,10:00,60,somnus,dri voip
+201008,11:00,60,somnus,dri
+201009,11:07,34,somnus,dri
+201009,11:43,2,somnus,dri
+201009,11:49,11,somnus,dri
+201009,13:03,29,jobs,all
+201009,14:13,12,somnus,light paper
+201009,14:26,4,somnus,light paper
+201009,14:30,55,jobs,all
+201009,17:23,48,somnus,light paper
+201012,11:41,27,somnus,admin
+201012,12:09,44,somnus,effort
+201012,12:55,2,somnus,effort
+201012,14:31,25,somnus,effort
+201012,15:00,6,somnus,effort
+201012,15:31,155,somnus,effort
+201012,18:18,54,somnus,effort
+201013,10:49,55,somnus,effort
+201013,11:44,73,somnus,effort
+201013,13:37,30,somnus,effort
+201013,14:07,5,somnus,effort
+201013,14:26,3,somnus,effort
+201013,14:38,69,somnus,effort
+201013,16:12,7,somnus,effort
+201013,17:44,23,somnus,effort
+201013,18:12,4,somnus,effort
+201013,18:21,5,somnus,effort
+201013,18:30,9,somnus,effort
+201013,18:39,10,somnus,effort
+201014,10:59,39,somnus,effort
+201014,11:44,10,somnus,effort
+201014,13:49,109,somnus,effort
+201014,16:33,16,somnus,effort
+201014,17:20,16,somnus,effort
+201014,20:08,5,somnus,effort
+201014,23:44,15,somnus,effort
+201015,10:30,60,somnus,effort voip
+201015,12:52,16,somnus,effort and connectome
+201015,13:08,28,somnus,dri connectome
+201015,14:10,11,somnus,dri connectome
+201015,14:21,82,somnus,dri connectome
+201015,15:51,66,somnus,dri connectome and effort
+201015,17:00,21,somnus,dri connectome 
+201015,17:21,6,somnus,dri connectome
+201015,22:42,39,somnus,effort
+201016,11:19,62,somnus,effort
+201016,12:28,43,somnus,effort
+201016,14:19,72,somnus,effort
+201016,15:33,63,somnus,effort
+201016,16:38,61,somnus,sgn
+201018,13:32,10,somnus,effort
+201018,13:45,18,somnus,effort
+201018,14:11,40,somnus,effort
+201018,15:11,15,somnus,effort
+201018,15:40,8,somnus,effort
+201020,18:00,30,jobs,all,
+201021,14:01,19,jobs,all,
+201022,13:33,3,somnus,effort
+201022,13:41,54,somnus,effort
+201024,13:54,72,somnus,effort
+201026,09:09,14,somnus,dri
+201026,09:47,29,somnus,dri
+201026,10:45,32,somnus,dri
+201026,11:19,79,somnus,dri
+201026,13:55,2,somnus,effort
+201026,14:05,71,somnus,dri
+201026,15:20,5,somnus,dri
+201026,16:16,32,somnus,admin
+201026,16:50,34,somnus,admin
+201026,17:25,21,somnus,dri
+201027,09:50,52,somnus,dri
+201027,11:11,10,somnus,admin
+201027,11:21,10,jobs,all
+201027,11:30,13,somnus,dri
+201027,11:50,35,somnus,dri
+201027,12:49,15,somnus,dri
+201027,13:11,31,somnus,dri
+201027,14:37,54,somnus,dri
+201027,15:45,11,somnus,dri
+201027,15:58,71,somnus,voip
+201027,17:44,7,somnus,dri
+201028,09:36,73,somnus,dri
+201028,11:05,27,somnus,dri
+201028,11:37,62,somnus,cadal
+201028,13:04,2,somnus,dri
+201028,13:35,9,somnus,cadal
+201028,13:44,2,somnus,cadal
+201028,15:09,74,somnus,cadal
+201028,16:36,21,sean,houses
+201028,16:59,25,somnus,cadal
+201028,17:27,37,somnus,cadal
+201029,09:54,6,somnus,cadal
+201029,10:01,61,somnus,dri paper voip
+201029,11:30,117,somnus,dri paper
+201029,14:18,144,somnus,cadal
+201029,17:07,19,somnus,cadal
+201030,10:20,3,somnus,cadal
+201030,10:28,13,somnus,cadal
+201030,10:43,54,somnus,cadal
+201030,11:40,44,somnus,cadal
+201030,13:30,81,somnus,effort
+201030,14:55,13,somnus,effort
+201030,15:11,10,somnus,effort
+201030,15:22,41,somnus,effort
+201030,16:52,22,somnus,effort
+201030,17:45,21,somnus,effort
+201101,16:01,15,sean,TODO
+201102,10:11,12,somnus,effort
+201102,10:30,4,somnus,effort
+201102,10:34,2,somnus,effort
+201102,11:32,27,somnus,effort
+201102,12:12,35,somnus,effort
+201102,14:19,4,somnus,effort
+201102,14:28,21,somnus,effort
+201102,14:50,19,sean,TODO
+201102,15:10,17,somnus,effort
+201102,15:29,29,somnus,effort
+201102,15:58,47,somnus,effort
+201102,16:48,14,somnus,effort
+201103,10:00,49,somnus,effort voip
+201103,10:50,18,somnus,effort
+201103,11:38,89,somnus,effort
+201103,14:42,17,somnus,effort
+201103,15:01,31,somnus,effort
+201103,16:16,12,somnus,effort
+201103,16:35,9,somnus,effort
+201103,16:45,91,somnus,effort
+201105,09:30,10,somnus,cadal
+201105,10:00,60,somnus,cadal voip
+201104,11:11,14,somnus,dri light
+201104,11:43,4,somnus,dri light
+201104,12:02,46,somnus,dri light
+201104,14:00,18,somnus,dri voip 
+201104,14:17,47,somnus,dri light
+201104,15:04,48,somnus,dri light
+201104,15:56,66,somnus,dri light
+201104,17:08,10,somnus,dri light
+201104,17:19,63,somnus,dri light
+201105,10:08,30,somnus,dri all voip
+201105,10:48,102,somnus,dri all voip and light paper
+201105,12:30,5,somnus,light paper
+201105,13:31,149,somnus,dri all voip and light paper
+201105,15:59,48,somnus,light paper
+201105,16:49,37,somnus,light paper
+201105,17:42,8,somnus,light paper
+201105,17:52,88,somnus,light paper
+201105,22:50,62,somnus,light paper
+201106,09:04,47,somnus,light paper
+201106,10:30,8,somnus,effort
+201106,10:52,12,somnus,effort
+201106,11:04,6,somnus,effort
+201106,11:04,6,somnus,effort voip with Anne
+201106,12:05,4,somnus,effort
+201106,14:09,61,somnus,effort
+201106,15:35,39,somnus,effort
+201106,16:42,14,somnus,effort
+201106,17:12,26,somnus,effort
+201107,21:29,140,sean,track time light
+201108,17:29,29,jobs,all
+201108,18:29,15,jobs,all
+201109,09:00,11,somnus,effort voip with Anne
+201109,09:12,88,somnus,effort void with Anne
+201109,10:40,5,somnus,effort
+201109,11:38,13,somnus,effort
+201109,12:00,53,somnus,effort
+201109,14:47,77,somnus,effort
+201109,16:06,103,somnus,effort
+201109,17:53,11,somnus,effort
+201109,18:08,26,somnus,effort
+201110,11:02,58,somnus,effort
+201110,12:00,35,somnus,effort voip
+201110,12:41,20,somnus,effort
+201110,14:46,16,somnus,effort
+201110,15:10,53,somnus,effort
+201110,16:05,17,somnus,effort
+201110,16:27,72,somnus,effort
+201111,11:17,59,somnus,effort
+201111,14:24,8,somnus,effort
+201111,14:32,2,somnus,effort
+201111,14:35,11,somnus,effort
+201111,15:08,39,somnus,effort
+201111,15:49,15,somnus,effort
+201111,16:20,15,somnus,effort
+201111,16:34,2,somnus,effort
+201111,16:36,38,somnus,effort
+201111,17:19,38,somnus,effort
+201111,17:58,3,somnus,effort
+201112,09:43,73,somnus,effort
+201112,10:56,7,somnus,effort
+201112,11:11,4,somnus,effort
+201112,11:22,5,somnus,effort
+201112,11:36,13,somnus,effort
+201112,12:01,52,somnus,light paper
+201112,14:32,15,somnus,cadal paper
+201112,14:50,30,somnus,cadal paper
+201112,15:19,32,somnus,effort
+201112,15:54,15,somnus,effort
+201112,16:09,85,somnus,effort voip
+201112,17:40,19,somnus,light paper
+201112,19:12,73,somnus,light paper
+201112,22:48,17,somnus,light paper
+201113,09:00,45,somnus,light paper voip
+201113,10:27,10,somnus,light paper
+201113,10:46,50,somnus,light paper
+201113,11:37,26,somnus,effort
+201113,12:05,34,somnus,effort
+201113,12:40,11,somnus,effort
+201113,14:29,82,somnus,effort
+201113,15:55,50,somnus,effort
+201113,16:45,5,somnus,effort
+201113,16:52,17,somnus,effort
+201113,17:09,55,somnus,effort
+201114,11:30,4,somnus,effort
+201114,11:49,5,somnus,effort
+201115,00:16,89,sean,pi server
+201116,11:09,2,somnus,admin
+201116,11:23,52,somnus,effort
+201116,12:24,12,somnus,effort
+201116,14:05,21,somnus,effort
+201116,14:31,20,somnus,effort
+201116,14:55,39,somnus,effort
+201116,15:49,36,somnus,effort
+201116,16:28,55,somnus,effort
+201116,17:43,20,somnus,effort
+201117,11:02,6,somnus,effort
+201117,11:16,8,somnus,effort
+201117,11:30,21,somnus,effort
+201117,11:56,47,somnus,effort
+201117,12:44,12,somnus,effort
+201117,14:40,3,somnus,effort
+201117,14:50,7,somnus,effort
+201117,15:07,36,somnus,effort
+201117,15:44,20,somnus,effort
+201117,16:12,55,somnus,effort voip
+201117,17:07,48,somnus,effort
+201117,17:59,2,somnus,effort
+201118,11:03,108,somnus,effort
+201118,14:00,17,somnus,all group voip
+201118,14:18,42,somnus,group voip
+201118,15:00,148,somnus,effort
+201118,17:32,30,somnus,effort
+201118,18:01,30,somnus,effort light
+201119,09:59,8,somnus,admin
+201119,10:06,57,somnus,effort
+201119,11:09,45,somnus,effort
+201119,11:57,43,somnus,effort
+201119,13:31,89,somnus,imran voip
+201119,15:20,20,somnus,effort
+201119,15:39,100,somnus,effort
+201119,17:29,24,somnus,effort
+201119,17:53,12,somnus,effort
+201119,18:03,6,somnus,effort
+201119,22:24,10,somnus,effort
+201119,22:48,46,somnus,effort
+201120,09:43,126,somnus,effort
+201120,09:43,77,somnus,effort
+201120,11:00,49,somnus,effort voip
+201120,13:39,73,somnus,light paper
+201120,14:55,17,somnus,light paper
+201120,15:36,38,somnus,light paper
+201120,16:23,50,somnus,light paper
+201120,17:43,7,somnus,light paper
+201120,17:51,12,somnus,light paper
+201121,13:52,6,somnus,effort
+201121,14:00,4,somnus,effort
+201122,21:22,7,somnus,admin
+201123,11:30,110,somnus,light paper
+201123,14:00,9,somnus,raid
+201123,14:09,50,somnus,raid
+201123,15:13,5,somnus,light paper
+201123,15:20,109,somnus,light paper
+201123,17:18,46,somnus,light paper
+201124,11:02,68,somnus,light paper
+201124,12:20,10,somnus,light paper
+201124,12:31,27,somnus,light paper
+201124,15:01,50,somnus,light paper
+201124,15:56,36,somnus,light paper
+201124,16:46,82,somnus,light paper
+201125,10:53,28,somnus,light paper
+201125,11:40,41,somnus,light paper
+201125,13:45,4,somnus,light paper
+201125,13:50,12,somnus,moles talk
+201125,14:08,38,somnus,moles talk
+201125,14:46,6,somnus,light paper
+201125,14:55,3,somnus,light paper
+201125,14:59,64,somnus,anne voip
+201125,16:02,8,somnus,light paper
+201125,16:10,3,somnus,light paper
+201125,16:39,15,somnus,light paper
+201125,16:58,62,somnus,light paper
+201125,23:41,13,somnus,moles talk 
+201126,10:00,173,somnus,moles talk
+201126,13:00,60,somnus,moles voip 
+201126,14:09,8,somnus,light paper
+201126,15:54,154,somnus,light paper
+201126,20:10,10,somnus,light paper
+201127,09:00,70,somnus,cadal voip 
+201127,11:28,12,somnus,light paper
+201127,11:46,60,somnus,light paper
+201127,14:39,61,somnus,light paper
+201127,15:46,18,somnus,light paper
+201127,16:22,24,somnus,light paper
+201127,17:40,18,somnus,light paper
+201127,18:12,7,somnus,light paper
+201129,14:55,3,janus,email
+201130,10:07,6,janus,email
+201130,10:13,43,somnus,effort
+201130,11:15,34,somnus,effort
+201130,12:06,40,somnus,effort
+201130,12:55,47,somnus,effort
+201130,14:54,73,somnus,effort
+201130,16:38,110,somnus,effort
+201201,10:42,2,somnus,effort
+201201,10:59,38,somnus,effort
+201201,11:53,35,somnus,effort
+201201,11:30,20,somnus,effort
+201201,14:44,38,somnus,effort
+201201,15:44,11,somnus,effort
+201201,15:58,38,somnus,effort
+201201,16:38,28,somnus,effort
+201201,17:24,14,somnus,effort
+201201,17:48,25,somnus,effort
+201202,09:00,62,somnus,effort voip
+201202,10:36,84,somnus,effort
+201202,12:22,50,somnus,effort
+201202,13:12,6,somnus,effort
+201202,14:00,62,somnus,surrey dri voip
+201202,16:03,13,somnus,effort
+201202,17:17,50,somnus,effort
+201202,23:28,34,sean,todo
+201203,10:25,3,somnus,effort
+201203,10:41,20,somnus,effort
+201203,11:05,17,somnus,effort
+201203,11:24,50,somnus,effort
+201203,12:23,16,somnus,all dri voip
+201203,13:47,30,somnus,all dri voip
+201203,14:17,98,somnus,effort
+201203,16:16,3,somnus,effort
+201203,16:23,24,somnus,effort
+201203,17:09,46,somnus,effort
+201203,17:55,9,somnus,effort
+201203,23:30,10,somnus,effort
+201204,10:00,60,somnus,effort voip
+201204,11:21,5,somnus,admin
+201204,11:31,33,somnus,effort
+201204,12:37,48,somnus,effort
+201204,15:17,114,somnus,effort
+201204,17:17,71,somnus,effort
+201205,14:16,14,jobs,all
+201206,12:48,21,sean,TODO
+201207,00:57,5,janus,ipcc problems
+201207,10:59,23,somnus,light paper
+201207,11:34,13,somnus,light paper
+201207,11:53,11,somnus,light paper
+201207,12:22,5,somnus,light paper
+201207,14:03,33,somnus,light paper
+201207,15:03,9,somnus,light paper
+201207,15:17,11,somnus,light paper
+201207,15:31,52,somnus,light paper
+201207,16:29,5,somnus,light paper
+201207,16:56,25,somnus,light paper
+201208,10:00,35,somnus,light paper
+201208,10:45,2,somnus,light paper
+201208,11:49,68,somnus,light paper
+201208,12:59,29,somnus,light paper
+201208,15:25,4,somnus,light paper
+201208,15:30,5,somnus,light paper
+201208,15:35,27,somnus,light paper
+201208,16:05,3,somnus,light paper
+201208,16:31,46,somnus,light paper
+201208,17:21,10,somnus,light paper
+201208,17:40,34,somnus,light paper
+201209,10:19,5,somnus,light paper
+201209,10:40,4,somnus,light paper
+201209,10:54,2,somnus,light paper
+201209,11:00,69,somnus,light apper, anne voip
+201209,13:42,18,sean,paperpi
+201209,14:00,50,somnus,light paper
+201209,15:04,41,somnus,light paper
+201209,15:44,13,somnus,dri,reading
+201209,15:57,46,somnus,light paper
+201209,17:25,4,somnus,light paper
+201209,18:03,22,somnus,light paper
+201210,10:29,12,somnus,light paper
+201210,10:48,67,somnus,light paper
+201210,11:56,56,somnus,light paper
+201210,13:00,73,somnus,moles,talk
+201210,14:54,32,somnus,light paper
+201210,15:38,80,somnus,light paper
+201210,23:13,36,somnus,light paper
+201211,00:26,20,somnus,light paper,email
+201211,09:30,60,somnus,light paper,voip
+201211,10:58,55,somnus,light paper,code
+201211,11:54,14,somnus,dri,email
+201211,12:26,41,somnus,dri,email
+201211,14:47,74,somnus,light paper,code
+201211,16:01,6,somnus,light paper,admin
+201211,16:41,87,somnus,light paper,code
+201213,15:47,13,jobs,all
+201214,00:54,8,janus,sandy questions,code
+201214,01:03,201,janus,sandy questions,email
+201214,11:55,3,somnus,training,talk
+201214,12:07,15,somnus,training,talk
+201214,13:49,6,somnus,admin,pay
+201214,13:58,56,somnus,effort paper,code
+201214,15:07,44,somnus,effort paper,code
+201214,16:36,36,somnus,effort paper,code
+201214,17:53,9,somnus,effort paper,code
+201215,13:56,12,somnus,admin,computers
+201215,14:08,20,somnus,effort paper,code
+201215,14:32,3,somnus,effort paper,code
+201215,14:44,16,somnus,effort paper,code
+201215,14:59,41,somnus,effort paper,code
+201215,16:14,34,somnus,effort paper,code
+201215,16:53,2,somnus,effort paper,code
+201215,17:14,56,somnus,dri,talk prep
+201216,10:46,57,somnus,dri,talk prep
+201216,13:07,58,somnus,dri,talk prep
+201216,14:04,58,somnus,dri,group voip
+201216,15:15,45,somnus,general,anne voip
+201216,16:53,7,jobs,all
+201216,16:59,6,somnus,effort paper,writing
+201216,17:05,10,jobs,all
+201216,17:42,23,somnus,effort paper,merging documents
+201217,10:05,3,somnus,effort paper,merging documents
+201217,10:30,36,somnus,effort paper,merging documents
+201217,11:18,2,jobs,all,email
+201217,11:47,7,jobs,all,email
+201217,11:53,3,somnus,admin,email
+201217,11:56,35,somnus,effort paper,code
+201217,12:41,74,somnus,effort paper,code
+201217,15:20,2,somnus,dri,admin
+201217,15:26,4,somnus,effort paper,code
+201217,15:31,45,somnus,effort paper,code
+201217,16:37,28,somnus,effort paper,writing
+201217,17:06,11,somnus,effort paper,writing
+201217,17:20,17,somnus,effort paper,june talk prep
+201217,17:44,41,somnus,effort paper,talk prep
+201217,17:35,10,somnus,effort paper,talk prep
+201217,22:25,10,somnus,effort paper,talk prep
+201217,23:14,81,somnus,effort paper,talk prep
+201218,09:00,60,somnus,effort paper,voip
+201218,09:59,2,somnus,effort paper,admin
+201218,12:01,79,somnus,sgn,email
+201218,14:23,28,somnus,light paper,writing
+201218,15:01,4,somnus,learning,python
+201218,15:08,11,somnus,learning,python
+201218,15:19,17,jobs,all,apply
+201218,15:39,17,somnus,effort paper,writing
+201218,15:56,20,somnus,effort paper,writing
+201218,16:24,52,somnus,effort paper,code
+201219,17:19,3,somnus,admin,email
+201220,14:12,15,somnus,admin,unitemps
+201221,10:02,70,somnus,papers,voip
+201221,12:57,5,somnus,papers,email
+201221,15:42,27,somnus,effort paper,code
+201221,16:10,27,somnus,effort paper,figures
+201221,16:40,40,somnus,effort paper,figures
+201221,17:56,7,somnus,effort paper,figures
+201222,11:37,11,somnus,effort paper,code
+201222,11:50,36,somnus,effort paper,code
+201222,12:42,23,somnus,effort paper,code
+201222,14:48,69,jobs,all,apply
+201222,16:00,6,jobs,all,apply
+201222,17:27,34,somnus,effort paper,code
+201222,18:28,3,somnus,effort paper,code
+201222,18:50,13,somnus,effort paper,code
+201229,11:40,25,somnus,effort paper,email
+201229,12:10,3,somnus,effort paper admin
+201229,12:27,58,somnus,effort paper,writing
+201229,14:27,34,somnus,light paper,code
+201229,16:39,51,somnus,light paper,code
+201229,17:40,20,somnus,light paper,code
+201230,12:20,7,somnus,effort paper,email
+201230,12:28,56,jobs,all,interview prep
+201230,13:30,36,jobs,all,interview
+201230,16:33,26,somnus,light paper,code
+201230,17:09,22,somnus,light paper,code
+201231,11:16,42,somnus,light paper,code
+201231,12:09,16,somnus,light paper,code
+201231,12:26,6,somnus,light paper,code
+201231,14:02,19,somnus,light paper,voip
+201231,16:23,58,somnus,light paper,code
+201231,18:47,13,somnus,light paper,code
+210103,11:38,3,sean,track time, analyse
+210103,11:41,26,sean,todo
+210103,18:13,71,somnus,effort paper,code
+210103,19:29,16,somnus,effort paper,code
+210104,10:53,75,somnus,light paper,code
+210104,12:27,50,somnus,light paper,code
+210104,14:00,75,somnus,all,voip
+210104,15:49,70,somnus,light paper,code
+210104,17:10,23,somnus,light paper,code
+210104,23:59,53,somnus,light paper,writing talk
+210105,10:00,57,somnus,light paper,voip
+210105,11:41,16,somnus,light paper,writing talk
+210105,12:04,15,somnus,light paper,writing talk
+210105,12:47,17,somnus,light paper,writing talk
+210105,13:06,13,somnus,light paper,writing talk
+210105,13:25,12,somnus,light paper,writing talk
+210105,14:00,14,somnus,light paper,writing talk
+210105,14:49,22,jobs,all,interview prep
+210105,15:30,33,jobs,all,interview
+210105,16:29,38,somnus,light paper,voip
+210105,19:52,5,somnus,light paper,voip
+210105,20:26,7,sean,track time,code
+210105,23:10,108,somnus,light paper,writing talk
+210106,01:18,44,somnus,light paper,writing talk
+210106,09:00,17,somnus,light paper,voip
+210106,10:34,37,somnus,light paper,writing talk
+210106,11:11,21,somnus,light paper,writing talk
+210106,11:45,30,somnus,light paper,writing talk
+210106,12:35,20,somnus,light paper,voip
+210106,13:20,40,somnus,light paper,writing talk
+210106,14:00,60,somnus,dri,voip
+210106,15:52,8,somnus,dri,email
+210106,17:29,19,somnus,dri,email
+210107,09:20,20,somnus,dri,voip
+210107,09:54,10,somnus,dri,voip
+210107,10:22,29,somnus,dri,voip
+210107,11:06,71,somnus,dri,voip
+210107,13:34,39,somnus,dri,voip
+210107,14:38,83,somnus,dri,voip
+210107,16:58,39,jobs,all,apply
+210107,17:40,31,somnus,somnia,code
+210108,11:18,6,somnus,light,code
+210108,11:40,4,somnus,light paper,code
+210108,12:07,10,somnus,light paper,email
+210108,12:16,21,somnus,somnia,code
+210108,12:37,31,somnus,effort paper,maths
+210108,14:26,13,jobs,elvie,email
+210108,14:39,13,somnus,effort paper,code
+210108,15:02,4,somnus,somnia,code
+210108,15:38,7,jobs,elvie,email
+210108,15:52,15,somnus,somnia,code
+210108,16:35,11,somnus,somnia,code
+210108,17:05,58,somnus,somnia,code
+210110,19:46,8,jobs,elvie,interview prep
+210111,10:00,15,somnus,somnia,voip
+210111,11:49,7,somnus,somnia,code
+210111,11:59,61,somnus,somnia,code
+210111,13:28,4,somnus,somnia,code
+210111,13:38,16,somnus,effort paper,code
+210111,14:22,67,somnus,effort paper,code
+210111,15:48,47,somnus,effort paper,code
+210111,16:53,24,somnus,effort paper,code
+210111,17:23,223,jobs,elvie,code test
+210111,10:00,40,somnus,all,voip
+210112,12:58,32,somnus,cadal,maths
+210112,14:54,68,somnus,cadal,writing
+210112,16:21,54,somnus,cadal,code
+210112,17:16,53,somnus,cadal,code
+210112,11:00,32,somnus,cadal,voip
+210113,11:50,28,somnus,light paper,writing
+210113,12:31,13,somnus,light paper,code
+210113,12:51,2,somnus,light paper,code
+210113,13:07,50,somnus,light paper,code
+210113,14:27,76,somnus,light paper,code
+210113,15:47,15,somnus,light paper,code
+210113,16:01,30,somnus,all,voip
+210113,16:35,56,somnus,light paper,code
+210113,17:42,27,somnus,light paper,code
+210114,10:5,30,somnus,light paper,voip
+210114,10:35,20,somnus,light paper,code
+210114,11:54,71,somnus,cadal,code
+210114,14:22,49,somnus,cadal,code
+210114,15:30,42,somnus,cadal,code
+210114,16:13,4,somnus,cadal,voip
+210114,16:45,15,somnus,cadal,writing
+210114,17:02,26,somnus,cadal,code
+210114,17:29,65,somnus,cadal,code
+210115,10:00,24,somnus,light paper,voip
+210115,11:35,80,somnus,cadal,code
+210115,13:48,21,jobs,all,call
+210115,14:25,52,somnus,cadal,code
+210115,15:23,87,somnus,cadal,code
+210115,16:55,67,somnus,cadal,code
+210115,18:06,3,somnus,cadal,code
+210115,20:50,8,somnus,cadal,code
+210116,15:18,38,jobs,all,cv
+210118,10:00,18,somnus,light paper,voip
+210118,10:21,3,somnus,light paper,code
+210118,10:32,23,somnus,light paper,code
+210118,11:00,68,somnus,light paper,code
+210118,12:24,5,somnus,light paper,code
+210118,14:00,39,somnus,light paper,code
+210118,14:39,20,somnus,light paper,code
+210118,15:20,84,somnus,light paper,code
+210118,17:41,41,somnus,light paper,code
+210119,10:05,40,somnus,light paper,voip
+210119,11:33,22,somnus,light paper,code
+210119,12:07,25,somnus,light paper,code
+210119,12:36,3,somnus,light paper,code
+210119,12:38,2,jobs,all,call
+210119,12:40,36,somnus,light paper,code
+210119,13:44,13,somnus,light paper,code
+210119,13:58,36,somnus,light paper,code
+210119,15:00,12,jobs,all,call
+210119,15:13,17,sean,computer,config
+210119,16:17,51,somnus,cadal,code
+210119,17:09,18,somnus,cadal,code
+210119,17:48,13,somnus,cadal,code
+210120,10:35,2,somnus,cadal,code
+210120,11:00,13,somnus,light paper,voip
+210120,11:46,74,somnus,light paper,code
+210120,13:50,64,somnus,light paper,code
+210120,15:04,52,somnus,cadal,code
+210120,16:00,38,somnus,thalia,voip
+210120,16:55,43,somnus,cadal,code
+210120,17:42,39,somnus,cadal,code
+210120,23:54,4,somnus,cadal,email
+210121,10:04,6,somnus,light paper,code
+210121,10:24,33,somnus,light paper,voip
+210121,11:34,67,somnus,somnia,code
+210121,12:45,21,somnus,somnia,code
+210121,14:06,8,somnus,somnia,code
+210121,14:16,34,somnus,somnia,code
+210121,14:54,15,somnus,somnia,code
+210121,15:32,14,somnus,somnia,code
+210121,15:49,40,somnus,somnia,code
+210121,16:32,24,somnus,somnia,code
+210121,17:00,32,somnus,somnia,code
+210121,17:42,48,somnus,somnia,code
+210121,23:22,79,somnus,somnia,code
+210122,00:49,9,somnus,somnia,code
+210122,10:00,21,somnus,light paper,voip
+210122,11:07,27,somnus,somnia,code
+210122,11:39,6,somnus,light paper,code
+210122,11:48,51,somnus,somnia,code
+210122,12:44,7,somnus,somnia,code
+210122,13:01,56,somnus,somnia,code
+210122,14:42,22,somnus,cadal,code
+210122,15:03,19,somnus,light paper,code
+210122,15:31,43,somnus,cadal,code
+210122,16:20,13,somnus,cadal,code
+210122,16:43,25,somnus,cadal,code
+210122,17:16,30,somnus,cadal,code
+210122,17:47,2,somnus,cadal,code
+210125,10:00,17,somnus,light paper,voip
+210125,10:54,54,somnus,light paper,figures
+210125,11:53,95,somnus,light paper,figures
+210125,14:39,4,somnus,admin,pay
+210125,14:45,35,somnus,admin,setup
+210125,15:20,26,somnus,light paper,figures
+210125,15:58,42,somnus,thalia,voip
+210125,15:58,54,somnus,light paper,voip
+210125,17:50,17,somnus,light paper,planning
+210126,10:00,10,somnus,light paper,voip
+210126,11:21,17,somnus,light paper,figures
+210126,11:56,10,somnus,light paper,figures
+210126,12:20,24,somnus,light paper,figures
+210126,12:48,18,somnus,light paper,figures
+210126,13:50,33,somnus,light paper,figures
+210126,14:34,13,somnus,light paper,figures
+210126,15:16,9,somnus,light paper,figures
+210126,15:33,70,somnus,cadal,code
+210126,16:58,3,somnus,cadal,code
+210126,17:01,5,somnus,light paper,email
+210126,17:18,9,jobs,all,email
+210126,17:27,50,somnus,cadal,code
+210126,23:37,30,somnus,light paper,figures
+210127,10:08,15,somnus,light paper,voip
+210127,11:11,67,somnus,light paper,figures
+210127,12:17,56,somnus,light paper,figures
+210127,14:07,4,somnus,light paper,figures
+210127,14:30,23,somnus,light paper,figures
+210127,14:53,30,somnus,light paper,figures
+210127,15:55,58,somnus,light paper,code
+210127,17:21,57,somnus,light paper,code
+210127,18:27,17,somnus,light paper,code
+210127,18:51,8,somnus,light paper,code
+210128,00:21,36,somnus,light paper,code
+210128,10:08,5,somnus,light paper,code
+210128,10:30,8,somnus,handover,voip
+210128,10:39,40,somnus,handover,voip
+210128,12:01,69,somnus,light paper,code
+210128,14:30,17,somnus,cadal,code
+210128,14:46,77,somnus,cadal,code
+210128,16:14,8,somnus,light paper,figures
+210128,17:05,67,somnus,cadal,code
+210128,23:16,9,somnus,light paper,figures
+210128,23:27,2,somnus,light paper,figures
+210129,00:40,56,somnus,light paper,figures
+210129,01:43,9,somnus,light paper,figures
+210129,10:04,57,somnus,all,voip
+210129,11:44,73,somnus,light paper,code
+210129,13:49,18,somnus,light paper,figures
+210129,14:07,43,somnus,all,voip
+210129,14:57,35,somnus,handover,voip
+210129,16:28,8,somnus,light paper,code
+210129,16:44,39,somnus,light paper,figures
+210129,17:38,36,somnus,light paper,code
+210201,11:21,38,jobs,all,interview prep
+210201,12:01,76,jobs,all,interview
+210202,17:42,53,somnus,light paper,code
+210203,14:54,17,somnus,light paper,figures
+210203,18:09,2,somnus,light paper,figures
+210204,09:55,3,somnus,light paper,figures
+210204,10:02,5,somnus,light paper,figures
+210204,15:22,10,somnus,light paper,figures
+210204,15:33,17,somnus,admin,unitemps
+210204,17:20,2,sean,todo,monthly
+210204,17:25,49,sean,todo,daily
+210204,18:14,6,jobs,all,research
+210204,22:27,14,somnus,light paper,figures
+210204,22:40,7,jobs,all,interview prep
+210205,13:16,7,somnus,light paper,figures
+210205,14:44,10,somnus,light paper,figures
+210206,12:37,19,sean,todo,weekly
+210206,17:23,39,sean,todo,debugger
+210206,19:18,13,sean,todo,sync
+210206,20:18,2,sean,todo,sync
+210207,10:46,26,somnus,light paper,code
+210207,12:30,27,somnus,light paper,code
+210207,14:45,10,somnus,light paper,figures
+210207,17:15,39,sean,todo,plants
+210207,18:00,7,sean,todo,plants
+210208,11:17,3,somnus,light paper,figures
+210208,11:38,23,somnus,light paper,figures
+210208,17:33,37,somnus,light paper,email
+210209,09:13,61,somnus,light paper,voip
+210209,12:32,3,somnus,light paper,figures
+210209,14:07,20,sean,website,certificate renewal
+210209,14:36,22,somnus,light paper,code
+210209,15:19,34,jobs,all,cv
+210209,16:45,37,jobs,all,cv
+210209,17:27,14,somnus,light paper,figures
+210209,17:49,4,somnus,light paper,code
+210209,17:58,21,somnus,light paper,code
+210209,18:19,60,jobs,all,cv
+210209,22:58,13,somnus,light paper,figures
+210209,23:16,15,somnus,light paper,figures
+210210,10:07,20,somnus,light paper,figures
+210210,10:27,17,jobs,all,cv
+210210,10:44,46,somnus,cadal,code
+210210,11:41,16,somnus,cadal,code
+210210,13:06,40,somnus,light paper,figures
+210210,14:21,9,somnus,light paper,code
+210210,14:35,4,jobs,all,cv
+210210,14:39,10,somnus,cadal,code
+210210,14:55,19,jobs,all,cv
+210210,16:28,3,somnus,light paper,writing
+210210,16:55,21,somnus,light paper,writing
+210210,17:26,27,somnus,light paper,writing
+210211,12:12,25,somnus,light paper,writing
+210211,15:06,9,jobs,all,cv
+210211,15:22,74,jobs,all,cv
+210211,17:53,108,somnus,light paper,writing
+210211,19:41,16,somnus,light paper,email
+210211,23:28,16,somnus,light paper,code
+210212,09:54,7,somnus,light paper,code
+210212,10:02,6,somnus,light paper,code
+210212,10:30,59,jobs,all,cv
+210212,11:32,10,somnus,light paper,code
+210212,11:46,3,somnus,light paper,code
+210212,11:56,4,somnus,light paper,code
+210212,17:28,39,sean,itchhikers,review
+210212,18:15,49,sean,itchhikers,review
+210212,19:25,9,jobs,all,email
+210213,11:15,63,sean,itchhikers,review
+210213,12:49,22,sean,itchhikers,review
+210213,13:21,42,sean,itchhikers,review
+210213,14:03,9,sean,itchhikers,review
+210213,14:16,6,sean,itchhikers,review
+210213,15:00,58,sean,itchhikers,review
+210215,09:01,32,somnus,light paper,voip
+210215,10:57,30,sean,todo,calendar
+210215,14:35,10,sean,cv,writing
+210215,14:52,22,somnus,light paper,code
+210215,15:30,109,sean,dnd,char creation
+210216,10:54,55,somnus,light paper,code
+210216,12:46,3,somnus,light paper,code
+210216,13:44,4,sean,todo,today
+210216,13:47,57,jobs,all,linkedin
+210216,15:02,45,somnus,light paper,email
+210216,17:41,39,sean,todo,lock
+210218,12:36,15,jobs,all,email
+210218,17:00,17,jobs,all,apply
+210219,11:00,31,jobs,all,apply
+210219,11:38,9,jobs,all,cover letter
+210219,12:16,3,jobs,all,cover letter
+210219,15:46,51,jobs,all,call
+210220,15:17,29,jobs,all,apply
+210220,16:33,10,sean,todo,rsi
+210220,16:57,6,sean,todo,admin
+210220,17:42,12,sean,track time,code
+210222,18:42,35,somnus,light paper,email
+210223,14:16,22,jobs,floow,cover letter
+210223,15:10,51,jobs,floow,cover letter
+210223,17:26,27,jobs,floow,cover letter
+210223,18:00,8,jobs,floow,cover letter
+210224,11:47,24,jobs,floow,cover letter
+210224,15:32,60,jobs,floow,cover letter
+210224,16:53,43,jobs,floow,cover letter
+210224,18:35,18,jobs,floow,cover letter
+210224,23:14,11,jobs,floow,cover letter
+210225,15:30,11,somnus,light paper,code
+210225,16:47,10,somnus,light paper,code
+210225,17:20,35,somnus,light paper,code
+210225,20:25,33,jobs,floow,research
+210226,14:03,11,sudorn,cursas,planning
+210226,14:51,70,sudorn,cursas,research
+210226,16:06,203,sudorn,cursas,setup
+210226,19:50,12,sudorn,cursas,setup
+210226,20:51,101,sudorn,cursas,setup
+210226,22:34,106,sudorn,cursas,setup
+210227,00:32,31,sudorn,cursas,setup
+210227,09:13,12,sudorn,cursas,setup
+210227,23:24,23,sudorn,cursas,setup
+210228,18:06,21,sean,todo,monthly
+210301,12:16,13,somnus,light paper,figures
+210301,16:00,45,somnus,light paper,voip
+210301,16:45,6,somnus,light paper,code
+210301,16:52,13,somnus,light paper,email
+210301,17:07,10,somnus,light paper,code
+210301,17:18,2,somnus,light paper,code
+210301,18:55,23,sudorn,cursas,naming
+210301,19:18,22,sudorn,cursas,setup
+210302,00:18,3,sudorn,cursas,setup
+210302,13:44,29,somnus,light paper,code
+210302,15:55,146,somnus,light paper,code
+210302,23:09,24,somnus,light paper,code
+210303,14:31,36,somnus,light paper,code
+210303,15:47,43,somnus,light paper,email
+210303,17:10,111,sudorn,cursas,code
+210303,23:46,11,jobs,all,email
+210304,09:30,25,somnus,light paper,voip
+210304,09:56,35,somnus,light paper,code
+210304,10:41,40,somnus,light paper,code
+210304,15:31,31,sudorn,cursas,deploy
+210304,16:24,12,sudorn,cursas,deploy
+210304,16:36,3,somnus,light paper,email
+210304,16:39,6,sudorn,cursas,code
+210304,16:58,75,sudorn,cursas,code
+210304,22:00,180,sudorn,cursas,code
+210305,12:00,20,jobs,all,apply
+210305,15:25,5,sudorn,cursas,layout
+210305,15:31,50,sudorn,cursas,layout
+210305,16:47,52,sean,website,navbar
+210305,17:46,26,sean,website,deploy
+210305,19:04,36,sean,website,design
+210306,00:31,78,sudorn,cursas,navbar
+210306,13:20,3,sudorn,cursas,code
+210306,14:57,20,sudorn,cursas,code
+210306,16:10,29,sean,TODO,weekly
+210306,17:26,19,sean,TODO,mute mic
+210307,14:09,10,sudorn,cursas,layout
+210307,14:26,51,sudorn,cursas,layout
+210307,17:15,16,jobs,avado,cover letter
+210307,17:32,60,jobs,avado,cover letter
+210307,23:24,34,jobs,avado,cover letter
+210308,14:42,39,sean,website,layout
+210308,15:43,31,sean,website,layout
+210309,13:38,10,jobs,funding circle,interview prep
+210309,15:28,44,somnus,light paper,email
+210309,16:12,4,jobs,funding circle,interview prep
+210309,17:47,63,sean,maps,selection
+210310,09:34,140,somnus,light paper,voip
+210310,11:57,9,jobs,techmodal,interview prep
+210310,13:45,6,somnus,light paper,email
+210310,15:57,54,sean,website,design
+210311,10:48,50,jobs,techmodal,interview
+210311,11:40,39,jobs,funding circle,interview prep
+210311,13:40,7,jobs,funding circle,interview prep
+210311,13:52,57,jobs,funding circle,interview
+210311,14:48,5,somnus,admin,research fish
+210311,15:31,20,sudorn,cursas,research
+210311,15:50,18,sudorn,cursas,plotting
+210312,14:47,89,sudorn,cursas,code
+210312,16:10,60,sudorn,cursas,code
+210312,17:23,34,sudorn,cursas,code
+210313,14:53,7,sudorn,cursas,code
+210313,15:01,71,sudorn,cursas,research
+210313,16:16,16,sudorn,cursas,research
+210313,16:34,37,sudorn,cursas,code
+210313,17:53,160,sudorn,cursas,code
+210314,00:28,61,sudorn,cursas,code
+210314,09:56,11,sudorn,cursas,code
+210315,17:14,36,jobs,all,apply
+210315,23:20,82,sudorn,cursas,code
+210316,13:53,25,sudorn,cursas,code
+210316,17:33,7,sudorn,cursas,code
+210316,18:05,104,sudorn,cursas,code
+210316,21:55,35,sudorn,cursas,code
+210316,22:33,9,sudorn,cursas,code
+210316,23:03,23,sudorn,cursas,code
+210316,23:39,58,sudorn,cursas,code
+210317,12:34,7,jobs,all,email
+210317,12:40,13,jobs,funding circle,interview prep
+210318,11:29,19,jobs,all,apply
+210318,11:47,10,sudorn,cursas,code
+210318,11:57,10,jobs,all,call
+210318,13:04,39,sudorn,cursas,code
+210318,14:29,35,sudorn,cursas,code
+210318,15:19,42,sudorn,cursas,code
+210318,16:21,21,jobs,floow,interview prep
+210318,16:42,5,jobs,floow,interview prep
+210318,16:52,4,sudorn,cursas,code
+210319,11:36,20,jobs,all,email
+210319,14:21,87,sudorn,cursas,writing
+210319,18:17,28,sudorn,cursas,code
+210319,18:57,5,sudorn,cursas,code
+210319,19:03,19,sudorn,cursas,code
+210321,13:03,10,jobs,all,email
+210321,14:17,7,jobs,all,apply
+210321,14:32,9,jobs,ev,email
+210321,14:42,40,jobs,ev,email
+210321,15:54,60,sudorn,cursas,code
+210321,17:05,12,sudorn,cursas,code
+210321,19:22,43,sudorn,cursas,code
+210321,23:46,16,sudorn,cursas,code
+210322,15:12,31,sudorn,cursas,code
+210322,17:47,16,somnus,light paper,email
+210322,22:44,61,somnus,light paper,email
+210323,15:16,6,somnus,somnia,code
+210323,16:48,84,jobs,floow,turas
+210323,23:40,24,jobs,all,admin
+210324,15:01,5,jobs,cassini,email
+210324,15:38,105,jobs,floow,turas
+210324,17:54,60,jobs,floow,turas
+210324,21:11,46,jobs,floow,turas
+210324,22:19,103,jobs,floow,turas
+210325,09:10,50,jobs,elvie,interview prep
+210325,10:00,60,jobs,elvie,interview
+210325,11:40,20,jobs,ev,interview prep
+210325,12:00,83,jobs,ev,interview
+210325,15:05,75,jobs,floow,turas
+210325,16:21,55,jobs,floow,turas
+210326,11:00,120,jobs,funding circle,interview
+210326,13:20,5,jobs,ev,call
+210327,15:10,13,arke,start keychain,research
+210327,15:30,16,arke,start keychain,code
+210327,16:27,18,arke,start keychain,debug
+210327,17:41,8,arke,start keychain,debug
+210328,17:23,18,sean,todo,bluetooth
+210329,14:52,23,jobs,nomura,email
+210329,15:22,3,jobs,all,interview prep
+210329,15:26,6,jobs,all,interview prep
+210329,15:40,60,jobs,all,interview prep
+210329,16:49,5,sean,track time,data clean 
+210331,13:44,80,sudorn,cursas,code
+210331,15:20,57,sudorn,cursas,code
+210331,17:19,33,sudorn,cursas,code
+210331,18:05,5,jobs,all,email
+210401,14:55,8,sudorn,cursas,code
+210401,15:04,11,sudorn,cursas,code
+210401,15:35,37,sudorn,cursas,code
+210401,16:26,20,sudorn,cursas,code
+210402,11:50,16,sudorn,motum,naming
+210402,12:33,14,sudorn,motum,naming
+210402,15:41,48,sudorn,motum,setup
+210402,17:31,29,sudorn,motum,code
+210402,18:58,4,sudorn,motum,code
+210404,15:40,17,sean,track time,code
+210404,16:07,9,sean,track time,database clean
+210406,15:23,41,sudorn,cursas,linting
+210406,17:28,113,jobs,ev,code test
+210406,23:05,184,jobs,ev,code test
+210407,02:08,29,jobs,ev,code test
+210407,11:00,120,jobs,ev,interview
+210407,17:57,97,sudorn,motum,plotting
+210408,11:14,33,sudorn,motum,plotting
+210408,12:50,2,sudorn,motum,coding
+210408,13:42,65,sudorn,motum,plotting
+210408,15:55,16,jobs,all,apply
+210408,15:55,2,jobs,nomura,call
+210408,16:13,11,jobs,all,apply
+210408,16:30,7,jobs,all,apply
+210408,17:15,19,jobs,all,apply
+210408,18:32,5,jobs,all,apply
+210409,13:03,17,sean,art,drawing
+210409,13:20,11,jobs,all,apply
+210409,13:51,98,jobs,all,apply
+210409,15:40,10,jobs,nomura,call
+210409,16:45,27,jobs,all,apply
+210409,17:18,11,jobs,dfe,apply
+210409,17:31,50,jobs,dfe,apply
+210410,14:36,25,jobs,dfe,apply
+210410,15:05,33,jobs,dfe,apply
+210410,15:45,87,jobs,dfe,apply
+210410,17:30,38,jobs,dfe,apply
+210410,19:36,10,jobs,dfe,apply
+210410,23:45,20,jobs,dfe,apply
+210411,13:51,6,jobs,all,apply
+210411,13:56,10,jobs,admiral,apply
+210411,14:12,6,jobs,all,apply
+210411,14:17,13,jobs,rsa,apply
+210411,14:34,28,jobs,signifyd,apply
+210411,15:01,15,jobs,ordiance survey,apply
+210411,15:17,21,jobs,3ug,apply
+210412,12:38,4,jobs,all,apply
+210412,12:43,10,sean,website,coding
+210412,14:39,7,jobs,all,apply
+210412,14:55,7,sean,art,drawing
+210412,15:06,12,jobs,all,apply
+210412,15:29,10,jobs,all,email
+210412,15:38,17,somnus,light paper,coding
+210412,15:56,10,jobs,all,apply
+210412,18:01,8,somnus,light paper,email
+210413,10:17,13,jobs,nomura,interview prep
+210413,10:50,10,jobs,nomura,interview prep
+210413,11:00,77,jobs,nomura,interview
+210413,16:44,15,jobs,all,apply
+210414,14:10,19,jobs,all,apply
+210414,14:28,16,somnus,light paper,coding
+210414,15:02,43,somnus,light paper,voip
+210414,18:15,16,sean,art,drawing
+210415,11:58,14,jobs,all,apply
+210415,12:14,30,jobs,all,apply
+210415,13:53,27,jobs,admiral,test
+210415,16:05,11,sean,bike,search
+210415,17:16,3,jobs,dfe,test
+210417,12:21,51,jobs,dfe,test
+210419,12:29,24,arke,sync,research
+210419,14:30,73,sean,computer,hardware debug
+210419,16:12,56,sean,computer,hardware debug
+210419,18:28,6,jobs,all,apply
+210420,15:12,120,arke,syncthing,setup
+210420,18:18,12,jobs,all,email
+210421,12:18,3,jobs,all,apply
+210421,12:31,27,jobs,all,apply
+210421,12:57,12,jobs,hopper,apply
+210421,13:16,22,jobs,juniper,apply
+210421,13:38,30,jobs,all,apply
+210422,14:00,36,arke,website,ssl
+210422,14:35,52,arke,website,cgit
+210422,15:27,26,arke,website,mobile
+210422,15:57,7,jobs,all,cv
+210422,17:36,9,jobs,all,apply
+210422,17:47,32,jobs,bt,apply
+210424,11:02,18,jobs,all,apply
+210424,11:24,20,sean,motherboard,buy
+210425,10:48,27,arke,website,logs
+210425,12:10,40,jobs,3ug,interview prep
+210426,12:22,12,jobs,zuken,email
+210426,12:40,4,jobs,all,apply
+210426,12:46,12,jobs,surrey,research
+210426,13:58,20,jobs,zuken,call
+210426,14:19,12,jobs,zuken,research
+210426,14:38,20,jobs,zuken,research
+210426,15:18,19,jobs,zuken,email
+210426,17:17,19,jobs,surrey,email
+210426,18:48,4,jobs,all,apply
+210427,15:25,45,jobs,3ug,interview prep
+210427,16:25,37,jobs,3ug,interview prep
+210427,18:23,15,sean,learning,gitbug
+210428,11:12,50,jobs,3ug,interview
+210428,15:46,14,jobs,zuken,email
+210430,15:52,18,jobs,zuken,interview prep
+210501,11:18,10,jobs,all,apply
+210501,12:13,20,sean,track time,review
+210501,13:42,11,sean,track time,review
+210502,15:53,25,sean,todo,present
+210502,18:42,17,sean,todo,monthly
+210503,11:10,31,jobs,fatigue,research
+210503,18:18,18,sean,graduation,booking
+210504,13:38,5,jobs,all,apply
+210504,18:42,37,arke,syncthing,mail
+210505,11:09,7,jobs,abc,interview prep
+210505,12:56,64,jobs,abc,interview
+210505,16:19,62,arke,syncthing,mail
+210507,09:31,20,jobs,3ug,email
+210507,10:19,17,jobs,akriva,research
+210507,11:05,55,jobs,akriva,email
+210507,12:30,4,sean,health,order test
+210507,13:07,5,arke,syncthing,email
+210507,13:26,4,jobs,arkriva,email
+210507,15:15,11,arke,syncthing,email
+210507,15:32,19,arke,syncthing,email
+210507,16:58,2,arke,syncthing,email
+210507,17:19,7,jobs,all,emails
+210508,16:19,31,tempus,influx,code
+210508,16:49,11,tempus,influx,name
+210508,17:04,21,tempus,influx,github
+210508,17:33,20,tempus,influx,poetry
+210508,17:53,40,tempus,influx,git
+210508,21:14,25,tempus,influx,code
+210509,11:43,81,jobs,3ug,skydemon
+210509,14:24,6,tempus,influx,code
+210509,14:33,42,tempus,influx,code
+210509,15:19,46,tempus,influx,code
+210509,16:05,5,tempus,influx,poetry
+210509,16:37,2,temnus,influx,github
+210509,17:41,35,tempus,influx,github
+210509,19:32,43,tempus,influx,code
+210510,00:03,10,jobs,all,email
+210510,00:23,10,jobs,dfe,email
