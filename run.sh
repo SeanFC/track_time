@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python -m track_time $*
+python track_time/__main__.py $*
