@@ -153,7 +153,7 @@ if __name__ == "__main__":
     #raster_plot_last_time_period(7)
 
     #TODO: What about the projects for these
-    #TODO: These should be ables on the biggest groups worked on
+    #TODO: These should be able on the biggest groups worked on
     graph_month_in_group_split('sudorn', (fig, axes[1,0]))
-    graph_month_in_group_split('jobs', (fig, axes[1,1]))
+    graph_month_in_group_split('zentum', (fig, axes[1,1]))
     plt.show()
