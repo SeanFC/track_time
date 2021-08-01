@@ -23,7 +23,7 @@ def stacked_bar_chart(ax, in_data, bar_labels):
 
 def monthly_weekly_daily_plots(plot_type, figax=None):
     # Pull in project data
-    parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
+    parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
     proj_data['group_name'] = proj_data['group_name'].str.lower()
 
@@ -42,7 +42,7 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
         # Where to start from 
         #TODO: Make this an input option
         base_time = proj_data['date'][0]
-        base_time= pd.Timestamp(dt.date.today() - dt.timedelta(days=31))
+        base_time = pd.Timestamp(dt.date.today() - dt.timedelta(days=31))
 
         amount_of_days = (proj_data['date'].iloc[-1] - base_time).days + 1
         date_list = [ base_time + dt.timedelta(days=x) for x in range(amount_of_days) ]
@@ -83,12 +83,11 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
         ax.set_xticks(np.arange(0, 7))
         ax.set_ylabel('Time Spent (h)')
     
-    ax.legend()
+    ax.legend(loc='upper left')
     return ax
 
 def raster_plot_last_time_period(days_past=7):
     group = 'somnus'
-    import datetime as dt
 
     parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
@@ -124,24 +123,30 @@ def raster_plot_last_time_period(days_past=7):
 
     plt.show()
 
-def graph_month_in_group_split(cur_group, figax):
+def graph_month_in_group_split(cur_group, figax, project_name=None):
     if not figax:
         fig, ax = plt.subplots(1,1)
     else:
         fig, ax = figax
 
-    parser = lambda date: pd.datetime.strptime(date, '%y%m%d')
+    parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
-
     proj_data = proj_data[proj_data['group_name'] == cur_group]
 
-    column_name = 'extra' #project_name
+    min_date = dt.datetime.today() - dt.timedelta(days=31) #TOOD: 31 should change based on month
+    proj_data = proj_data[proj_data['date'] >= min_date]
+
+    # If we're given a project name then display the graph for the extra column, otherwise we show all the projects 
+    column_name = 'project_name'
+    if project_name is not None:
+        proj_data = proj_data[proj_data['project_name'] == project_name]
+        column_name='extra'
+
     task_names = proj_data[column_name].unique()
     task_times = [ proj_data[proj_data[column_name] == tn]['time_spent'].sum() for tn in task_names]
 
     ax.pie(task_times, labels=task_names)
     print(task_names)
-    print(proj_data[proj_data[column_name] == 'all'])
 
     ax.text(0.05, 0.95, cur_group, transform=ax.transAxes, bbox={'boxstyle':'square', 'facecolor':'white'})
 
@@ -154,6 +159,7 @@ if __name__ == "__main__":
 
     #TODO: What about the projects for these
     #TODO: These should be able on the biggest groups worked on
-    graph_month_in_group_split('sudorn', (fig, axes[1,0]))
-    graph_month_in_group_split('zentum', (fig, axes[1,1]))
+    #graph_month_in_group_split('sudorn', (fig, axes[1,0]))
+    graph_month_in_group_split('zentum', (fig, axes[1,0]))
+    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='seer')
     plt.show()

@@ -17,3 +17,4 @@ Alternatively, start a timer and when you're finished enter the project name and
 * [ ] General clean up of code with comments
 * [ ] Use proper date strings
 * [ ] Put into python setup tools package
+* [ ] Extra column for the specifics of what was being done
