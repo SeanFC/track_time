@@ -1,3 +1,5 @@
 #data
 #data_old
 #media
+#
+*__pycache__*
