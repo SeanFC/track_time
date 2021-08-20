@@ -150,7 +150,42 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
 
     ax.text(0.05, 0.95, cur_group, transform=ax.transAxes, bbox={'boxstyle':'square', 'facecolor':'white'})
 
+def create_daily_timesheet():
+    cur_group = 'zentum'
+
+    parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
+    proj_data = proj_data[proj_data['group_name'] == cur_group]
+
+    days_to_run = 60
+    min_date = dt.date.today() - dt.timedelta(days=days_to_run) 
+
+    for days_since_start in range(days_to_run):
+        cur_day = min_date + dt.timedelta(days=days_since_start) 
+        cur_data = proj_data[cur_day == proj_data['date'].apply(lambda x:x.date())]
+
+        seer_time = cur_data[cur_data['project_name'] == 'seer']['time_spent'].sum()
+        safeflight_time = cur_data[cur_data['project_name'] == 'safeflight']['time_spent'].sum()
+        all_time = cur_data['time_spent'].sum()
+
+        def print_hour(time_s):
+            if np.isnan(time_s):
+                return "00:00"
+            return str(int(time_s/60))+ ':' + str(int(np.mod(time_s, 60))) 
+        print(
+                cur_day, 
+                print_hour(all_time), 
+                print_hour(seer_time), 
+                print_hour(safeflight_time),
+                print_hour(8*60 * (seer_time/(safeflight_time + seer_time))),
+                print_hour(8*60 * (safeflight_time/(safeflight_time + seer_time)))
+                )
+
+
 if __name__ == "__main__":
+    create_daily_timesheet()
+    exit()
+
     fig, axes = plt.subplots(2, 2)
     monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]))
     monthly_weekly_daily_plots('monthly', (fig, axes[0, 1]))
