@@ -39,10 +39,9 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
                 for x in range(amount_of_months)
                 ]
     elif plot_type == "all_week" or plot_type == "daily":
-        # Where to start from 
         #TODO: Make this an input option
-        base_time = proj_data['date'][0]
-        base_time = pd.Timestamp(dt.date.today() - dt.timedelta(days=31))
+        # The first day is the first month before a month ago
+        base_time = pd.Timestamp(dt.date.today() - dt.timedelta(days=31 - dt.date.today().weekday() - 1))
 
         amount_of_days = (proj_data['date'].iloc[-1] - base_time).days + 1
         date_list = [ base_time + dt.timedelta(days=x) for x in range(amount_of_days) ]
@@ -67,10 +66,10 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
             proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group['group_name'] == proj_name]['time_spent'].to_numpy(dtype='int'))
 
     if plot_type == "monthly":
-        stacked_bar_chart(ax, proj_time_by_group, proj_names)
+        stacked_bar_chart(ax, proj_time_by_group/60, proj_names)
         ax.set_xticklabels(list(map(lambda x: x.strftime("%b"), date_list)))
         ax.set_xticks(range(len(date_list)))
-        ax.set_ylabel("Logged Time (m)")
+        ax.set_ylabel("Logged Time (h)")
     elif plot_type == "daily":
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
     elif plot_type == "all_week":
@@ -207,7 +206,8 @@ if __name__ == "__main__":
     #TODO: What about the projects for these
     #TODO: These should be able on the biggest groups worked on
     #graph_month_in_group_split('sudorn', (fig, axes[1,0]))
-    graph_month_in_group_split('zentum', (fig, axes[1,0]))
-    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='seer')
-    graph_month_in_group_split('zentum', (fig, axes[1,2]), project_name='linny')
+    graph_month_in_group_split('zentum', (fig, axes[0,2]))
+    graph_month_in_group_split('zentum', (fig, axes[1,0]), project_name='linny')
+    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='web tool')
+    graph_month_in_group_split('zentum', (fig, axes[1,2]), project_name='all')
     plt.show()
