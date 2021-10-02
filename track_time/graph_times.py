@@ -148,7 +148,10 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
     ax.pie(task_times, labels=task_names)
     print(task_names)
 
-    ax.text(0.05, 0.95, cur_group, transform=ax.transAxes, bbox={'boxstyle':'square', 'facecolor':'white'})
+    pie_graph_title = cur_group
+    if project_name is not None:
+        pie_graph_title += ' - ' + project_name
+    ax.text(0.05, 0.95, pie_graph_title, transform=ax.transAxes, bbox={'boxstyle':'square', 'facecolor':'white'})
 
 def create_daily_timesheet():
     cur_group = 'zentum'
@@ -160,33 +163,42 @@ def create_daily_timesheet():
     days_to_run = 60
     min_date = dt.date.today() - dt.timedelta(days=days_to_run) 
 
+    daily_table = pd.DataFrame(columns=['Date', 'Time Worked', 'SEER', 'Safeflight', 'SEER 8h', 'Safeflight 8h'])
+
     for days_since_start in range(days_to_run):
         cur_day = min_date + dt.timedelta(days=days_since_start) 
         cur_data = proj_data[cur_day == proj_data['date'].apply(lambda x:x.date())]
 
-        seer_time = cur_data[cur_data['project_name'] == 'seer']['time_spent'].sum()
-        safeflight_time = cur_data[cur_data['project_name'] == 'safeflight']['time_spent'].sum()
+        seer_time = cur_data[
+                (cur_data['project_name'] == 'seer') | 
+                (cur_data['project_name'] == 'web demo')
+                ]['time_spent'].sum()
+        safeflight_time = cur_data[
+                (cur_data['project_name'] == 'safeflight') |
+                (cur_data['project_name'] == 'linny')
+                ]['time_spent'].sum()
         all_time = cur_data['time_spent'].sum()
 
         def print_hour(time_s):
             if np.isnan(time_s):
                 return "00:00"
             return str(int(time_s/60))+ ':' + str(int(np.mod(time_s, 60))) 
-        print(
-                cur_day, 
-                print_hour(all_time), 
-                print_hour(seer_time), 
-                print_hour(safeflight_time),
-                print_hour(8*60 * (seer_time/(safeflight_time + seer_time))),
-                print_hour(8*60 * (safeflight_time/(safeflight_time + seer_time)))
-                )
+        daily_table = daily_table.append({
+           'Date' : cur_day, 
+           'Time Worked' : print_hour(all_time), 
+           'SEER' : print_hour(seer_time), 
+           'Safeflight'  : print_hour(safeflight_time),
+           'SEER 8h' : print_hour(8*60 * (seer_time/(safeflight_time + seer_time))),
+           'Safeflight 8h': print_hour(8*60 * (safeflight_time/(safeflight_time + seer_time)))
+                }, ignore_index=True)
+    print(daily_table)
 
 
 if __name__ == "__main__":
-    create_daily_timesheet()
-    exit()
+    #create_daily_timesheet()
+    #exit()
 
-    fig, axes = plt.subplots(2, 2)
+    fig, axes = plt.subplots(2, 3)
     monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]))
     monthly_weekly_daily_plots('monthly', (fig, axes[0, 1]))
     #monthly_weekly_daily_plots('monthly')
@@ -197,4 +209,5 @@ if __name__ == "__main__":
     #graph_month_in_group_split('sudorn', (fig, axes[1,0]))
     graph_month_in_group_split('zentum', (fig, axes[1,0]))
     graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='seer')
+    graph_month_in_group_split('zentum', (fig, axes[1,2]), project_name='linny')
     plt.show()
