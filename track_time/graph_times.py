@@ -159,7 +159,7 @@ def create_daily_timesheet():
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
     proj_data = proj_data[proj_data['group_name'] == cur_group]
 
-    days_to_run = 60
+    days_to_run = 28
     min_date = dt.date.today() - dt.timedelta(days=days_to_run) 
 
     daily_table = pd.DataFrame(columns=['Date', 'Time Worked', 'SEER', 'Safeflight', 'SEER 8h', 'Safeflight 8h'])
@@ -170,7 +170,7 @@ def create_daily_timesheet():
 
         seer_time = cur_data[
                 (cur_data['project_name'] == 'seer') | 
-                (cur_data['project_name'] == 'web demo')
+                (cur_data['project_name'] == 'web tool')
                 ]['time_spent'].sum()
         safeflight_time = cur_data[
                 (cur_data['project_name'] == 'safeflight') |
