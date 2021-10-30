@@ -234,11 +234,19 @@ if __name__ == "__main__":
             'detail_level': 'project_name',
             'higher_level_selection_filter':'zentum'
     }
+    personal_filter = {
+            'start_time': None,
+            'detail_level': 'group_name',
+            'higher_level_selection_filter':None
+    }
+
+    current_filter = zentum_filter
+    #current_filter = personal_filter 
 
 
     axes[0,0].set_title('All time')
-    monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]), **zentum_filter)
-    monthly_weekly_daily_plots('monthly', (fig, axes[1, 0]), **zentum_filter)
+    monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]), **current_filter)
+    monthly_weekly_daily_plots('monthly', (fig, axes[1, 0]), **current_filter)
     #monthly_weekly_daily_plots('monthly')
     #raster_plot_last_time_period(7)
 
