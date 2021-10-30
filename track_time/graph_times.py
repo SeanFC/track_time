@@ -2,6 +2,7 @@ import settings
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 import datetime as dt
 
 def map_bin(x, bins, base):
@@ -14,21 +15,41 @@ def map_bin(x, bins, base):
 def stacked_bar_chart(ax, in_data, bar_labels):
     stack_data = np.cumsum(in_data, axis=0)
     n_proj, n_group = stack_data.shape
+   
+    # Change times to % relative of longest bar
+    max_time = stack_data.max()
+    stack_data /= max_time/100
+    in_data /= max_time/100
 
     stack_data = np.vstack((np.zeros((1, n_group)), stack_data))
-
     for proj_idx in range(n_proj):
         ax.bar(np.arange(n_group), in_data[proj_idx, :], bottom=stack_data[proj_idx, :], label=bar_labels[proj_idx])
 
 
-def monthly_weekly_daily_plots(plot_type, figax=None):
+DETAIL_LEVELS = ['group_name', 'project_name', 'extra']
+
+def monthly_weekly_daily_plots(plot_type, figax=None, start_time=None, detail_level='group_name', higher_level_selection_filter=None):
     # Pull in project data
     parser = lambda date: dt.datetime.strptime(date, '%y%m%d')
     proj_data = pd.read_csv(settings.data_file_path, parse_dates=['date'], date_parser=parser)
-    proj_data['group_name'] = proj_data['group_name'].str.lower()
+
+    # Restrict to starting at the start time
+    if start_time is not None:
+        proj_data = proj_data[proj_data['date'] >= pd.Timestamp(start_time)]
+
+    # Filter none relevant selections
+    if detail_level != DETAIL_LEVELS[0] and higher_level_selection_filter is not None:
+        higher_level_index = DETAIL_LEVELS.index(detail_level) - 1
+        proj_data = proj_data[proj_data[DETAIL_LEVELS[higher_level_index]] == higher_level_selection_filter]
+
+    # Turn all the detail levels to lower case
+    for level in DETAIL_LEVELS:
+        proj_data[level] = proj_data[level].str.lower()
+
+    proj_data = proj_data.sort_values(by='date')
 
     if plot_type == "monthly":
-        base_time = dt.datetime(year = proj_data['date'][0].year, month = proj_data['date'][0].month, day=1)
+        base_time = dt.datetime(year = proj_data['date'].iloc[0].year, month = proj_data['date'].iloc[0].month, day=1)
 
         amount_of_months = int((proj_data['date'].iloc[-1] - base_time).days/31 + 2) #TODO: Unsure why +2 needed here
         date_list = [
@@ -54,7 +75,7 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
     else:
         fig, ax = figax
 
-    proj_names = proj_data['group_name'].unique()
+    proj_names = proj_data[detail_level].unique()
     proj_time_by_group = np.zeros((len(proj_names), len(date_list)))
 
     proj_data['Grouping'] = proj_data['date'].apply(lambda x, bins: map_bin(x,bins,base_time), bins=[(x-base_time).total_seconds() for x in date_list])
@@ -63,13 +84,12 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
         cur_group = g[1]
         time_per_proj = {}
         for proj_idx, proj_name in enumerate(proj_names):
-            proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group['group_name'] == proj_name]['time_spent'].to_numpy(dtype='int'))
+            proj_time_by_group[proj_idx, g[0]-1] = np.sum(cur_group[cur_group[detail_level] == proj_name]['time_spent'].to_numpy(dtype='int'))
 
     if plot_type == "monthly":
         stacked_bar_chart(ax, proj_time_by_group/60, proj_names)
+        ax.xaxis.set_major_locator(mticker.FixedLocator(range(len(date_list))))
         ax.set_xticklabels(list(map(lambda x: x.strftime("%b"), date_list)))
-        ax.set_xticks(range(len(date_list)))
-        ax.set_ylabel("Logged Time (h)")
     elif plot_type == "daily":
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
     elif plot_type == "all_week":
@@ -78,9 +98,11 @@ def monthly_weekly_daily_plots(plot_type, figax=None):
         for i in np.arange(7):
             weekly_proj_times[:, i] = np.sum(proj_time_by_group[:, i::7], axis=1)/proj_time_by_group.shape[1]*7/60
         stacked_bar_chart(ax, weekly_proj_times[:, [-1, *(np.arange(6))]], proj_names)
-        ax.set_xticklabels(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'])
-        ax.set_xticks(np.arange(0, 7))
-        ax.set_ylabel('Time Spent (h)')
+
+        ax.xaxis.set_major_locator(mticker.FixedLocator(np.arange(0, 7)))
+        ax.set_xticklabels(['Mon', 'Tues', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'])
+
+    ax.set_ylabel('Time Spent (% Rel to Max)')
     
     ax.legend(loc='upper left')
     return ax
@@ -145,7 +167,6 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
     task_times = [ proj_data[proj_data[column_name] == tn]['time_spent'].sum() for tn in task_names]
 
     ax.pie(task_times, labels=task_names)
-    print(task_names)
 
     pie_graph_title = cur_group
     if project_name is not None:
@@ -163,14 +184,14 @@ def create_daily_timesheet():
     min_date = dt.date.today() - dt.timedelta(days=days_to_run) 
 
     daily_table = pd.DataFrame(columns=['Date', 'Time Worked', 'SEER', 'Safeflight', 'SEER 8h', 'Safeflight 8h'])
-
-    for days_since_start in range(days_to_run):
+    for days_since_start in range(days_to_run+1):
         cur_day = min_date + dt.timedelta(days=days_since_start) 
         cur_data = proj_data[cur_day == proj_data['date'].apply(lambda x:x.date())]
 
         seer_time = cur_data[
                 (cur_data['project_name'] == 'seer') | 
-                (cur_data['project_name'] == 'web tool')
+                (cur_data['project_name'] == 'web tool') |
+                (cur_data['project_name'] == 'rie')
                 ]['time_spent'].sum()
         safeflight_time = cur_data[
                 (cur_data['project_name'] == 'safeflight') |
@@ -182,13 +203,22 @@ def create_daily_timesheet():
             if np.isnan(time_s):
                 return "00:00"
             return str(int(time_s/60))+ ':' + str(int(np.mod(time_s, 60))) 
+       
+        ratio_denominator = safeflight_time + seer_time
+        if ratio_denominator != 0:
+            ratio_seer_time = seer_time/ratio_denominator
+            ratio_safeflight_time = safeflight_time/ratio_denominator
+        else:
+            ratio_seer_time = 0
+            ratio_safeflight_time = 0
+
         daily_table = daily_table.append({
            'Date' : cur_day, 
            'Time Worked' : print_hour(all_time), 
            'SEER' : print_hour(seer_time), 
            'Safeflight'  : print_hour(safeflight_time),
-           'SEER 8h' : print_hour(8*60 * (seer_time/(safeflight_time + seer_time))),
-           'Safeflight 8h': print_hour(8*60 * (safeflight_time/(safeflight_time + seer_time)))
+           'SEER 8h' : print_hour(8*60 * ratio_seer_time),
+           'Safeflight 8h': print_hour(8*60 * ratio_safeflight_time)
                 }, ignore_index=True)
     print(daily_table)
 
@@ -198,16 +228,27 @@ if __name__ == "__main__":
     #exit()
 
     fig, axes = plt.subplots(2, 3)
-    monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]))
-    monthly_weekly_daily_plots('monthly', (fig, axes[0, 1]))
+
+    zentum_filter = {
+            'start_time': dt.date(year=2021, month=6, day=1),
+            'detail_level': 'project_name',
+            'higher_level_selection_filter':'zentum'
+    }
+
+
+    axes[0,0].set_title('All time')
+    monthly_weekly_daily_plots('all_week', (fig, axes[0, 0]), **zentum_filter)
+    monthly_weekly_daily_plots('monthly', (fig, axes[1, 0]), **zentum_filter)
     #monthly_weekly_daily_plots('monthly')
     #raster_plot_last_time_period(7)
 
-    #TODO: What about the projects for these
     #TODO: These should be able on the biggest groups worked on
-    #graph_month_in_group_split('sudorn', (fig, axes[1,0]))
-    graph_month_in_group_split('zentum', (fig, axes[0,2]))
-    graph_month_in_group_split('zentum', (fig, axes[1,0]), project_name='linny')
-    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='web tool')
-    graph_month_in_group_split('zentum', (fig, axes[1,2]), project_name='all')
+    axes[0,1].set_title('Last Month')
+    axes[0,2].set_title('Last Month')
+    graph_month_in_group_split('zentum', (fig, axes[0,1]))
+    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='linny')
+    graph_month_in_group_split('zentum', (fig, axes[0,2]), project_name='web tool')
+    graph_month_in_group_split('zentum', (fig, axes[1,2]), project_name='safeflight')
     plt.show()
+
+    #TODO: Make function to go through data and pick out input errors
