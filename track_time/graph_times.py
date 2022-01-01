@@ -165,6 +165,7 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
 
     task_names = proj_data[column_name].unique()
     task_times = [ proj_data[proj_data[column_name] == tn]['time_spent'].sum() for tn in task_names]
+    print(task_names)
 
     ax.pie(task_times, labels=task_names)
 
@@ -254,8 +255,8 @@ if __name__ == "__main__":
     axes[0,1].set_title('Last Month')
     axes[0,2].set_title('Last Month')
     graph_month_in_group_split('zentum', (fig, axes[0,1]))
-    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='linny')
-    graph_month_in_group_split('zentum', (fig, axes[0,2]), project_name='web tool')
+    graph_month_in_group_split('zentum', (fig, axes[1,1]), project_name='all')
+    graph_month_in_group_split('zentum', (fig, axes[0,2]), project_name='admin')
     graph_month_in_group_split('zentum', (fig, axes[1,2]), project_name='safeflight')
     plt.show()
 
