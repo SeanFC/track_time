@@ -318,7 +318,12 @@ def create_daily_timesheet():
             },
             ignore_index=True,
         )
-    print(daily_table)
+    with pd.option_context('display.max_rows', None,
+            'display.max_columns', None,
+            'display.width', 1000,
+            'display.precision', 3,
+            'display.colheader_justify', 'center'):
+        daily_table.T.to_csv('/tmp/cur.csv')
 
 
 def create_time_of_day_plot(start_time):
@@ -362,28 +367,28 @@ def create_time_of_day_plot(start_time):
 
     plt.show()
 
+ZENTUM_FILTER = {
+    "start_time": dt.date(year=2021, month=6, day=1),
+    "detail_level": "project_name",
+    "higher_level_selection_filter": "zentum",
+}
+PERSONAL_FILTER = {
+    "start_time": None,
+    "detail_level": "group_name",
+    "higher_level_selection_filter": None,
+}
 
 if __name__ == "__main__":
+    current_filter = ZENTUM_FILTER
+    # current_filter = PERSONAL_FILTER
 
-    # create_daily_timesheet()
-    # exit()
+    #create_daily_timesheet()
+    #exit()
 
-    zentum_filter = {
-        "start_time": dt.date(year=2021, month=6, day=1),
-        "detail_level": "project_name",
-        "higher_level_selection_filter": "zentum",
-    }
-    personal_filter = {
-        "start_time": None,
-        "detail_level": "group_name",
-        "higher_level_selection_filter": None,
-    }
-
-    current_filter = zentum_filter
-    # current_filter = personal_filter
-
-    create_time_of_day_plot(current_filter["start_time"])
-    exit()
+    
+    
+    #create_time_of_day_plot(current_filter["start_time"])
+    #exit()
 
     fig, axes = plt.subplots(2, 3)
     axes[0, 0].set_title("All time")
@@ -397,8 +402,8 @@ if __name__ == "__main__":
     axes[0, 2].set_title("Last Month")
     graph_month_in_group_split("zentum", (fig, axes[0, 1]))
     graph_month_in_group_split("zentum", (fig, axes[1, 1]), project_name="all")
-    graph_month_in_group_split("zentum", (fig, axes[0, 2]), project_name="via")
-    graph_month_in_group_split("zentum", (fig, axes[1, 2]), project_name="safeflight")
+    graph_month_in_group_split("zentum", (fig, axes[0, 2]), project_name="alias")
+    graph_month_in_group_split("zentum", (fig, axes[1, 2]), project_name="flyte")
     plt.show()
 
     # TODO: Make function to go through data and pick out input errors
