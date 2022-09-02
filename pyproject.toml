@@ -5,12 +5,16 @@ description = "Track your time spent on different projects"
 authors = ["Sean F. Cleator <seancleator@hotmail.co.uk>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.6.2"
 matplotlib = "^3.4.2"
 pandas = "^1.2.4"
 numpy = "^1.20.3"
 
 [tool.poetry.dev-dependencies]
+black = "^22.6.0"
+
+[tool.black]
+line-length = 120
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

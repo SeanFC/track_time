@@ -367,25 +367,23 @@ def create_time_of_day_plot(start_time):
 
     plt.show()
 
-ZENTUM_FILTER = {
-    "start_time": dt.date(year=2021, month=6, day=1),
-    "detail_level": "project_name",
-    "higher_level_selection_filter": "zentum",
-}
-PERSONAL_FILTER = {
-    "start_time": None,
-    "detail_level": "group_name",
-    "higher_level_selection_filter": None,
-}
-
 if __name__ == "__main__":
+    ZENTUM_FILTER = {
+        "start_time": dt.date(year=2021, month=6, day=1),
+        "detail_level": "project_name",
+        "higher_level_selection_filter": "zentum",
+    }
+    PERSONAL_FILTER = {
+        "start_time": None,
+        "detail_level": "group_name",
+        "higher_level_selection_filter": None,
+    }
+
     current_filter = ZENTUM_FILTER
     # current_filter = PERSONAL_FILTER
 
     #create_daily_timesheet()
     #exit()
-
-    
     
     #create_time_of_day_plot(current_filter["start_time"])
     #exit()

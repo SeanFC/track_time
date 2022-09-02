@@ -1,5 +1,4 @@
-#!/bin/python3
-
+"""Add data to the data base"""
 from os import system, path, makedirs
 from datetime import datetime, timedelta
 from time import sleep
