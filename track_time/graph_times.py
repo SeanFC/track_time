@@ -238,10 +238,8 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
 
     task_names = proj_data[column_name].unique()
     task_times = [
-        proj_data[proj_data[column_name] == tn]["time_spent"].sum() for tn in task_names
+        proj_data[proj_data[column_name] == tn]["time_spent"].astype(float).sum() for tn in task_names
     ]
-    print(task_names)
-
     ax.pie(task_times, labels=task_names)
 
     pie_graph_title = cur_group
@@ -265,7 +263,7 @@ def create_daily_timesheet():
     )
     proj_data = proj_data[proj_data["group_name"] == cur_group]
 
-    days_to_run = 70
+    days_to_run = 150
     min_date = dt.date.today() - dt.timedelta(days=days_to_run)
 
     daily_table = pd.DataFrame(
@@ -287,12 +285,14 @@ def create_daily_timesheet():
             | (cur_data["project_name"] == "web tool")
             | (cur_data["project_name"] == "rie")
             | (cur_data["project_name"] == "via")
-        ]["time_spent"].sum()
+        ]["time_spent"].astype(float).sum()
         safeflight_time = cur_data[
             (cur_data["project_name"] == "safeflight")
+            | (cur_data["project_name"] == "alias")
+            | (cur_data["project_name"] == "flyte")
             | (cur_data["project_name"] == "linny")
-        ]["time_spent"].sum()
-        all_time = cur_data["time_spent"].sum()
+        ]["time_spent"].astype(float).sum()
+        all_time = cur_data["time_spent"].astype(float).sum()
 
         def print_hour(time_s):
             if np.isnan(time_s):
@@ -368,8 +368,10 @@ def create_time_of_day_plot(start_time):
     plt.show()
 
 if __name__ == "__main__":
+    #TODO: This is just of the last year
     ZENTUM_FILTER = {
-        "start_time": dt.date(year=2021, month=6, day=1),
+        #"start_time": dt.date(year=2021, month=6, day=1),
+        "start_time": dt.date.today() - dt.timedelta(days=365),
         "detail_level": "project_name",
         "higher_level_selection_filter": "zentum",
     }
@@ -395,12 +397,12 @@ if __name__ == "__main__":
     # monthly_weekly_daily_plots('monthly')
     # raster_plot_last_time_period(7)
 
-    # TODO: These should be able on the biggest groups worked on
+    # TODO: These should be on the biggest groups worked on
     axes[0, 1].set_title("Last Month")
     axes[0, 2].set_title("Last Month")
     graph_month_in_group_split("zentum", (fig, axes[0, 1]))
     graph_month_in_group_split("zentum", (fig, axes[1, 1]), project_name="all")
-    graph_month_in_group_split("zentum", (fig, axes[0, 2]), project_name="alias")
+    graph_month_in_group_split("zentum", (fig, axes[0, 2]), project_name="perception")
     graph_month_in_group_split("zentum", (fig, axes[1, 2]), project_name="flyte")
     plt.show()
 
