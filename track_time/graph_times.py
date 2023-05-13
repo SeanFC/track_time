@@ -291,6 +291,7 @@ def create_daily_timesheet():
             | (cur_data["project_name"] == "alias")
             | (cur_data["project_name"] == "flyte")
             | (cur_data["project_name"] == "linny")
+            | (cur_data["project_name"] == "all")
         ]["time_spent"].astype(float).sum()
         all_time = cur_data["time_spent"].astype(float).sum()
 
@@ -384,8 +385,8 @@ if __name__ == "__main__":
     current_filter = ZENTUM_FILTER
     # current_filter = PERSONAL_FILTER
 
-    #create_daily_timesheet()
-    #exit()
+    create_daily_timesheet()
+    exit()
     
     #create_time_of_day_plot(current_filter["start_time"])
     #exit()
@@ -402,7 +403,7 @@ if __name__ == "__main__":
     axes[0, 2].set_title("Last Month")
     graph_month_in_group_split("zentum", (fig, axes[0, 1]))
     graph_month_in_group_split("zentum", (fig, axes[1, 1]), project_name="all")
-    graph_month_in_group_split("zentum", (fig, axes[0, 2]), project_name="perception")
+    graph_month_in_group_split("zentum", (fig, axes[0, 2]), project_name="dynamo")
     graph_month_in_group_split("zentum", (fig, axes[1, 2]), project_name="flyte")
     plt.show()
 
