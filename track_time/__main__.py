@@ -1,6 +1,8 @@
 """The main entry point"""
 import argparse
+from datetime import date, timedelta
 from os import system
+from pathlib import Path
 
 from track_time.repos import TimesRepo
 from track_time.services import (
@@ -9,7 +11,23 @@ from track_time.services import (
     show_overall_dashboard,
     show_time_of_day_plot,
 )
-from track_time.settings import data_file_path
+
+data_file_path = Path.home() / "projects" / "track_time" / "data" / "tt_db.csv"
+
+ZENTUM_FILTER = {
+    "start_time": date.today() - timedelta(days=365),
+    "detail_level": "project_name",
+    "higher_level_selection_filter": "zentum",
+}
+PERSONAL_FILTER = {
+    "start_time": None,
+    "detail_level": "group_name",
+    "higher_level_selection_filter": None,
+}
+
+current_filter = ZENTUM_FILTER
+# current_filter = PERSONAL_FILTER
+
 
 if __name__ == "__main__":
     # Set up the possible arguments to the command line
@@ -27,19 +45,6 @@ if __name__ == "__main__":
     elif args.dashboard:
         # create_zentum_spreadsheet(repo)
         # show_time_of_day_plot(repo)
-        ZENTUM_FILTER = {
-            "start_time": date.today() - timedelta(days=365),
-            "detail_level": "project_name",
-            "higher_level_selection_filter": "zentum",
-        }
-        PERSONAL_FILTER = {
-            "start_time": None,
-            "detail_level": "group_name",
-            "higher_level_selection_filter": None,
-        }
-
-        current_filter = ZENTUM_FILTER
-        # current_filter = PERSONAL_FILTER
 
         show_overall_dashboard(repo, current_filter)
     else:
