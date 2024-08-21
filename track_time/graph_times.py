@@ -54,7 +54,9 @@ def monthly_weekly_daily_plots(
     # Filter none relevant selections
     if detail_level != DETAIL_LEVELS[0] and higher_level_selection_filter is not None:
         higher_level_index = DETAIL_LEVELS.index(detail_level) - 1
-        proj_data = proj_data[proj_data[DETAIL_LEVELS[higher_level_index]] == higher_level_selection_filter]
+        proj_data = proj_data[
+            proj_data[DETAIL_LEVELS[higher_level_index]] == higher_level_selection_filter
+        ]
 
     # Turn all the detail levels to lower case
     for level in DETAIL_LEVELS:
@@ -87,7 +89,9 @@ def monthly_weekly_daily_plots(
         ]
     elif plot_type == "all_week" or plot_type == "daily":
         # The first day is the first month before a month ago
-        base_time = pd.Timestamp(dt.date.today() - dt.timedelta(days=31 - dt.date.today().weekday() - 1))
+        base_time = pd.Timestamp(
+            dt.date.today() - dt.timedelta(days=31 - dt.date.today().weekday() - 1)
+        )
 
         amount_of_days = (proj_data["date"].iloc[-1] - base_time).days + 1
         date_list = [base_time + dt.timedelta(days=x) for x in range(amount_of_days)]
@@ -214,7 +218,10 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
         column_name = "extra"
 
     task_names = proj_data[column_name].unique()
-    task_times = [proj_data[proj_data[column_name] == tn]["time_spent"].astype(float).sum() for tn in task_names]
+    task_times = [
+        proj_data[proj_data[column_name] == tn]["time_spent"].astype(float).sum()
+        for tn in task_names
+    ]
     ax.pie(task_times, labels=task_names)
 
     pie_graph_title = cur_group

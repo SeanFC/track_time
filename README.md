@@ -17,18 +17,22 @@ Install the development environment with
 ```
 poetry install --with dev
 ```
+lint with
+```
+poetry run scripts/lint
+```
 
 ## TODO
 * [ ] Dmenu/sxhkd start and stop
 * [ ] Daemon process that can be started and stopped
 * [ ] Integrate with panel bar
 * [ ] Android app 
-* [ ] Add additional flags (meeting, travel, light) 
-* [ ] Plot additional flags (meeting, travel, light) 
+* [-] Add additional flags (meeting, travel, light) 
+* [-] Plot additional flags (meeting, travel, light) 
 * [ ] Use group and project name constancy (a project is part of a group)
 * [ ] Monthly usage panel (are you on track to hit averages)
 * [ ] General clean up of code with comments
-* [ ] Use proper date strings
-* [ ] Put into python setup tools package
+* [x] Use proper date strings
+* [x] Put into python setup tools package
 * [ ] Extra column for the specifics of what was being done
 * [ ] Change to be based around new `tt -u` usage
