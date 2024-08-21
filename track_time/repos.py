@@ -3,9 +3,6 @@ from pathlib import Path
 
 import pandas as pd
 
-from track_time.settings import base_path, data_file_path
-
-
 class TimesRepo:
     def __init__(self, file_path: Path):
         self._file_path = file_path

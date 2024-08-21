@@ -5,14 +5,15 @@ description = "Track your time spent on different projects"
 authors = ["Sean F. Cleator <seancleator@hotmail.co.uk>"]
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.12"
 matplotlib = "*"
 pandas = "*"
 numpy = "*"
 
 [tool.poetry.group.dev.dependencies]
-autoflake = "^2.3.1"
-black = "^22.6.0"
+autoflake = "*"
+black = "*"
+pytest = "*"
 
 [tool.black]
 line-length = 100
