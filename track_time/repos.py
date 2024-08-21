@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
+
 class TimesRepo:
     def __init__(self, file_path: Path):
         self._file_path = file_path

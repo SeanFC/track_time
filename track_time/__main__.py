@@ -1,4 +1,5 @@
 """The main entry point"""
+
 import argparse
 from datetime import date, timedelta
 from os import system
@@ -12,7 +13,7 @@ from track_time.services import (
     show_time_of_day_plot,
 )
 
-data_file_path = Path.home() / "projects" / "track_time" / "data" / "tt_db.csv"
+DATA_FILE_PATH = Path.home() / "projects" / "track_time" / "data" / "tt_db.csv"
 
 ZENTUM_FILTER = {
     "start_time": date.today() - timedelta(days=365),
@@ -37,7 +38,7 @@ if __name__ == "__main__":
     group_ex.add_argument("-d", "--dashboard", help="Open the dashboard", action="store_true")
     args = parser.parse_args()
 
-    repo = TimesRepo(data_file_path)
+    repo = TimesRepo(DATA_FILE_PATH)
 
     if args.open:
         # Open the vim file of the database, the + here means we go to the end of the file,
