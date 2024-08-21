@@ -1,9 +1,10 @@
-import settings
-import pandas as pd
-import numpy as np
+import datetime as dt
+
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
-import datetime as dt
+import numpy as np
+import pandas as pd
+import settings
 
 
 def map_bin(x, bins, base):
@@ -120,12 +121,14 @@ def monthly_weekly_daily_plots(
         ax.set_xticklabels(list(map(lambda x: x.strftime("%b"), date_list)))
     elif plot_type == "daily":
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
-    elif plot_type == "all_week": 
+    elif plot_type == "all_week":
         weekly_proj_times = np.zeros((proj_time_by_group.shape[0], 7))
 
         for i in np.arange(7):
             day_of_week_numer = datelist[i].weekday()
-            weekly_proj_times[:, day_of_week_number] = np.sum(proj_time_by_group[:, i::7], axis=1) / proj_time_by_group.shape[1] * 7 / 60
+            weekly_proj_times[:, day_of_week_number] = (
+                np.sum(proj_time_by_group[:, i::7], axis=1) / proj_time_by_group.shape[1] * 7 / 60
+            )
         stacked_bar_chart(ax, weekly_proj_times, proj_names)
 
         ax.xaxis.set_major_locator(mticker.FixedLocator(np.arange(0, 7)))
@@ -248,19 +251,27 @@ def create_daily_zentum_timesheet():
         cur_day = min_date + dt.timedelta(days=days_since_start)
         cur_data = proj_data[cur_day == proj_data["date"].apply(lambda x: x.date())]
 
-        seer_time = cur_data[
-            (cur_data["project_name"] == "seer")
-            | (cur_data["project_name"] == "web tool")
-            | (cur_data["project_name"] == "rie")
-            | (cur_data["project_name"] == "via")
-        ]["time_spent"].astype(float).sum()
-        safeflight_time = cur_data[
-            (cur_data["project_name"] == "safeflight")
-            | (cur_data["project_name"] == "alias")
-            | (cur_data["project_name"] == "flyte")
-            | (cur_data["project_name"] == "linny")
-            | (cur_data["project_name"] == "all")
-        ]["time_spent"].astype(float).sum()
+        seer_time = (
+            cur_data[
+                (cur_data["project_name"] == "seer")
+                | (cur_data["project_name"] == "web tool")
+                | (cur_data["project_name"] == "rie")
+                | (cur_data["project_name"] == "via")
+            ]["time_spent"]
+            .astype(float)
+            .sum()
+        )
+        safeflight_time = (
+            cur_data[
+                (cur_data["project_name"] == "safeflight")
+                | (cur_data["project_name"] == "alias")
+                | (cur_data["project_name"] == "flyte")
+                | (cur_data["project_name"] == "linny")
+                | (cur_data["project_name"] == "all")
+            ]["time_spent"]
+            .astype(float)
+            .sum()
+        )
 
         all_time = cur_data["time_spent"].astype(float).sum()
 

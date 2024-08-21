@@ -1,5 +1,5 @@
-from pathlib import Path
 from os import path
+from pathlib import Path
 
 base_path = path.join(str(Path.home()), "projects", "track_time", "data")
 

@@ -1,15 +1,16 @@
 """Add data to the data base"""
 
-from os import system, path, makedirs
-from datetime import datetime, timedelta
-from time import sleep
+import argparse
 import csv
 import sys
-import argparse
+from datetime import datetime, timedelta
 from glob import glob
 from math import ceil
+from os import makedirs, path, system
+from time import sleep
 
 import pandas as pd
+
 from .settings import base_path, data_file_path
 
 
