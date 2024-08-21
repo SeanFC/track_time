@@ -35,4 +35,4 @@ poetry run scripts/lint
 * [x] Use proper date strings
 * [x] Put into python setup tools package
 * [ ] Extra column for the specifics of what was being done
-* [ ] Change to be based around new `tt -u` usage
+* [x] Change to be based around new `tt -u` usage

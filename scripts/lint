@@ -1,2 +1,3 @@
+autoflake -r --in-place --remove-unused-variables **/*.py
 isort .
 black .
