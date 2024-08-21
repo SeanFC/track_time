@@ -1,9 +1,7 @@
 # Track Time
 
 Track your time spent on various projects.
-State a project and how long you're going to spend on it. 
-After the timer finishes you'll be alerted and the time and your time spent on the project will be logged.
-Alternatively, start a timer and when you're finished enter the project name and the time taken will be saved
+Start a timer and when you're finished enter the project name and the time taken will be saved.
 
 ## Environment Setup 
 The run environment is managed by poetry. 
@@ -36,3 +34,4 @@ poetry run scripts/lint
 * [x] Put into python setup tools package
 * [ ] Extra column for the specifics of what was being done
 * [x] Change to be based around new `tt -u` usage
+* [ ] Make service to go through data and pick out input errors
