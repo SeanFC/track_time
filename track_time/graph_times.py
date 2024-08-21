@@ -44,10 +44,7 @@ def monthly_weekly_daily_plots(
     higher_level_selection_filter=None,
 ):
     # Pull in project data
-    parser = lambda date: dt.datetime.strptime(date, "%y%m%d")
-    proj_data = pd.read_csv(
-        settings.data_file_path, parse_dates=["date"], date_parser=parser
-    )
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=["date"], date_format="%y%m%d")
 
     # Restrict to starting at the start time
     if start_time is not None:
@@ -56,10 +53,7 @@ def monthly_weekly_daily_plots(
     # Filter none relevant selections
     if detail_level != DETAIL_LEVELS[0] and higher_level_selection_filter is not None:
         higher_level_index = DETAIL_LEVELS.index(detail_level) - 1
-        proj_data = proj_data[
-            proj_data[DETAIL_LEVELS[higher_level_index]]
-            == higher_level_selection_filter
-        ]
+        proj_data = proj_data[proj_data[DETAIL_LEVELS[higher_level_index]] == higher_level_selection_filter]
 
     # Turn all the detail levels to lower case
     for level in DETAIL_LEVELS:
@@ -85,19 +79,14 @@ def monthly_weekly_daily_plots(
                     if (base_time.month + x) // 12 != (base_time.month + x) / 12
                     else (base_time.month + x - 1) // 12
                 ),
-                month=(base_time.month + x) % 12
-                if (base_time.month + x) % 12 != 0
-                else 12,
+                month=(base_time.month + x) % 12 if (base_time.month + x) % 12 != 0 else 12,
                 day=1,
             )
             for x in range(amount_of_months)
         ]
     elif plot_type == "all_week" or plot_type == "daily":
-        # TODO: Make this an input option
         # The first day is the first month before a month ago
-        base_time = pd.Timestamp(
-            dt.date.today() - dt.timedelta(days=31 - dt.date.today().weekday() - 1)
-        )
+        base_time = pd.Timestamp(dt.date.today() - dt.timedelta(days=31 - dt.date.today().weekday() - 1))
 
         amount_of_days = (proj_data["date"].iloc[-1] - base_time).days + 1
         date_list = [base_time + dt.timedelta(days=x) for x in range(amount_of_days)]
@@ -120,12 +109,9 @@ def monthly_weekly_daily_plots(
     grouped_data = proj_data.groupby("Grouping")
     for group_idx, g in enumerate(grouped_data):
         cur_group = g[1]
-        time_per_proj = {}
         for proj_idx, proj_name in enumerate(proj_names):
             proj_time_by_group[proj_idx, g[0] - 1] = np.sum(
-                cur_group[cur_group[detail_level] == proj_name]["time_spent"].to_numpy(
-                    dtype="int"
-                )
+                cur_group[cur_group[detail_level] == proj_name]["time_spent"].to_numpy(dtype="int")
             )
 
     if plot_type == "monthly":
@@ -134,34 +120,27 @@ def monthly_weekly_daily_plots(
         ax.set_xticklabels(list(map(lambda x: x.strftime("%b"), date_list)))
     elif plot_type == "daily":
         stacked_bar_chart(ax, proj_time_by_group, proj_names)
-    elif plot_type == "all_week":
+    elif plot_type == "all_week": 
         weekly_proj_times = np.zeros((proj_time_by_group.shape[0], 7))
 
         for i in np.arange(7):
-            weekly_proj_times[:, i] = (
-                np.sum(proj_time_by_group[:, i::7], axis=1)
-                / proj_time_by_group.shape[1]
-                * 7
-                / 60
-            )
-        stacked_bar_chart(ax, weekly_proj_times[:, [-1, *(np.arange(6))]], proj_names)
+            day_of_week_numer = datelist[i].weekday()
+            weekly_proj_times[:, day_of_week_number] = np.sum(proj_time_by_group[:, i::7], axis=1) / proj_time_by_group.shape[1] * 7 / 60
+        stacked_bar_chart(ax, weekly_proj_times, proj_names)
 
         ax.xaxis.set_major_locator(mticker.FixedLocator(np.arange(0, 7)))
         ax.set_xticklabels(["Mon", "Tues", "Wed", "Thu", "Fri", "Sat", "Sun"])
 
     ax.set_ylabel("Time Spent (% Rel to Max)")
 
-    ax.legend(loc="upper left")
+    ax.legend()
     return ax
 
 
 def raster_plot_last_time_period(days_past=7):
     group = "somnus"
 
-    parser = lambda date: dt.datetime.strptime(date, "%y%m%d")
-    proj_data = pd.read_csv(
-        settings.data_file_path, parse_dates=["date"], date_parser=parser
-    )
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=["date"], date_format="%y%m%d")
     import somnia.visualise as vis
 
     # By today we want the end of day so days past needs an extra 1 to reflect this
@@ -219,15 +198,10 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
     else:
         fig, ax = figax
 
-    parser = lambda date: dt.datetime.strptime(date, "%y%m%d")
-    proj_data = pd.read_csv(
-        settings.data_file_path, parse_dates=["date"], date_parser=parser
-    )
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=["date"], date_format="%y%m%d")
     proj_data = proj_data[proj_data["group_name"] == cur_group]
 
-    min_date = dt.datetime.today() - dt.timedelta(
-        days=31
-    )  # TOOD: 31 should change based on month
+    min_date = dt.datetime.today() - dt.timedelta(days=31)  # TOOD: 31 should change based on month
     proj_data = proj_data[proj_data["date"] >= min_date]
 
     # If we're given a project name then display the graph for the extra column, otherwise we show all the projects
@@ -237,9 +211,7 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
         column_name = "extra"
 
     task_names = proj_data[column_name].unique()
-    task_times = [
-        proj_data[proj_data[column_name] == tn]["time_spent"].astype(float).sum() for tn in task_names
-    ]
+    task_times = [proj_data[proj_data[column_name] == tn]["time_spent"].astype(float).sum() for tn in task_names]
     ax.pie(task_times, labels=task_names)
 
     pie_graph_title = cur_group
@@ -254,13 +226,9 @@ def graph_month_in_group_split(cur_group, figax, project_name=None):
     )
 
 
-def create_daily_timesheet():
-    cur_group = "zentum"
+def create_daily_zentum_timesheet():
 
-    parser = lambda date: dt.datetime.strptime(date, "%y%m%d")
-    proj_data = pd.read_csv(
-        settings.data_file_path, parse_dates=["date"], date_parser=parser
-    )
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=["date"], date_format="%y%m%d")
     proj_data = proj_data[proj_data["group_name"] == cur_group]
 
     days_to_run = 150
@@ -293,6 +261,7 @@ def create_daily_timesheet():
             | (cur_data["project_name"] == "linny")
             | (cur_data["project_name"] == "all")
         ]["time_spent"].astype(float).sum()
+
         all_time = cur_data["time_spent"].astype(float).sum()
 
         def print_hour(time_s):
@@ -319,12 +288,19 @@ def create_daily_timesheet():
             },
             ignore_index=True,
         )
-    with pd.option_context('display.max_rows', None,
-            'display.max_columns', None,
-            'display.width', 1000,
-            'display.precision', 3,
-            'display.colheader_justify', 'center'):
-        daily_table.T.to_csv('/tmp/cur.csv')
+    with pd.option_context(
+        "display.max_rows",
+        None,
+        "display.max_columns",
+        None,
+        "display.width",
+        1000,
+        "display.precision",
+        3,
+        "display.colheader_justify",
+        "center",
+    ):
+        daily_table.T.to_csv("/tmp/cur.csv")
 
 
 def create_time_of_day_plot(start_time):
@@ -335,10 +311,7 @@ def create_time_of_day_plot(start_time):
     :type start_time: datetime.datetime
     """
     # Pull in project data
-    parser = lambda date: dt.datetime.strptime(date, "%y%m%d")
-    proj_data = pd.read_csv(
-        settings.data_file_path, parse_dates=["date"], date_parser=parser
-    )
+    proj_data = pd.read_csv(settings.data_file_path, parse_dates=["date"], date_format="%y%m%d")
 
     # Restrict to starting at the start time
     if start_time is not None:
@@ -368,10 +341,11 @@ def create_time_of_day_plot(start_time):
 
     plt.show()
 
+
 if __name__ == "__main__":
-    #TODO: This is just of the last year
+    # TODO: This is just of the last year
     ZENTUM_FILTER = {
-        #"start_time": dt.date(year=2021, month=6, day=1),
+        # "start_time": dt.date(year=2021, month=6, day=1),
         "start_time": dt.date.today() - dt.timedelta(days=365),
         "detail_level": "project_name",
         "higher_level_selection_filter": "zentum",
@@ -385,11 +359,11 @@ if __name__ == "__main__":
     current_filter = ZENTUM_FILTER
     # current_filter = PERSONAL_FILTER
 
-    #create_daily_timesheet()
-    #exit()
-    
-    #create_time_of_day_plot(current_filter["start_time"])
-    #exit()
+    # create_daily_zentum_timesheet()
+    # exit()
+
+    # create_time_of_day_plot(current_filter["start_time"])
+    # exit()
 
     fig, axes = plt.subplots(2, 3)
     axes[0, 0].set_title("All time")
