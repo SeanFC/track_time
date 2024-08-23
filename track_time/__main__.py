@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     if args.open:
         # Open the vim file of the database, the + here means we go to the end of the file,
-        system(f"$EDITOR + {data_file_path}")
+        system(f"$EDITOR + {DATA_FILE_PATH}")
     elif args.dashboard:
         # create_zentum_spreadsheet(repo)
         # show_time_of_day_plot(repo)
