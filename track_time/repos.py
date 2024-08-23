@@ -10,6 +10,9 @@ class TimesRepo:
         self._file_path.parent.mkdir(exist_ok=True)
 
     def get(self):
+        with open(self._file_path, "r") as f:
+            for line in f:
+                print(line)
         return pd.read_csv(self._file_path, parse_dates=["date"], date_format="%y%m%d")
 
     def add(self, date_string, start_time_string, minutes_to_wait, name_string):
@@ -30,7 +33,7 @@ class TimesRepo:
         new_data = pd.DataFrame(data=dat)
 
         with open(self._file_path, "a") as csv_file_handler:
-            new_data.to_csv(csv_file_handler, mode="a", header=False, index=False)
+            new_data.to_csv(csv_file_handler, mode="a", header=True, index=False)
 
 
 # TODO: Give better name

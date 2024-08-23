@@ -1,4 +1,5 @@
 from datetime import date, datetime, timedelta
+from typing import Callable
 
 import pandas as pd
 
@@ -14,10 +15,16 @@ from track_time.repos import (
 )
 
 
-def run_timer(data: TimesRepo):
-    project_name = input("Enter project name: ")
+def run_timer(
+    repo: TimesRepo,
+    input_service: Callable[[str], str] = input,
+    now_time_service: Callable[[], datetime] = datetime.now,
+):
+    start_time = now_time_service()
+    date_string = start_time.strftime("%y%m%d")
+    project_name = input_service("Enter project name: ")
 
-    time_spent_delta = datetime.now() - start_time
+    time_spent_delta = now_time_service() - start_time
     time_spent = get_timedelta_minute_string(time_spent_delta)
     time_spent = 0 if time_spent_delta.seconds < 60 else time_spent
     nearest_time_string = get_as_nearest_time_string(start_time, 1)
@@ -38,7 +45,7 @@ def run_timer(data: TimesRepo):
             + "minute long"
         )
 
-    repo.add(date_string, newest_time_String, time_spent, project_name)
+    repo.add(date_string, nearest_time_string, time_spent, project_name)
 
 
 def create_zentum_spreadsheet(data: TimesRepo):
